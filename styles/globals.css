@@ -1,0 +1,67 @@
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+.portfolio_list .elisc_tm_button {
+  margin-top: 75px;
+}
+
+.testimonials_list .owl-dots {
+  margin-top: 39px;
+}
+
+.elisc_fn_moving_box {
+  width: 265px;
+  height: 198px;
+  border: 1px solid #fff;
+  position: fixed;
+  top: 50%;
+  right: 170px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.6);
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+.elisc_fn_moving_box.opened {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+@media screen and (min-width: 1040px) {
+  .elisc_tm_mobile_menu {
+    display: none;
+  }
+}
+
+.elisc_tm_sidebar .social ul li {
+  margin: 0 10px 0 0;
+}
+
+.elisc_tm_sidebar .menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.elisc_tm_button input[type="submit"] {
+  font-family: unset;
+  text-transform: unset;
+  padding: 15px 40px 15px 40px;
+  height: unset;
+  font-weight: unset;
+  font-size: unset;
+}
+.elisc_tm_intro .pricing-info,
+.elisc_tm_intro .anim {
+  font-family: unset;
+}
