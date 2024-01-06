@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/fwbp9dwe3clr/public_html/
+    - /bin/cp -R pages $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -R src $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
+    - /bin/cp jsconfig.json $DEPLOYPATH
+    - /bin/cp next.config.js $DEPLOYPATH
+    - /bin/cp pacakge.json
+
+
