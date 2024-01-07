@@ -126,7 +126,7 @@ const Sidebar = () => {
             <div className="name">
               <h3>
                 <span>
-                  C.Straface<span className="back">C.Straface/span>
+                  C.Straface<span className="back">C.Straface</span>
                 </span>
               </h3>
             </div>
