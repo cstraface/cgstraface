@@ -66,7 +66,7 @@ const Home = () => {
               <div className="info">
                 <ul>
                   <li>
-                    <a href="tel:+1 208 803 4580">+1 208-803-4580/a>
+                    <a href="tel:+1 208 803 4580">+1 208-803-4580</a>
                   </li>
                   <li>
                     <a href="mailto:cstrafa@gmail.com">cstrafa@gmail.com</a>
