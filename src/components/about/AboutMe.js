@@ -63,7 +63,7 @@ const AboutMe = () => {
                   <li>
                     <span>Mail</span>
                     <span>
-                      <a href="mailto:support@elisc.com">cstrafa@gmail.com</a>
+                      <a href="mailto:cstrafa@gmail.com">cstrafa@gmail.com</a>
                     </span>
                   </li>
                   <li>
