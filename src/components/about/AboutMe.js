@@ -12,16 +12,16 @@ const AboutMe = () => {
             <div className="left">
               <div className="title">
                 <span className="mini">- Nice to meet you!</span>
-                <h3 className="name">Robert Elisc</h3>
+                <h3 className="name">Chris Straface</h3>
                 <span className="job">
                   <span className="cd-headline rotate-1">
                     {" "}
                     {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
-                    <span className="blc">Web designer &amp;</span>
+                    <span className="blc">Product Manager &amp;</span>
                     <span className="cd-words-wrapper">
-                      <b className="is-visible">Developer</b>
-                      <b>Coder</b>
-                      <b>Player</b>
+                      <b className="is-visible">Dad</b>
+                      <b>Closet Coder</b>
+                      <b>Home Automation Geek</b>
                     </span>
                   </span>
                 </span>
@@ -36,41 +36,40 @@ const AboutMe = () => {
               <div className="text">
                 <p>
                   Hello there! My name is{" "}
-                  <span className="yellowColor">Robert Elisc</span>. I am a web
-                  designer &amp; developer, and I'm very passionate and
-                  dedicated to my work.
+                  <span className="yellowColor">Chris</span>. With a decade-long track record steering the helm of e-commerce and
+                  direct-to-consumer enterprises, I bring a wealth of expertise as a seasoned product manager.
                 </p>
                 <p>
-                  With 20 years experience as a professional a graphic designer,
-                  I have acquired the skills and knowledge necessary to make
-                  your project a success. I enjoy every step of the design
-                  process, from discussion and collaboration.
+                  My journey has sculpted a unique fusion of marketing finesse and product leadership—an intricate dance between
+                  technical proficiency and an acute understanding of customer journeys. Operating with efficiency at the core of
+                  my approach, I stand ready to propel your e-commerce venture toward unprecedented growth. Let's collaborate to
+                  transform your business aspirations into thriving realities.
                 </p>
               </div>
               <div className="info">
                 <ul>
                   <li>
                     <span>Age</span>
-                    <span>25</span>
+                    <span>36</span>
                   </li>
                   <li>
                     <span>Born In</span>
                     <span>
                       <a className="href_location" href="#">
-                        Florida, USA
+                        California, USA
                       </a>
                     </span>
                   </li>
                   <li>
                     <span>Mail</span>
                     <span>
-                      <a href="mailto:support@elisc.com">support@elisc.com</a>
+                      <a href="mailto:support@elisc.com">cstrafa@gmail.com</a>
                     </span>
                   </li>
                   <li>
                     <span>Phone</span>
                     <span>
-                      <a href="tel:+77 022 444 05 05">+77 022 444 05 05</a>
+                      <a href="tel:+1 208 803 4580">+1 208 803 4580</a>
                     </span>
                   </li>
                 </ul>
@@ -81,13 +80,13 @@ const AboutMe = () => {
             <ul>
               <li>
                 <div className="list_inner">
-                  <h3>10+</h3>
-                  <span>Years of Experience</span>
+                  <h3>14</h3>
+                  <span>Years of Professional Experience</span>
                 </div>
               </li>
               <li>
                 <div className="list_inner">
-                  <h3>50+</h3>
+                  <h3>100+</h3>
                   <span>Projects Completed</span>
                 </div>
               </li>
