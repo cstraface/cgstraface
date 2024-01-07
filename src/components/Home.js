@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { context } from "../context/context";
 import SectionContainer from "./SectionContainer";
 const homeData = {
-  skills: ["Designer", "Coder", "Player"],
+  skills: ["Manager", "Leader", "Ethusiast"],
 };
 const Home = () => {
   const [text, setText] = useState(0);
@@ -27,7 +27,7 @@ const Home = () => {
                   <span className="cd-headline rotate-1">
                     {" "}
                     {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
-                    <span className="blc">Creative</span>{" "}
+                    <span className="blc">Product</span>{" "}
                     <span className="cd-words-wrapper">
                       {homeData.skills.map((skill, i) => (
                         <b
@@ -40,19 +40,18 @@ const Home = () => {
                     </span>
                   </span>
                 </h3>
-                <h3>Based in Florida</h3>
+                <h3>Based in Idaho</h3>
               </div>
               <div className="subtitle">
                 <p>
-                  I'm a Florida based web designer &amp; front‑end developer
-                  with <span className="blueColor">10+ years</span> of
-                  experience
+                  I'm an Idaho based product manager with <span className="blueColor">10 years</span> of
+                  professional experience, working in D2C and E-Commerce.
                 </p>
               </div>
               <div className="buttons">
                 <div className="elisc_tm_button transition_link">
                   <a href="#portfolio" onClick={() => navChange("portfolio")}>
-                    Got a project?
+                    I help small brands do big things.
                   </a>
                 </div>
                 <div
@@ -67,14 +66,14 @@ const Home = () => {
               <div className="info">
                 <ul>
                   <li>
-                    <a href="tel:+77 022 444 05 05">+77 022 444 05 05</a>
+                    <a href="tel:+1 208 803 4580">+1 208-803-4580/a>
                   </li>
                   <li>
-                    <a href="mailto:support@elisc.com">support@elisc.com</a>
+                    <a href="mailto:cstrafa@gmail.com">cstrafa@gmail.com</a>
                   </li>
                   <li>
                     <a className="href_location" href="#">
-                      Ave Street Avenue, New York
+                      Meridian, Idaho
                     </a>
                   </li>
                 </ul>
