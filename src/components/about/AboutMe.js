@@ -15,7 +15,7 @@ const AboutMe = () => {
                 <h3 className="name">Chris Straface</h3>
                 <span className="job">
                   <span className="cd-headline rotate-1">
-                    {" "}
+                    {"letters type"}
                     {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
                     <span className="blc">Product Manager &amp;</span>
                     <span className="cd-words-wrapper">
@@ -81,7 +81,7 @@ const AboutMe = () => {
               <li>
                 <div className="list_inner">
                   <h3>14</h3>
-                  <span>Years of Professional Experience</span>
+                  <span>Years of Experience</span>
                 </div>
               </li>
               <li>
