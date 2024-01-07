@@ -21,7 +21,7 @@ const Home = () => {
             <div className="left">
               <div className="title">
                 <h3>
-                  Hi, I'm <span className="blueColor">Elisc!</span>
+                  Hi, I'm <span className="blueColor">Chris!</span>
                 </h3>
                 <h3>
                   <span className="cd-headline rotate-1">
