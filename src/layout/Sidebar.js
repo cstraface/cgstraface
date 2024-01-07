@@ -20,7 +20,7 @@ const Sidebar = () => {
               <img src="img/logo/logo.png" alt="image" />
             </a>
             <a className="text" href="#">
-              <span>R.Elisc</span>
+              <span>C.Straface</span>
             </a>
           </div>
           <div className="trigger">
@@ -126,7 +126,7 @@ const Sidebar = () => {
             <div className="name">
               <h3>
                 <span>
-                  Robert Elisc<span className="back">Robert Elisc</span>
+                  C.Straface<span className="back">C.Straface/span>
                 </span>
               </h3>
             </div>
@@ -167,7 +167,7 @@ const Sidebar = () => {
             </div>
             <div className="text">
               <p>
-                Copyright © {new Date().getFullYear()} Robert Elisc. All rights
+                Copyright © {new Date().getFullYear()} Brick Enterprises. All rights
                 reserved.
               </p>
             </div>
