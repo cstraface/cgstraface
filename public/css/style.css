@@ -542,7 +542,7 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 100%;
+/*  border-radius: 100%;*/
 }
 .elisc_tm_sidebar .author .main:before {
   position: absolute;
