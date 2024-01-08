@@ -5,32 +5,32 @@ import SectionContainer from "./SectionContainer";
 const services = [
   {
     id: 1,
-    name: "Web Design",
+    name: "Shopify Store Setup",
     image: "/img/service/1.jpg",
   },
   {
     id: 2,
-    name: "Content Writing",
+    name: "Shopify Product Catalog Setup",
     image: "/img/service/2.jpg",
   },
   {
     id: 3,
-    name: "Brand Identity",
+    name: "Shopify Theme Development",
     image: "/img/service/3.jpg",
   },
   {
     id: 4,
-    name: "Live Chat",
+    name: "Shopify Store Automations",
     image: "/img/service/4.jpg",
   },
   {
     id: 5,
-    name: "After Effects",
+    name: "Shopify Inventory/Location Setup",
     image: "/img/service/1.jpg",
   },
   {
     id: 6,
-    name: "Mobile App",
+    name: "e-Commerce Administration",
     image: "/img/service/2.jpg",
   },
 ];
@@ -46,7 +46,7 @@ const Service = () => {
               <span>- Services</span>
               <h3>My Services</h3>
             </div>
-            <a href="mailto:support@elisc.com">support@elisc.com</a>
+            <a href="mailto:cstrafa@gmail.com">cstrafa@gmail.com</a>
           </div>
           <div className="service_list">
             <ul>
@@ -65,8 +65,7 @@ const Service = () => {
                       </div>
                       <div className="text">
                         <p>
-                          Web development is the process of building,
-                          programming...
+                          Elevating Shopify stores since 2012
                         </p>
                       </div>
                       <div className="elisc_tm_read_more">
