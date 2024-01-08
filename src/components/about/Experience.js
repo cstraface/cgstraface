@@ -43,7 +43,7 @@ const Experience = () => {
       <div className="tm_content">
         <div className="elisc_tm_title">
           <span>- Experience</span>
-          <h3>Everything about me!</h3>
+          <h3>My past few years...</h3>
         </div>
         <div className="list">
           <ul>

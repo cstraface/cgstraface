@@ -551,9 +551,9 @@ body::-webkit-scrollbar-thumb {
   bottom: -2px;
   left: -2px;
   right: -2px;
-  background-color: var(--blue-color);
+/*  background-color: var(--blue-color);*/
   z-index: -1;
-  border-radius: 100%;
+/*  border-radius: 100%; */
 }
 .elisc_tm_sidebar .name {
   width: 100%;
@@ -2359,7 +2359,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*---------------------------------------------------*/
-/*	13) ELISC ONE PAGE 
+/*	13) ELISC ONE PAGE
 /*---------------------------------------------------*/
 
 .dodo_tm_one_page_wrapper {
