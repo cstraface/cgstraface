@@ -29,6 +29,7 @@ const experiences = [
     date: "2014 - 2016",
     company: "Kinders BBQ",
     designation: "Brand Manager",
+    description: "Website development is the process of building, programming, coding and maintaining websites and web applications.",
   },
 ];
 
@@ -53,7 +54,7 @@ const Experience = () => {
                 <div className="list_inner">
                   <div className="short">
                     <div className="job">
-                      <span className="yellowColor">-{experience.date}</span>
+                      <span className="yellowColor">{experience.date}</span>
                       <h3>{experience.designation}</h3>
                     </div>
                     <div className="place">
@@ -61,11 +62,7 @@ const Experience = () => {
                     </div>
                   </div>
                   <div className="text">
-                    <p>
-                      Website development is the process of building,
-                      programming, coding and maintaining websites and web
-                      applications.
-                    </p>
+                    <p>{experience.description}</p>
                   </div>
                   <a
                     className="elisc_tm_full_link"
