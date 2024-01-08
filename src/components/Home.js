@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { context } from "../context/context";
 import SectionContainer from "./SectionContainer";
 const homeData = {
-  skills: ["Manager", "Leader", "Ethusiast"],
+  skills: ["Guru", "Admin", "Manager"],
 };
 const Home = () => {
   const [text, setText] = useState(0);
@@ -27,7 +27,7 @@ const Home = () => {
                   <span className="cd-headline rotate-1">
                     {" "}
                     {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
-                    <span className="blc">Product</span>{" "}
+                    <span className="blc">Your Shopify</span>{" "}
                     <span className="cd-words-wrapper">
                       {homeData.skills.map((skill, i) => (
                         <b
@@ -44,14 +44,14 @@ const Home = () => {
               </div>
               <div className="subtitle">
                 <p>
-                  I'm an Idaho based product manager with <span className="blueColor">10 years</span> of
+                  I'm an Idaho based product manager with <span className="blueColor">14 years</span> of
                   professional experience, working in D2C and E-Commerce.
                 </p>
               </div>
               <div className="buttons">
                 <div className="elisc_tm_button transition_link">
                   <a href="#portfolio" onClick={() => navChange("portfolio")}>
-                    I help small brands do big things.
+                    My Shopify Services
                   </a>
                 </div>
                 <div
@@ -59,17 +59,17 @@ const Home = () => {
                   data-style="border"
                 >
                   <a href="#contact" onClick={() => navChange("contact")}>
-                    Let's talk
+                    Get Started
                   </a>
                 </div>
               </div>
               <div className="info">
                 <ul>
                   <li>
-                    <a href="tel:+1 208 803 4580">+1 208-803-4580</a>
+                    <a href="tel:+1 208 803 4580">Give me a call</a>
                   </li>
                   <li>
-                    <a href="mailto:cstrafa@gmail.com">cstrafa@gmail.com</a>
+                    <a href="mailto:cstrafa@gmail.com">Shoot me an email</a>
                   </li>
                   <li>
                     <a className="href_location" href="#">
