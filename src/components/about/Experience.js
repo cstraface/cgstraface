@@ -8,6 +8,7 @@ const experiences = [
     date: "2019 - Present",
     company: "Lovevery",
     designation: "Senior Product Manager",
+    description: "Responsible for four 0-to-1 consumer launches.",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const experiences = [
     date: "2017 - 2018",
     company: "Zume Inc.",
     designation: "Brand Manager",
+    description: "Responsibilities included performance and optimization of ad spend, management of brand messaging through all omnichannel touchpoints, pizza/sides/beverage menu management, eCommerce operations and merchandizing.",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const experiences = [
     date: "2016 - 2017",
     company: "Clorox",
     designation: "Client Insights Consultant",
+    description: "Strategic insights consultant providing advanced business analytics and modeling on acquisition targets to Clorox’s New Business Development Unit.",
   },
   {
     id: 4,
@@ -29,7 +32,7 @@ const experiences = [
     date: "2014 - 2016",
     company: "Kinders BBQ",
     designation: "Brand Manager",
-    description: "Website development is the process of building, programming, coding and maintaining websites and web applications.",
+    description: "Responsible for orchestrating Kinder's e-commerce strategy, while overseeing all digital marketing activities, including email and social channels.",
   },
 ];
 
