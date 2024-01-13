@@ -1,4 +1,4 @@
-/* import Blogs from "@/src/components/Blogs"; */
+import Blogs from "@/src/components/Blogs";
 import Contact from "@/src/components/Contact";
 import Home from "@/src/components/Home";
 import Portfolio from "@/src/components/Portfolio";
