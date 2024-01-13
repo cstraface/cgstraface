@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import SectionContainer from "./SectionContainer";
+import ReCAPTCHA from "react-google-recaptcha";
 const Contact = () => {
   const [mailData, setMailData] = useState({
     name: "",
@@ -19,10 +20,10 @@ const Contact = () => {
     } else {
       emailjs
         .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
+          "service_vpskuf6", // service id
+          "template_l8kuc4s", // template id
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "jZFfRXuqTehgwi-0j" // public api
         )
         .then(
           (response) => {
@@ -130,6 +131,7 @@ const Contact = () => {
                       placeholder="Write something..."
                     />
                   </div>
+                  <div class="g-recaptcha" data-sitekey={process.env.REACT_APP_SITE_KEY}></div>
                   <div className="elisc_tm_button">
                     <input type="submit" value="Submit now" />
                   </div>
