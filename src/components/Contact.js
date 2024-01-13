@@ -134,7 +134,8 @@ const Contact = () => {
                       placeholder="Write something..."
                     />
                   </div>
-                  <ReCAPTCHA sitekey={process.env.REACT_APP_SITEKEY} />
+                  <div class="g-recaptcha" data-sitekey="{process.env.REACT_APP_SITEKEY}"></div>
+                  <ReCAPTCHA sitekey= />
                   <div className="elisc_tm_button">
                     <input type="submit" value="Submit now" />
                   </div>
