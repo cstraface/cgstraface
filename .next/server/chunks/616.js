@@ -227,14 +227,18 @@ const Contact = ()=>{
             ...mailData,
             [e.target.name]: e.target.value
         });
-    const onSubmit = (e)=>{
+    const onSubmit = (e, captchaValue)=>{
+        const mailParams = {
+            mailData,
+            "g-recaptcha-response": captchaValue
+        };
         e.preventDefault();
         if (name.length === 0 || email.length === 0 || message.length === 0) {
             setError(true);
             clearError();
         } else {
-            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_l8kuc4s", mailData, g - recaptcha - response, "jZFfRXuqTehgwi-0j" // public api
-            ).then((response1)=>{
+            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_l8kuc4s", mailParams, "jZFfRXuqTehgwi-0j" // public api
+            ).then((response)=>{
                 setError(false);
                 clearError();
                 setMailData({
@@ -599,7 +603,7 @@ const Home = ()=>{
 
 /***/ }),
 
-/***/ 524:
+/***/ 183:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
