@@ -18,7 +18,7 @@ const Contact = () => {
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
-    const = capthValue
+    const = capthValue;
     e.preventDefault();
     if (name.length === 0 || email.length === 0 || message.length === 0) {
       setError(true);
