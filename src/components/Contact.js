@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import SectionContainer from "./SectionContainer";
 import ReCAPTCHA from "react-google-recaptcha";
 const sitekey = process.env.SITE_KEY
-console.log(`Site Key: ${sitekey}`);
+//console.log(`Site Key: ${sitekey}`);
 //{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
 
 const Contact = () => {
@@ -22,6 +22,7 @@ const Contact = () => {
       mailData,
       'g-recaptcha-response': captchaValue,
     };
+    console.log(`mail params: ${mailParams}`);
     e.preventDefault();
     if (name.length === 0 || email.length === 0 || message.length === 0) {
       setError(true);

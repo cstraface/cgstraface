@@ -212,7 +212,7 @@ const Blogs = ()=>{
 
 
 const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
-console.log(`Site Key: ${sitekey}`);
+//console.log(`Site Key: ${sitekey}`);
 //{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
 const Contact = ()=>{
     const recaptcha = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)();
@@ -232,6 +232,7 @@ const Contact = ()=>{
             mailData,
             "g-recaptcha-response": captchaValue
         };
+        console.log(`mail params: ${mailParams}`);
         e.preventDefault();
         if (name.length === 0 || email.length === 0 || message.length === 0) {
             setError(true);
