@@ -72,8 +72,7 @@ const Service = () => {
                       <div className="text">
                         <p>{service.description}</p>
                       </div>
-                      </div>
-                      // <div className="elisc_tm_read_more">
+                      /* // <div className="elisc_tm_read_more">
                       //  <a href="#">
                       //    Read More
                       //    <span>
@@ -84,9 +83,9 @@ const Service = () => {
                       //      />
                       //    </span>
                       //  </a>
-                      //  </div>
-                    
-                    //<a
+                      //  </div>*/
+                    </div>
+                    /*//<a
                     //  className="elisc_tm_full_link"
                     //  href="#"
                     //  onClick={(e) => {
@@ -94,7 +93,7 @@ const Service = () => {
                     //    modalToggle(true);
                     //    setServiceModal(service);
                     //  }}
-                    //  />
+                    //  />*/
                   </div>
                 </li>
               ))}
