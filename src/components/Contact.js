@@ -18,6 +18,7 @@ const Contact = () => {
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
+    const = capthValue
     e.preventDefault();
     if (name.length === 0 || email.length === 0 || message.length === 0) {
       setError(true);
@@ -28,7 +29,7 @@ const Contact = () => {
           "service_vpskuf6", // service id
           "template_l8kuc4s", // template id
           mailData,
-          g-recaptcha-response,
+          'g-recaptcha-response': capthValue,
           "jZFfRXuqTehgwi-0j" // public api
         )
         .then(
