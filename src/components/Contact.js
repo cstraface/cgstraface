@@ -28,6 +28,7 @@ const Contact = () => {
           "service_vpskuf6", // service id
           "template_l8kuc4s", // template id
           mailData,
+          g-recaptcha-response,
           "jZFfRXuqTehgwi-0j" // public api
         )
         .then(

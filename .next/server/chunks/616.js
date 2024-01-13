@@ -212,7 +212,6 @@ const Blogs = ()=>{
 
 
 const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
-//const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i"
 console.log(`Site Key: ${sitekey}`);
 //{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
 const Contact = ()=>{
@@ -234,8 +233,8 @@ const Contact = ()=>{
             setError(true);
             clearError();
         } else {
-            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_l8kuc4s", mailData, "jZFfRXuqTehgwi-0j" // public api
-            ).then((response)=>{
+            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_l8kuc4s", mailData, g - recaptcha - response, "jZFfRXuqTehgwi-0j" // public api
+            ).then((response1)=>{
                 setError(false);
                 clearError();
                 setMailData({
@@ -373,6 +372,7 @@ const Contact = ()=>{
                                                 })
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                                class: "g-recaptcha",
                                                 sitekey: sitekey,
                                                 ref: recaptcha
                                             }),
