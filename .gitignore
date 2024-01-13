@@ -6,6 +6,7 @@ bin-release/
 
 # Env
 .env
+.next
 
 # Other files and folders
 .settings/
