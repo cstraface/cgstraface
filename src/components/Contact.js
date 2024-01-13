@@ -15,7 +15,7 @@ const Contact = () => {
   });
   const { name, email, message } = mailData;
   const [error, setError] = useState(null);
-  const onChange = (e, , captchaValue) =>
+  const onChange = (e, captchaValue) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
     const mailParams = {
