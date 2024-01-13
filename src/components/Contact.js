@@ -2,6 +2,11 @@ import emailjs from "emailjs-com";
 import { useState } from "react";
 import SectionContainer from "./SectionContainer";
 import ReCAPTCHA from "react-google-recaptcha";
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
+
 const Contact = () => {
   const [mailData, setMailData] = useState({
     name: "",
@@ -126,7 +131,7 @@ const Contact = () => {
                     <textarea
                       id="message"
                       name="message"
-                      onChange={(e) => onChange(e)} 
+                      onChange={(e) => onChange(e)}
                       value={message}
                       placeholder="Write something..."
                     />
