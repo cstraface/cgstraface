@@ -3,6 +3,8 @@ import { useState } from "react";
 import SectionContainer from "./SectionContainer";
 import ReCAPTCHA from "react-google-recaptcha";
 
+{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
+
 const Contact = () => {
   const [mailData, setMailData] = useState({
     name: "",
