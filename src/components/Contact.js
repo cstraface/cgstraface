@@ -136,6 +136,8 @@ const Contact = () => {
                       placeholder="Write something..."
                     />
                   </div>
+
+                  <ReCAPTCHA class="g-recaptcha" sitekey={sitekey} ref={recaptcha}  />
                   <div className="elisc_tm_button">
                     <input type="submit" value="Submit now" />
                   </div>
