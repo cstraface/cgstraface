@@ -211,7 +211,11 @@ const Blogs = ()=>{
 
 
 
+const sitekey = process.env.REACT_APP_SITE_KEY;
+console.log(`Site Key: ${sitekey}`);
+//{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
 const Contact = ()=>{
+    const recaptcha = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)();
     const [mailData, setMailData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)({
         name: "",
         email: "",
@@ -367,9 +371,9 @@ const Contact = ()=>{
                                                     placeholder: "Write something..."
                                                 })
                                             }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                class: "g-recaptcha",
-                                                "data-sitekey": process.env.REACT_APP_SITE_KEY
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                                sitekey: sitekey,
+                                                ref: recaptcha
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 className: "elisc_tm_button",
@@ -594,7 +598,7 @@ const Home = ()=>{
 
 /***/ }),
 
-/***/ 183:
+/***/ 524:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
