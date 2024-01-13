@@ -7,7 +7,7 @@ const Portfolio = () => {
   const { setPortfolioModal, modalToggle } = useContext(context);
   return (
     <SectionContainer name="portfolio">
-    
+
       {/* PARTNERS */}
       <div className="elisc_tm_partners">
         <div className="tm_content">
@@ -44,6 +44,24 @@ const Portfolio = () => {
               <li>
                 <div className="list_inner">
                   <img src="img/partners/5.png" alt="image" />
+                  <a className="elisc_tm_full_link" href="#" />
+                </div>
+              </li>
+              <li>
+                <div className="list_inner">
+                  <img src="img/partners/6.png" alt="image" />
+                  <a className="elisc_tm_full_link" href="#" />
+                </div>
+              </li>
+              <li>
+                <div className="list_inner">
+                  <img src="img/partners/7.png" alt="image" />
+                  <a className="elisc_tm_full_link" href="#" />
+                </div>
+              </li>
+              <li>
+                <div className="list_inner">
+                  <img src="img/partners/8.png" alt="image" />
                   <a className="elisc_tm_full_link" href="#" />
                 </div>
               </li>
