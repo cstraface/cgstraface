@@ -72,6 +72,7 @@ const Service = () => {
                       <div className="text">
                         <p>{service.description}</p>
                       </div>
+                      </div>
                       // <div className="elisc_tm_read_more">
                       //  <a href="#">
                       //    Read More
@@ -84,7 +85,7 @@ const Service = () => {
                       //    </span>
                       //  </a>
                       //  </div>
-                    </div>
+                    
                     //<a
                     //  className="elisc_tm_full_link"
                     //  href="#"
