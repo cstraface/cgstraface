@@ -5,7 +5,7 @@ bin-release/
 [Bb]in/
 
 # Env
-# .env
+#.env
 .next
 
 # Other files and folders

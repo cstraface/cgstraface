@@ -211,8 +211,8 @@ const Blogs = ()=>{
 
 
 
-//const sitekey = process.env.REACT_APP_SITE_KEY
-const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
+const sitekey = process.env.REACT_APP_SITE_KEY;
+//const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i"
 console.log(`Site Key: ${sitekey}`);
 //{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
 const Contact = ()=>{
@@ -599,7 +599,7 @@ const Home = ()=>{
 
 /***/ }),
 
-/***/ 524:
+/***/ 183:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
