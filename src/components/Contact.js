@@ -136,6 +136,7 @@ const Contact = () => {
                       placeholder="Write something..."
                     />
                   </div>
+                  <div className="elisc_tm_button">
                     <input type="submit" value="Submit now" />
                   </div>
                 </form>
