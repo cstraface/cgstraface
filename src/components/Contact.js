@@ -1,11 +1,12 @@
 import emailjs from "emailjs-com";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import SectionContainer from "./SectionContainer";
 import ReCAPTCHA from "react-google-recaptcha";
 
 {process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
 
 const Contact = () => {
+  const recaptcha = useRef();
   const [mailData, setMailData] = useState({
     name: "",
     email: "",
@@ -134,7 +135,7 @@ const Contact = () => {
                       placeholder="Write something..."
                     />
                   </div>
-                  <div class="g-recaptcha" data-sitekey={process.env.REACT_APP_SITEKEY}></div>
+                  <ReCAPTCHA ref={recaptcha} sitekey={process.env.REACT_APP_SITEKEY} />
                   <div className="elisc_tm_button">
                     <input type="submit" value="Submit now" />
                   </div>
