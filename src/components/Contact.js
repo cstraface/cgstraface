@@ -3,10 +3,6 @@ import { useState } from "react";
 import SectionContainer from "./SectionContainer";
 import ReCAPTCHA from "react-google-recaptcha";
 
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-    async defer>
-</script>
-
 const Contact = () => {
   const [mailData, setMailData] = useState({
     name: "",
@@ -136,7 +132,7 @@ const Contact = () => {
                       placeholder="Write something..."
                     />
                   </div>
-                  <div class="g-recaptcha" data-sitekey={process.env.REACT_APP_SITE_KEY}></div>
+                  <div class="g-recaptcha" data-sitekey={process.env.REACT_APP_SITEKEY}></div>
                   <div className="elisc_tm_button">
                     <input type="submit" value="Submit now" />
                   </div>
