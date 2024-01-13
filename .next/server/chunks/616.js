@@ -211,7 +211,8 @@ const Blogs = ()=>{
 
 
 
-const sitekey = process.env.REACT_APP_SITE_KEY;
+//const sitekey = process.env.REACT_APP_SITE_KEY
+const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
 console.log(`Site Key: ${sitekey}`);
 //{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
 const Contact = ()=>{
