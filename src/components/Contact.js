@@ -135,7 +135,7 @@ const Contact = () => {
                       placeholder="Write something..."
                     />
                   </div>
-                  <ReCAPTCHA ref={recaptcha} sitekey={process.env.REACT_APP_SITEKEY} />
+                  <ReCAPTCHA ref={recaptcha} sitekey={process.env.REACT_APP_SITE_KEY} />
                   <div className="elisc_tm_button">
                     <input type="submit" value="Submit now" />
                   </div>
