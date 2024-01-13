@@ -27,7 +27,7 @@ const Home = () => {
                   <span className="cd-headline rotate-1">
                     {" "}
                     {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
-                    <span className="blc">Your Shopify</span>{" "}
+                    <span className="blc">Shopify</span>{" "}
                     <span className="cd-words-wrapper">
                       {homeData.skills.map((skill, i) => (
                         <b
@@ -50,8 +50,8 @@ const Home = () => {
               </div>
               <div className="buttons">
                 <div className="elisc_tm_button transition_link">
-                  <a href="#portfolio" onClick={() => navChange("portfolio")}>
-                    My Shopify Services
+                  <a href="#service" onClick={() => navChange("service")}>
+                    Shopify Services
                   </a>
                 </div>
                 <div
