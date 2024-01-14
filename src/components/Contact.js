@@ -21,9 +21,10 @@ const Contact = () => {
     const token = recaptcha.current.getValue();
     recaptcha.current.reset();
     const mailParams = {
+      mailData,
       'g-recaptcha-response':token,
     };
-    console.log(`mail params: ${mailParams}`);
+    console.log(mailParams);
     e.preventDefault();
     if (name.length === 0 || email.length === 0 || message.length === 0) {
       setError(true);
@@ -34,7 +35,6 @@ const Contact = () => {
           "service_vpskuf6", // service id
           "template_b0z3zhu", // template id
           mailParams,
-          mailData,
           "jZFfRXuqTehgwi-0j" // public api
         )
         .then(
