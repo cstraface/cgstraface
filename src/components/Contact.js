@@ -15,12 +15,12 @@ const Contact = () => {
   });
   const { name, email, message } = mailData;
   const [error, setError] = useState(null);
-  const onChange = (e, captchaValue) =>
+  const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
     const mailParams = {
       mailData,
-      'g-recaptcha-response': captchaValue,
+      'g-recaptcha-response':recaptcha,
     };
     console.log(`mail params: ${mailParams}`);
     e.preventDefault();
