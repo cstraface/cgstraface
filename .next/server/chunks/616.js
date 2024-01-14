@@ -227,18 +227,20 @@ const Contact = ()=>{
             ...mailData,
             [e.target.name]: e.target.value
         });
-    const onSubmit = (e, captchaValue)=>{
+    const onSubmit = (e)=>{
+        const token = recaptcha.current.getValue();
+        recaptcha.current.reset();
         const mailParams = {
             mailData,
-            "g-recaptcha-response": captchaValue
+            "g-recaptcha-response": token
         };
-        console.log(`mail params: ${mailParams}`);
+        console.log(mailParams);
         e.preventDefault();
         if (name.length === 0 || email.length === 0 || message.length === 0) {
             setError(true);
             clearError();
         } else {
-            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_l8kuc4s", mailParams, "jZFfRXuqTehgwi-0j" // public api
+            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_b0z3zhu", mailParams, "jZFfRXuqTehgwi-0j" // public api
             ).then((response)=>{
                 setError(false);
                 clearError();
@@ -252,6 +254,7 @@ const Contact = ()=>{
             });
         }
     };
+    console.log(onSubmit);
     const clearError = ()=>{
         setTimeout(()=>{
             setError(null);
@@ -604,7 +607,7 @@ const Home = ()=>{
 
 /***/ }),
 
-/***/ 183:
+/***/ 524:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
