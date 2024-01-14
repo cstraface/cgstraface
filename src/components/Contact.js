@@ -22,7 +22,6 @@ const Contact = () => {
     recaptcha.current.reset();
     const mailParams = {
       'g-recaptcha-response':token,
-      mailData,
     };
     console.log(mailParams);
     e.preventDefault();
@@ -34,8 +33,9 @@ const Contact = () => {
         .send(
           "service_vpskuf6", // service id
           "template_b0z3zhu", // template id
+          mailData,
+          "jZFfRXuqTehgwi-0j", // public api
           mailParams,
-          "jZFfRXuqTehgwi-0j" // public api
         )
         .then(
           (response) => {
