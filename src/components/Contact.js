@@ -3,7 +3,6 @@ import { useRef, useState } from "react";
 import SectionContainer from "./SectionContainer";
 import ReCAPTCHA from "react-google-recaptcha";
 const sitekey = process.env.SITE_KEY
-//console.log(`Site Key: ${sitekey}`);
 //{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
 
 const Contact = () => {
@@ -20,11 +19,9 @@ const Contact = () => {
   const onSubmit = (e) => {
     const token = recaptcha.current.getValue();
     recaptcha.current.reset();
-    const mailParams = {
-      mailData,
+    const captchaParams = {
       'g-recaptcha-response':token,
     };
-    console.log(`mail params: ${mailParams}`);
     e.preventDefault();
     if (name.length === 0 || email.length === 0 || message.length === 0) {
       setError(true);
@@ -33,8 +30,9 @@ const Contact = () => {
       emailjs
         .send(
           "service_vpskuf6", // service id
-          "template_l8kuc4s", // template id
-          mailParams,
+          "template_b0z3zhu", // template id
+          mailData,
+          captchaParams,
           "jZFfRXuqTehgwi-0j" // public api
         )
         .then(
