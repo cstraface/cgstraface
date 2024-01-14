@@ -5,13 +5,13 @@ import ServicePopup from "@/src/components/popup/ServicePopup";
 import VideoPopup from "@/src/components/popup/VideoPopup";
 import { context } from "@/src/context/context";
 import Sidebar from "@/src/layout/Sidebar";
-import { eliscUtilits } from "@/src/utilits";
+import { swissUtilits } from "@/src/utilits";
 import { Fragment, useContext, useEffect } from "react";
 const Layout = ({ children }) => {
   useEffect(() => {
-    eliscUtilits.dataImage();
-    eliscUtilits.customCursor();
-    eliscUtilits.imgToSVG();
+    swissUtilits.dataImage();
+    swissUtilits.customCursor();
+    swissUtilits.imgToSVG();
   }, []);
   const {
     modal,
@@ -30,14 +30,14 @@ const Layout = ({ children }) => {
       {modal && portfolioModal && <PortfolioPopup />}
       {modal && blogModal && <BlogPopup />}
       <div
-        className={animation ? "elisc_tm_all_wrap" : "dodo_tm_one_page_wrapper"}
+        className={animation ? "swiss_tm_all_wrap" : "dodo_tm_one_page_wrapper"}
         data-magic-cursor="show"
         data-enter={animation}
         data-exit
       >
         <Sidebar />
         {/* MAINPART */}
-        <div className="elisc_tm_mainpart">
+        <div className="swiss_tm_mainpart">
           <div className="mainpart_inner">{children}</div>
         </div>
         {/* /MAINPART */}
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
         <div className="mouse-cursor cursor-inner" />
         {/* /CURSOR */}
       </div>
-      <div className="elisc_fn_moving_box"></div>
+      <div className="swiss_fn_moving_box"></div>
     </Fragment>
   );
 };

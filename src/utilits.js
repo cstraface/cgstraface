@@ -1,4 +1,4 @@
-export const eliscUtilits = {
+export const swissUtilits = {
   dataImage() {
     let d = document.querySelectorAll("[data-img-url");
     for (let i = 0; i < d.length; i++) {
@@ -116,13 +116,13 @@ export const eliscUtilits = {
     });
   },
   blogMoveingBox() {
-    var lists = document.querySelectorAll(".elisc_blogs_list > ul > li");
-    let box = document.querySelector(".elisc_fn_moving_box");
+    var lists = document.querySelectorAll(".swiss_blogs_list > ul > li");
+    let box = document.querySelector(".swiss_fn_moving_box");
 
     if (!box) {
       let body = document.querySelector("body");
       let div = document.createElement("div");
-      div.classList.add("elisc_fn_moving_box");
+      div.classList.add("swiss_fn_moving_box");
       body.appendChild(div);
     }
 
@@ -146,7 +146,7 @@ export const eliscUtilits = {
   },
   smoothScrolling() {
     window.addEventListener("scroll", () => {
-      const sections = document.querySelectorAll(".elisc_tm_section");
+      const sections = document.querySelectorAll(".swiss_tm_section");
       const navLi = document.querySelectorAll(".transition_link li");
       let current = "";
       sections.forEach((section) => {

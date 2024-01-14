@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { eliscUtilits } from "../utilits";
+import { swissUtilits } from "../utilits";
 
 const PreLoader = () => {
   useEffect(() => {
-    eliscUtilits.preloader();
+    swissUtilits.preloader();
   }, []);
 
   return (

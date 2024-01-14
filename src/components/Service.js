@@ -45,10 +45,10 @@ const Service = () => {
   const { setServiceModal, modalToggle } = useContext(context);
   return (
     <SectionContainer name="service">
-      <div className="elisc_tm_services">
+      <div className="swiss_tm_services">
         <div className="tm_content">
-          <div className="elisc_tm_service_title">
-            <div className="elisc_tm_title">
+          <div className="swiss_tm_service_title">
+            <div className="swiss_tm_title">
               <span>- Services</span>
               <h3>My Services</h3>
             </div>
@@ -78,7 +78,7 @@ const Service = () => {
               ))}
             </ul>
           </div>
-          <div className="elisc_tm_video">
+          <div className="swiss_tm_video">
             <img className="placeholder" src="img/thumbs/4-2.jpg" alt="image" />
             <div className="image" data-img-url="img/service/1.jpg" />
             <div className="overlay" />
@@ -89,7 +89,7 @@ const Service = () => {
               <h3>Intro Video</h3>
             </div>
             <a
-              className="elisc_tm_full_link popup-youtube"
+              className="swiss_tm_full_link popup-youtube"
               href="https://www.youtube.com/watch?v=7e90gBu4pas"
             />
           </div>

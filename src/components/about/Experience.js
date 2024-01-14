@@ -39,9 +39,9 @@ const experiences = [
 const Experience = () => {
   const { modalToggle, setexperienceModal } = useContext(context);
   return (
-    <div className="elisc_tm_experience">
+    <div className="swiss_tm_experience">
       <div className="tm_content">
-        <div className="elisc_tm_title">
+        <div className="swiss_tm_title">
           <span>- Experience</span>
           <h3>My past few years...</h3>
         </div>
@@ -68,7 +68,7 @@ const Experience = () => {
                     <p>{experience.description}</p>
                   </div>
                   <a
-                    className="elisc_tm_full_link"
+                    className="swiss_tm_full_link"
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();

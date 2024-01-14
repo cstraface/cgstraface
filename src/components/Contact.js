@@ -58,11 +58,11 @@ const Contact = () => {
   };
   return (
     <SectionContainer name="contact">
-      <div className="elisc_tm_contact">
+      <div className="swiss_tm_contact">
         <div className="tm_content">
           <div className="wrapper">
             <div className="left">
-              <div className="elisc_tm_title">
+              <div className="swiss_tm_title">
                 <span>- Let's Connect</span>
                 <h3>Get in touch</h3>
               </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                     <a href="tel:+77 022 444 05 05">+77 022 444 05 05</a>
                   </li>
                   <li>
-                    <a href="mailto:support@elisc.com">support@elisc.com</a>
+                    <a href="mailto:support@swiss.com">support@swiss.com</a>
                   </li>
                   <li>
                     <a className="href_location" href="#">
@@ -147,14 +147,14 @@ const Contact = () => {
                   </div>
 
                   <ReCAPTCHA class="g-recaptcha" sitekey={sitekey} ref={recaptcha}  />
-                  <div className="elisc_tm_button">
+                  <div className="swiss_tm_button">
                     <input type="submit" value="Submit now" />
                   </div>
                 </form>
               </div>
             </div>
           </div>
-          <div className="elisc_tm_map">
+          <div className="swiss_tm_map">
             <div className="mapouter">
               <div className="gmap_canvas">
                 <iframe

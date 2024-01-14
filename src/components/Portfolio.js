@@ -9,9 +9,9 @@ const Portfolio = () => {
     <SectionContainer name="portfolio">
 
       {/* PARTNERS */}
-      <div className="elisc_tm_partners">
+      <div className="swiss_tm_partners">
         <div className="tm_content">
-          <div className="elisc_tm_title">
+          <div className="swiss_tm_title">
             <span>- Clients</span>
             <h3>Customers &amp; clients</h3>
           </div>
@@ -20,49 +20,49 @@ const Portfolio = () => {
               <li>
                 <div className="list_inner">
                   <img src="img/partners/1.png" alt="image" />
-                  <a className="elisc_tm_full_link" href="#" />
+                  <a className="swiss_tm_full_link" href="#" />
                 </div>
               </li>
               <li>
                 <div className="list_inner">
                   <img src="img/partners/2.png" alt="image" />
-                  <a className="elisc_tm_full_link" href="#" />
+                  <a className="swiss_tm_full_link" href="#" />
                 </div>
               </li>
               <li>
                 <div className="list_inner">
                   <img src="img/partners/3.png" alt="image" />
-                  <a className="elisc_tm_full_link" href="#" />
+                  <a className="swiss_tm_full_link" href="#" />
                 </div>
               </li>
               <li>
                 <div className="list_inner">
                   <img src="img/partners/4.png" alt="image" />
-                  <a className="elisc_tm_full_link" href="#" />
+                  <a className="swiss_tm_full_link" href="#" />
                 </div>
               </li>
               <li>
                 <div className="list_inner">
                   <img src="img/partners/5.png" alt="image" />
-                  <a className="elisc_tm_full_link" href="#" />
+                  <a className="swiss_tm_full_link" href="#" />
                 </div>
               </li>
               <li>
                 <div className="list_inner">
                   <img src="img/partners/6.png" alt="image" />
-                  <a className="elisc_tm_full_link" href="#" />
+                  <a className="swiss_tm_full_link" href="#" />
                 </div>
               </li>
               <li>
                 <div className="list_inner">
                   <img src="img/partners/7.png" alt="image" />
-                  <a className="elisc_tm_full_link" href="#" />
+                  <a className="swiss_tm_full_link" href="#" />
                 </div>
               </li>
               <li>
                 <div className="list_inner">
                   <img src="img/partners/8.png" alt="image" />
-                  <a className="elisc_tm_full_link" href="#" />
+                  <a className="swiss_tm_full_link" href="#" />
                 </div>
               </li>
             </ul>
@@ -71,10 +71,10 @@ const Portfolio = () => {
       </div>
       {/* /PARTNERS */}
       {/* TESTIMONIALS */}
-      <div className="elisc_tm_testimonial_wrapper">
+      <div className="swiss_tm_testimonial_wrapper">
         <div className="tm_content">
-          <div className="elisc_tm_testimonials">
-            <div className="elisc_tm_title" data-position="center">
+          <div className="swiss_tm_testimonials">
+            <div className="swiss_tm_title" data-position="center">
               <span>- Testimonial</span>
               <h3>What client's say?</h3>
             </div>

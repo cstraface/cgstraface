@@ -6,9 +6,9 @@ const AboutMe = () => {
   const { navChange } = useContext(context);
   return (
     <SectionContainer name="about">
-      <div className="elisc_tm_about">
+      <div className="swiss_tm_about">
         <div className="tm_content">
-          <div className="elisc_tm_biography">
+          <div className="swiss_tm_biography">
             <div className="left">
               <div className="title">
                 <span className="mini">- Nice to meet you!</span>
@@ -26,7 +26,7 @@ const AboutMe = () => {
                   </span>
                 </span>
               </div>
-              <div className="elisc_tm_button transition_link">
+              <div className="swiss_tm_button transition_link">
                 <a href="#portfolio" onClick={() => navChange("portfolio")}>
                   Got a project?
                 </a>
@@ -76,7 +76,7 @@ const AboutMe = () => {
               </div>
             </div>
           </div>
-          <div className="elisc_tm_counter">
+          <div className="swiss_tm_counter">
             <ul>
               <li>
                 <div className="list_inner">

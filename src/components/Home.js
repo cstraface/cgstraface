@@ -15,7 +15,7 @@ const Home = () => {
   const { navChange } = useContext(context);
   return (
     <SectionContainer name={"home"}>
-      <div className="elisc_tm_home">
+      <div className="swiss_tm_home">
         <div className="tm_content">
           <div className="details">
             <div className="left">
@@ -49,13 +49,13 @@ const Home = () => {
                 </p>
               </div>
               <div className="buttons">
-                <div className="elisc_tm_button transition_link">
+                <div className="swiss_tm_button transition_link">
                   <a href="#service" onClick={() => navChange("service")}>
                     Shopify Services
                   </a>
                 </div>
                 <div
-                  className="elisc_tm_button transition_link"
+                  className="swiss_tm_button transition_link"
                   data-style="border"
                 >
                   <a href="#contact" onClick={() => navChange("contact")}>

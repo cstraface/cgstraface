@@ -52,16 +52,16 @@ const Blogs = () => {
 
   return (
     <SectionContainer name="blogs">
-      <div className="elisc_tm_news fn_w_sminiboxes">
+      <div className="swiss_tm_news fn_w_sminiboxes">
         <div className="tm_content">
           <div className="wrapper">
             <div className="left fn_w_sminibox">
-              <div className="elisc_tm_sticky_section">
-                <div className="elisc_tm_title">
+              <div className="swiss_tm_sticky_section">
+                <div className="swiss_tm_title">
                   <span>- Blog</span>
                   <h3>My blog &amp; news</h3>
                 </div>
-                <div className="elisc_tm_button transition_link">
+                <div className="swiss_tm_button transition_link">
                   <a href="#contact" onClick={() => navChange("contact")}>
                     Get in touch
                   </a>
@@ -69,8 +69,8 @@ const Blogs = () => {
               </div>
             </div>
             <div className="right fn_w_sminibox">
-              <div className="elisc_tm_sticky_section">
-                <div className="list elisc_blogs_list">
+              <div className="swiss_tm_sticky_section">
+                <div className="list swiss_blogs_list">
                   <ul>
                     {blogsData.map((blog) => (
                       <li data-img={blog.img} key={blog.id}>
@@ -104,7 +104,7 @@ const Blogs = () => {
                               </h3>
                             </div>
                           </div>
-                          <div className="elisc_tm_read_more">
+                          <div className="swiss_tm_read_more">
                             <a
                               className="line_effect"
                               href="#"

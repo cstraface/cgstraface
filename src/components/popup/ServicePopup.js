@@ -19,7 +19,7 @@ const ServicePopup = () => {
           <h3>{serviceModal.name}</h3>
         </div>
         <p>
-          Elisc is a leading web design agency with an award-winning design team
+          swiss is a leading web design agency with an award-winning design team
           that creates innovative, effective websites that capture your brand,
           improve your conversion rates, and maximize your revenue to help grow
           your business and achieve your goals.
@@ -33,7 +33,7 @@ const ServicePopup = () => {
         </p>
         <p>
           That’s why more companies are not only reevaluating their website’s
-          design but also partnering with Elisc, the web design agency that’s
+          design but also partnering with swiss, the web design agency that’s
           driven more than $2.4 billion in revenue for its clients. With over 50
           web design awards under our belt, we're confident we can design a
           custom website that drives sales for your unique business.

@@ -1,8 +1,8 @@
 const Intro = () => {
   return (
-    <div className="elisc_tm_all_wrap" data-magic-cursor="show">
-      <div className="elisc_tm_intro">
-        <div className="elisc_tm_intro_fixed_price">
+    <div className="swiss_tm_all_wrap" data-magic-cursor="show">
+      <div className="swiss_tm_intro">
+        <div className="swiss_tm_intro_fixed_price">
           <span className="anim" />
           <span className="anim" />
           <span className="anim" />

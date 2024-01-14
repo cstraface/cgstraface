@@ -26,7 +26,7 @@ const BlogPopup = () => {
         </div>
         <div className="text">
           <p>
-            Elisc is a leading web design agency with an award-winning design
+            swiss is a leading web design agency with an award-winning design
             team that creates innovative, effective websites that capture your
             brand, improve your conversion rates, and maximize your revenue to
             help grow your business and achieve your goals.

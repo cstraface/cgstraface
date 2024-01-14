@@ -6,25 +6,25 @@
 /*	This file is made for CURRENT TEMPLATE
 
 
-01)	ELISC BASE
-02) ELISC MOBILE MENU
-03) ELISC SIDEBAR
-04) ELISC HOME
-05) ELISC ABOUT
-06) ELISC SERVICES
-07) ELISC PORTFOLIO
-08) ELISC PARTNERS
-09) ELISC TESTIMONIALS
-10) ELISC NEWS
-11) ELISC CONTACT
-12) ELISC MODALBOXES
-13) ELISC ONE PAGE
-14) ELISC MAGIC CURSOR
-15) ELISC MEDIA QUERIES (FOR SMALL DEVICES)
+01)	swiss BASE
+02) swiss MOBILE MENU
+03) swiss SIDEBAR
+04) swiss HOME
+05) swiss ABOUT
+06) swiss SERVICES
+07) swiss PORTFOLIO
+08) swiss PARTNERS
+09) swiss TESTIMONIALS
+10) swiss NEWS
+11) swiss CONTACT
+12) swiss MODALBOXES
+13) swiss ONE PAGE
+14) swiss MAGIC CURSOR
+15) swiss MEDIA QUERIES (FOR SMALL DEVICES)
 
 
 /*---------------------------------------------------*/
-/*	01) ELISC BASE
+/*	01) swiss BASE
 /*---------------------------------------------------*/
 
 a {
@@ -96,7 +96,7 @@ img.svg {
   color: rgba(85, 82, 124, 0.6);
 }
 
-.elisc_tm_sticky_section {
+.swiss_tm_sticky_section {
   position: -webkit-sticky;
   position: -moz-sticky;
   position: -ms-sticky;
@@ -105,7 +105,7 @@ img.svg {
   overflow: visible;
   top: 120px;
 }
-.elisc_tm_sticky_section:after {
+.swiss_tm_sticky_section:after {
   clear: both;
   display: table;
   content: "";
@@ -142,15 +142,15 @@ h6 {
   font-size: 16px;
 }
 
-.elisc_tm_all_wrap {
+.swiss_tm_all_wrap {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   position: relative;
 }
-.elisc_tm_all_wrap,
-.elisc_tm_all_wrap * {
+.swiss_tm_all_wrap,
+.swiss_tm_all_wrap * {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box; /* Opera/IE 8+ */
@@ -288,7 +288,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
   border: 3px solid #fff;
 }
-.elisc_tm_section {
+.swiss_tm_section {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -305,32 +305,32 @@ body::-webkit-scrollbar-thumb {
   -webkit-transition: visibility1s linear, opacity 0s linear;
   -o-transition: visibility 1s linear, opacity 0s linear;
 }
-.elisc_tm_section.animated {
+.swiss_tm_section.animated {
   opacity: 1;
   visibility: visible;
   z-index: 9;
 }
-.elisc_tm_section.active {
+.swiss_tm_section.active {
   opacity: 1;
   visibility: visible;
   z-index: 10;
 }
-.elisc_tm_section.hidden {
+.swiss_tm_section.hidden {
   opacity: 0;
   visibility: hidden;
   z-index: 9;
 }
-.elisc_tm_section::-webkit-scrollbar {
+.swiss_tm_section::-webkit-scrollbar {
   width: 0px;
 }
-.elisc_tm_mainpart {
+.swiss_tm_mainpart {
   width: 100%;
   min-height: 100vh;
   clear: both;
   float: left;
   padding-left: 370px;
 }
-.elisc_tm_mainpart .mainpart_inner {
+.swiss_tm_mainpart .mainpart_inner {
   width: 100%;
   min-height: 100vh;
   clear: both;
@@ -347,10 +347,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*---------------------------------------------------*/
-/*	02) ELISC MOBILE MENU
+/*	02) swiss MOBILE MENU
 /*---------------------------------------------------*/
 
-.elisc_tm_topbar {
+.swiss_tm_topbar {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -360,7 +360,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 15;
   display: none;
 }
-.elisc_tm_topbar .topbar_inner {
+.swiss_tm_topbar .topbar_inner {
   width: 100%;
   height: 100%;
   clear: both;
@@ -369,23 +369,23 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 0px 20px;
 }
-.elisc_tm_topbar .logo img {
+.swiss_tm_topbar .logo img {
   max-width: 100px;
   max-height: 40px;
 }
-.elisc_tm_topbar .logo[data-type="image"] .image {
+.swiss_tm_topbar .logo[data-type="image"] .image {
   display: inline-block;
 }
-.elisc_tm_topbar .logo[data-type="image"] .text {
+.swiss_tm_topbar .logo[data-type="image"] .text {
   display: none;
 }
-.elisc_tm_topbar .logo[data-type="text"] .image {
+.swiss_tm_topbar .logo[data-type="text"] .image {
   display: none;
 }
-.elisc_tm_topbar .logo[data-type="text"] .text {
+.swiss_tm_topbar .logo[data-type="text"] .text {
   display: inline-block;
 }
-.elisc_tm_topbar .logo .text {
+.swiss_tm_topbar .logo .text {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
@@ -395,23 +395,23 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0px;
   line-height: 50px;
 }
-.elisc_tm_topbar .hamburger {
+.swiss_tm_topbar .hamburger {
   padding: 0px;
 }
-.elisc_tm_topbar .hamburger-inner,
-.elisc_tm_topbar .hamburger-inner:after,
-.elisc_tm_topbar .hamburger-inner:before {
+.swiss_tm_topbar .hamburger-inner,
+.swiss_tm_topbar .hamburger-inner:after,
+.swiss_tm_topbar .hamburger-inner:before {
   width: 30px;
   height: 2px;
 }
-.elisc_tm_topbar .trigger {
+.swiss_tm_topbar .trigger {
   position: relative;
   top: 5px;
 }
-.elisc_tm_topbar .hamburger-box {
+.swiss_tm_topbar .hamburger-box {
   width: 30px;
 }
-.elisc_tm_mobile_menu {
+.swiss_tm_mobile_menu {
   position: fixed;
   top: 50px;
   right: -200px;
@@ -426,24 +426,24 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_mobile_menu.opened {
+.swiss_tm_mobile_menu.opened {
   right: 0px;
 }
-.elisc_tm_mobile_menu .inner {
+.swiss_tm_mobile_menu .inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: right;
   padding: 70px 20px 20px 20px;
 }
-.elisc_tm_mobile_menu .avatar {
+.swiss_tm_mobile_menu .avatar {
   width: 70px;
   height: 70px;
   position: relative;
   float: right;
   margin-bottom: 50px;
 }
-.elisc_tm_mobile_menu .avatar .image {
+.swiss_tm_mobile_menu .avatar .image {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -453,57 +453,57 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   background-position: center;
 }
-.elisc_tm_mobile_menu .menu_list {
+.swiss_tm_mobile_menu .menu_list {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   margin-bottom: 50px;
 }
-.elisc_tm_mobile_menu .menu_list ul {
+.swiss_tm_mobile_menu .menu_list ul {
   margin: 0px;
   list-style-type: none;
 }
-.elisc_tm_mobile_menu .menu_list ul li {
+.swiss_tm_mobile_menu .menu_list ul li {
   margin: 0px 0px 7px 0px;
 }
-.elisc_tm_mobile_menu .menu_list ul li a {
+.swiss_tm_mobile_menu .menu_list ul li a {
   text-decoration: none;
   color: var(--dark-color);
 }
-.elisc_tm_mobile_menu .social {
+.swiss_tm_mobile_menu .social {
   width: 100%;
   float: left;
   margin-bottom: 5px;
 }
-.elisc_tm_mobile_menu .social ul {
+.swiss_tm_mobile_menu .social ul {
   margin: 0px;
   list-style-type: none;
 }
-.elisc_tm_mobile_menu .social ul li {
+.swiss_tm_mobile_menu .social ul li {
   margin: 0px 8px 0px 0px;
   display: inline-block;
 }
-.elisc_tm_mobile_menu .social ul li:last-child {
+.swiss_tm_mobile_menu .social ul li:last-child {
   margin-right: 0px;
 }
-.elisc_tm_mobile_menu .social ul li a {
+.swiss_tm_mobile_menu .social ul li a {
   text-decoration: none;
   color: #333;
 }
-.elisc_tm_mobile_menu .copyright {
+.swiss_tm_mobile_menu .copyright {
   width: 100%;
   float: left;
 }
-.elisc_tm_mobile_menu .copyright p {
+.swiss_tm_mobile_menu .copyright p {
   color: var(--dark-color);
 }
 
 /*---------------------------------------------------*/
-/*	03) ELISC SIDEBAR
+/*	03) swiss SIDEBAR
 /*---------------------------------------------------*/
 
-.elisc_tm_sidebar {
+.swiss_tm_sidebar {
   width: 370px;
   height: 100vh;
   position: fixed;
@@ -511,29 +511,29 @@ body::-webkit-scrollbar-thumb {
   top: 0px;
   border-right: 1px solid rgba(85, 82, 124, 0.1);
 }
-.elisc_tm_sidebar .sidebar_inner {
+.swiss_tm_sidebar .sidebar_inner {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   text-align: center;
 }
-.elisc_tm_sidebar .author {
+.swiss_tm_sidebar .author {
   width: 100%;
   float: left;
   padding-top: 60px;
 }
-.elisc_tm_sidebar .author .image {
+.swiss_tm_sidebar .author .image {
   position: relative;
   width: 118px;
   display: inline-block;
 }
-.elisc_tm_sidebar .author .image img {
+.swiss_tm_sidebar .author .image img {
   position: relative;
   opacity: 0;
   min-width: 100%;
 }
-.elisc_tm_sidebar .author .main {
+.swiss_tm_sidebar .author .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -544,7 +544,7 @@ body::-webkit-scrollbar-thumb {
   background-position: center;
 /*  border-radius: 100%;*/
 }
-.elisc_tm_sidebar .author .main:before {
+.swiss_tm_sidebar .author .main:before {
   position: absolute;
   content: "";
   top: -2px;
@@ -555,12 +555,12 @@ body::-webkit-scrollbar-thumb {
   z-index: -1;
 /*  border-radius: 100%; */
 }
-.elisc_tm_sidebar .name {
+.swiss_tm_sidebar .name {
   width: 100%;
   float: left;
   margin-top: -9px;
 }
-.elisc_tm_sidebar .name span {
+.swiss_tm_sidebar .name span {
   position: relative;
   font-style: italic;
   font-size: 88px;
@@ -569,7 +569,7 @@ body::-webkit-scrollbar-thumb {
   color: rgba(19, 15, 73, 0.07);
   display: block;
 }
-.elisc_tm_sidebar .name .back {
+.swiss_tm_sidebar .name .back {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -582,11 +582,11 @@ body::-webkit-scrollbar-thumb {
   font-style: normal;
   margin-top: 5px;
 }
-.elisc_tm_sidebar .menu {
+.swiss_tm_sidebar .menu {
   width: 100%;
   float: left;
 }
-.elisc_tm_sidebar .menu ul {
+.swiss_tm_sidebar .menu ul {
   margin: 0px;
   height: 100%;
   display: flex;
@@ -594,13 +594,13 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   flex-direction: column;
 }
-.elisc_tm_sidebar .menu ul li {
+.swiss_tm_sidebar .menu ul li {
   margin: 0px 0px 15px 0px;
 }
-.elisc_tm_sidebar .menu ul li:last-child {
+.swiss_tm_sidebar .menu ul li:last-child {
   margin-bottom: 0px;
 }
-.elisc_tm_sidebar .menu ul li a {
+.swiss_tm_sidebar .menu ul li a {
   color: var(--main-color);
 
   -webkit-transition: all 0.3s ease;
@@ -609,31 +609,31 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_sidebar .menu ul li.active a,
-.elisc_tm_sidebar .menu ul li.current a,
-.elisc_tm_sidebar .menu ul li a:hover {
+.swiss_tm_sidebar .menu ul li.active a,
+.swiss_tm_sidebar .menu ul li.current a,
+.swiss_tm_sidebar .menu ul li a:hover {
   color: var(--blue-color);
 }
-.elisc_tm_sidebar .copyright {
+.swiss_tm_sidebar .copyright {
   position: absolute;
   bottom: 50px;
 }
-.elisc_tm_sidebar .social {
+.swiss_tm_sidebar .social {
   width: 100%;
   float: left;
   margin-bottom: 7px;
 }
-.elisc_tm_sidebar .social ul {
+.swiss_tm_sidebar .social ul {
   margin: 0px;
 }
-.elisc_tm_sidebar .social ul li {
+.swiss_tm_sidebar .social ul li {
   margin: 0px 3px 0px 0px;
   display: inline-block;
 }
-.elisc_tm_sidebar .social ul li:last-child {
+.swiss_tm_sidebar .social ul li:last-child {
   margin-right: 0px;
 }
-.elisc_tm_sidebar .social ul li a {
+.swiss_tm_sidebar .social ul li a {
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -642,48 +642,48 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(19, 15, 73, 0.05);
   color: var(--dark-color);
 }
-.elisc_tm_sidebar .social ul li i {
+.swiss_tm_sidebar .social ul li i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 16px;
 }
-.elisc_tm_sidebar .text {
+.swiss_tm_sidebar .text {
   padding: 0px 50px;
 }
 
 /*---------------------------------------------------*/
-/*	04) ELISC HOME
+/*	04) swiss HOME
 /*---------------------------------------------------*/
 
-.elisc_tm_home {
+.swiss_tm_home {
   width: 100%;
   min-height: 100vh;
   clear: both;
   float: left;
   background-color: #effbf8;
 }
-.elisc_tm_home .details {
+.swiss_tm_home .details {
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
 }
-.elisc_tm_home .details .left {
+.swiss_tm_home .details .left {
   width: 50%;
 }
-.elisc_tm_home .title {
+.swiss_tm_home .title {
   width: 100%;
   float: left;
   margin-bottom: 21px;
 }
-.elisc_tm_home .title h3 {
+.swiss_tm_home .title h3 {
   font-weight: 800;
   font-size: 60px;
   line-height: 70px;
 }
-.elisc_tm_home .title span {
+.swiss_tm_home .title span {
   font-weight: 800;
   font-size: 64px;
   line-height: 72px;
@@ -694,18 +694,18 @@ body::-webkit-scrollbar-thumb {
 .yellowColor {
   color: var(--yellow-color);
 }
-.elisc_tm_home .subtitle {
+.swiss_tm_home .subtitle {
   width: 100%;
   max-width: 80%;
   float: left;
   margin-bottom: 40px;
 }
-.elisc_tm_button {
+.swiss_tm_button {
   width: 100%;
   float: left;
 }
-.elisc_tm_button a,
-.elisc_tm_button input[type="submit"] {
+.swiss_tm_button a,
+.swiss_tm_button input[type="submit"] {
   color: #fff;
   background-color: #130f49;
   display: inline-block;
@@ -720,50 +720,50 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_button a:hover,
-.elisc_tm_button input[type="submit"]:hover {
+.swiss_tm_button a:hover,
+.swiss_tm_button input[type="submit"]:hover {
   background-color: transparent;
   color: #55527c;
 }
-.elisc_tm_button[data-style="border"] a {
+.swiss_tm_button[data-style="border"] a {
   background-color: transparent;
   color: #55527c;
 }
-.elisc_tm_button[data-style="border"] a:hover {
+.swiss_tm_button[data-style="border"] a:hover {
   background-color: #130f49;
   color: #fff;
 }
-.elisc_tm_button[data-position="center"] {
+.swiss_tm_button[data-position="center"] {
   text-align: center;
 }
-.elisc_tm_button[data-position="left"] {
+.swiss_tm_button[data-position="left"] {
   text-align: left;
 }
-.elisc_tm_button[data-position="right"] {
+.swiss_tm_button[data-position="right"] {
   text-align: right;
 }
-.elisc_tm_home .buttons {
+.swiss_tm_home .buttons {
   width: 100%;
   float: left;
   display: flex;
   align-items: center;
   margin-bottom: 150px;
 }
-.elisc_tm_home .elisc_tm_button {
+.swiss_tm_home .swiss_tm_button {
   width: auto;
 }
-.elisc_tm_home .elisc_tm_button:nth-child(2) {
+.swiss_tm_home .swiss_tm_button:nth-child(2) {
   margin-left: 15px;
 }
-.elisc_tm_home .info {
+.swiss_tm_home .info {
   width: 100%;
   float: left;
 }
-.elisc_tm_home .info ul {
+.swiss_tm_home .info ul {
   margin: 0px;
   position: relative;
 }
-.elisc_tm_home .info ul:before {
+.swiss_tm_home .info ul:before {
   position: absolute;
   content: "";
   width: 4px;
@@ -771,10 +771,10 @@ body::-webkit-scrollbar-thumb {
   top: 0px;
   bottom: 0px;
 }
-.elisc_tm_home .info ul li {
+.swiss_tm_home .info ul li {
   padding-left: 15px;
 }
-.elisc_tm_home .info ul li a {
+.swiss_tm_home .info ul li a {
   color: #130f49;
   font-weight: 600;
   font-size: 18px;
@@ -785,97 +785,97 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_home .info ul li a:hover {
+.swiss_tm_home .info ul li a:hover {
   color: var(--yellow-color);
 }
-.elisc_tm_home .info ul li p {
+.swiss_tm_home .info ul li p {
   color: #130f49;
   font-weight: 600;
   font-size: 18px;
 }
-.elisc_tm_home .details .right {
+.swiss_tm_home .details .right {
   width: 50%;
   padding-left: 50px;
 }
-.elisc_tm_home .details .right img {
+.swiss_tm_home .details .right img {
 }
 
 /*---------------------------------------------------*/
-/*	05) ELISC ABOUT
+/*	05) swiss ABOUT
 /*---------------------------------------------------*/
 
-.elisc_tm_about {
+.swiss_tm_about {
   width: 100%;
   float: left;
   padding-top: 130px;
 }
-.elisc_tm_biography {
+.swiss_tm_biography {
   width: 100%;
   float: left;
   display: flex;
   margin-bottom: 40px;
 }
-.elisc_tm_biography .left {
+.swiss_tm_biography .left {
   width: 40%;
 }
-.elisc_tm_biography .title {
+.swiss_tm_biography .title {
   width: 100%;
   float: left;
   margin-bottom: 40px;
 }
-.elisc_tm_biography .title .mini {
+.swiss_tm_biography .title .mini {
   display: block;
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 12px;
 }
-.elisc_tm_biography .name {
+.swiss_tm_biography .name {
   font-weight: 800;
   font-size: 40px;
 }
-.elisc_tm_biography .job {
+.swiss_tm_biography .job {
   font-weight: 600;
   font-size: 20px;
   color: var(--dark-color);
 }
-.elisc_tm_biography .right {
+.swiss_tm_biography .right {
   width: 60%;
 }
-.elisc_tm_biography .text {
+.swiss_tm_biography .text {
   width: 100%;
   float: left;
   margin-bottom: 44px;
 }
-.elisc_tm_biography .text p {
+.swiss_tm_biography .text p {
   margin-bottom: 30px;
 }
-.elisc_tm_biography .text p:last-child {
+.swiss_tm_biography .text p:last-child {
   margin-bottom: 0px;
 }
-.elisc_tm_biography .info {
+.swiss_tm_biography .info {
   width: 100%;
   float: left;
 }
-.elisc_tm_biography .info ul {
+.swiss_tm_biography .info ul {
   margin: 0px;
 }
-.elisc_tm_biography .info ul li {
+.swiss_tm_biography .info ul li {
   margin: 0px 40px 20px 0px;
   display: inline-block;
 }
-.elisc_tm_biography .info ul li span {
+.swiss_tm_biography .info ul li span {
   display: block;
 }
-.elisc_tm_biography .info ul li span:first-child {
+.swiss_tm_biography .info ul li span:first-child {
   text-transform: uppercase;
   text-decoration: underline;
 }
-.elisc_tm_biography .info ul li span:last-child {
+.swiss_tm_biography .info ul li span:last-child {
   font-family: var(--font-inter);
   font-weight: 700;
   color: var(--dark-color);
 }
-.elisc_tm_biography .info ul li a {
+.swiss_tm_biography .info ul li a {
   color: var(--dark-color);
 
   -webkit-transition: all 0.3s ease;
@@ -884,24 +884,24 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_biography .info ul li a:hover {
+.swiss_tm_biography .info ul li a:hover {
   color: var(--yellow-color);
 }
-.elisc_tm_counter {
+.swiss_tm_counter {
   width: 100%;
   float: left;
   margin-bottom: 90px;
 }
-.elisc_tm_counter ul {
+.swiss_tm_counter ul {
   margin: 0px 0px 0px -30px;
 }
-.elisc_tm_counter ul li {
+.swiss_tm_counter ul li {
   margin: 0px 0px 30px 0px;
   float: left;
   width: 33.3333%;
   padding-left: 30px;
 }
-.elisc_tm_counter ul li .list_inner {
+.swiss_tm_counter ul li .list_inner {
   width: 100%;
   float: left;
   position: relative;
@@ -910,7 +910,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px;
   overflow: hidden;
 }
-.elisc_tm_counter ul li .list_inner:before {
+.swiss_tm_counter ul li .list_inner:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -926,53 +926,53 @@ body::-webkit-scrollbar-thumb {
   transform: scale3d(3.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
     translate3d(0, -100%, 0);
 }
-.elisc_tm_counter ul li .list_inner:hover:before {
+.swiss_tm_counter ul li .list_inner:hover:before {
   -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
     translate3d(0, 100%, 0);
   transform: scale3d(3.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
     translate3d(0, 100%, 0);
 }
-.elisc_tm_counter ul li:nth-child(1) .list_inner {
+.swiss_tm_counter ul li:nth-child(1) .list_inner {
   background-color: #d3f4ec;
 }
-.elisc_tm_counter ul li:nth-child(2) .list_inner {
+.swiss_tm_counter ul li:nth-child(2) .list_inner {
   background-color: #fce8d4;
 }
-.elisc_tm_counter ul li:nth-child(3) .list_inner {
+.swiss_tm_counter ul li:nth-child(3) .list_inner {
   background-color: #e3f9e0;
 }
-.elisc_tm_counter h3 {
+.swiss_tm_counter h3 {
   font-size: 40px;
   margin-bottom: 7px;
 }
-.elisc_tm_counter span {
+.swiss_tm_counter span {
   font-weight: 500;
   font-family: var(--font-karla);
   text-transform: uppercase;
 }
-.elisc_tm_experience {
+.swiss_tm_experience {
   width: 100%;
   float: left;
   background-color: #f3f9ff;
   padding: 100px 0px 70px 0px;
 }
-.elisc_tm_experience .popup_image {
+.swiss_tm_experience .popup_image {
   display: none;
   opacity: 0;
   position: absolute;
   z-index: -11;
 }
-.elisc_tm_title {
+.swiss_tm_title {
   width: 100%;
   float: left;
 }
-.elisc_tm_title[data-position="center"] {
+.swiss_tm_title[data-position="center"] {
   text-align: center;
 }
-.elisc_tm_title[data-position="right"] {
+.swiss_tm_title[data-position="right"] {
   text-align: right;
 }
-.elisc_tm_title span {
+.swiss_tm_title span {
   width: 100%;
   float: left;
   font-weight: 500;
@@ -980,27 +980,27 @@ body::-webkit-scrollbar-thumb {
   display: inline-block;
   margin-bottom: 12px;
 }
-.elisc_tm_title h3 {
+.swiss_tm_title h3 {
   font-size: 40px;
   font-weight: 800;
 }
-.elisc_tm_experience .list {
+.swiss_tm_experience .list {
   width: 100%;
   float: left;
   margin-top: 40px;
 }
-.elisc_tm_experience .list ul {
+.swiss_tm_experience .list ul {
   margin: 0px 0px 0px -30px;
   display: flex;
   flex-wrap: wrap;
 }
-.elisc_tm_experience .list ul li {
+.swiss_tm_experience .list ul li {
   margin: 0px 0px 40px 0px;
   padding-left: 30px;
   width: 50%;
   float: left;
 }
-.elisc_tm_experience .list ul li .list_inner {
+.swiss_tm_experience .list ul li .list_inner {
   width: 100%;
   clear: both;
   float: left;
@@ -1017,69 +1017,69 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_experience .list ul li .list_inner:hover {
+.swiss_tm_experience .list ul li .list_inner:hover {
   transform: translateY(-5px);
 }
-.elisc_tm_experience .short {
+.swiss_tm_experience .short {
   width: 100%;
   float: left;
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
 }
-.elisc_tm_experience .job span {
+.swiss_tm_experience .job span {
   font-weight: 500;
   display: inline-block;
   margin-bottom: 4px;
 }
-.elisc_tm_experience .job h3 {
+.swiss_tm_experience .job h3 {
   font-size: 20px;
 }
-.elisc_tm_experience .place span {
+.swiss_tm_experience .place span {
   font-weight: 500;
   font-family: var(--font-inter);
 }
-.elisc_tm_experience .text {
+.swiss_tm_experience .text {
   width: 100%;
   float: left;
 }
-.elisc_tm_experience .text p {
+.swiss_tm_experience .text p {
   opacity: 0.7;
 }
 
 /*---------------------------------------------------*/
-/*	06) ELISC SERVICES
+/*	06) swiss SERVICES
 /*---------------------------------------------------*/
 
-.elisc_tm_services {
+.swiss_tm_services {
   width: 100%;
   float: left;
   padding-top: 110px;
 }
-.elisc_tm_services .popup_image {
+.swiss_tm_services .popup_image {
   display: none;
   opacity: 0;
   position: absolute;
   z-index: -11;
 }
-.elisc_tm_service_title {
+.swiss_tm_service_title {
   width: 100%;
   float: left;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.elisc_tm_service_title .elisc_tm_title {
+.swiss_tm_service_title .swiss_tm_title {
   width: auto;
 }
-.elisc_tm_service_title a {
+.swiss_tm_service_title a {
   color: var(--dark-color);
   font-weight: 600;
   font-family: var(--font-inter);
   display: inline-block;
   position: relative;
 }
-.elisc_tm_service_title a:before {
+.swiss_tm_service_title a:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -1094,7 +1094,7 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_service_title a:hover:before {
+.swiss_tm_service_title a:hover:before {
   width: 0px;
 }
 .service_list {
@@ -1164,23 +1164,23 @@ body::-webkit-scrollbar-thumb {
   color: #55527c;
   opacity: 0.7;
 }
-.elisc_tm_read_more {
+.swiss_tm_read_more {
   width: 100%;
   float: left;
   display: flex;
   align-items: center;
 }
-.elisc_tm_read_more a {
+.swiss_tm_read_more a {
   color: #130f49;
   font-family: var(--font-inter);
   font-weight: 500;
 }
-.elisc_tm_read_more span {
+.swiss_tm_read_more span {
   padding-left: 20px;
   position: relative;
   top: -1px;
 }
-.elisc_tm_video {
+.swiss_tm_video {
   width: 100%;
   float: left;
   position: relative;
@@ -1188,12 +1188,12 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   border-radius: 4px;
 }
-.elisc_tm_video .placeholder {
+.swiss_tm_video .placeholder {
   min-width: 100%;
   opacity: 0;
   position: relative;
 }
-.elisc_tm_video .image {
+.swiss_tm_video .image {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1209,10 +1209,10 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_video:hover .image {
+.swiss_tm_video:hover .image {
   transform: scale(1.1);
 }
-.elisc_tm_video .overlay {
+.swiss_tm_video .overlay {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1220,7 +1220,7 @@ body::-webkit-scrollbar-thumb {
   right: 0px;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.elisc_tm_video .play {
+.swiss_tm_video .play {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1231,7 +1231,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #fff;
   border-radius: 100%;
 }
-.elisc_tm_video .play .svg {
+.swiss_tm_video .play .svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1240,7 +1240,7 @@ body::-webkit-scrollbar-thumb {
   height: 18px;
   margin-left: 2px;
 }
-.elisc_tm_video .text {
+.swiss_tm_video .text {
   position: absolute;
   bottom: 16px;
   right: 16px;
@@ -1248,13 +1248,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #fff;
   padding: 20px 30px;
 }
-.elisc_tm_video .text h3 {
+.swiss_tm_video .text h3 {
   color: #51586a;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.elisc_tm_full_link {
+.swiss_tm_full_link {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1264,25 +1264,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*---------------------------------------------------*/
-/*	07) ELISC PORTFOLIO
+/*	07) swiss PORTFOLIO
 /*---------------------------------------------------*/
 
-.elisc_tm_portfolio {
+.swiss_tm_portfolio {
   width: 100%;
   float: left;
   padding-top: 120px;
 }
-.elisc_tm_portfolio_title {
+.swiss_tm_portfolio_title {
   width: 100%;
   float: left;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
-.elisc_tm_portfolio_title .elisc_tm_title {
+.swiss_tm_portfolio_title .swiss_tm_title {
   width: auto;
 }
-.elisc_tm_portfolio_title .buttons a {
+.swiss_tm_portfolio_title .buttons a {
   width: 49px;
   height: 49px;
   border-radius: 100%;
@@ -1297,13 +1297,13 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_portfolio_title .buttons a:hover {
+.swiss_tm_portfolio_title .buttons a:hover {
   background-color: #130f49;
 }
-.elisc_tm_portfolio_title .buttons a:last-child {
+.swiss_tm_portfolio_title .buttons a:last-child {
   margin-right: 0px;
 }
-.elisc_tm_portfolio_title .buttons .svg {
+.swiss_tm_portfolio_title .buttons .svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1318,34 +1318,34 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_portfolio_title .buttons a:hover .svg {
+.swiss_tm_portfolio_title .buttons a:hover .svg {
   color: #fff;
 }
-.elisc_tm_portfolio .portfolio_list {
+.swiss_tm_portfolio .portfolio_list {
   width: 100%;
   float: left;
   margin-top: 40px;
   margin-bottom: 120px;
 }
-.elisc_tm_portfolio .portfolio_list ul {
+.swiss_tm_portfolio .portfolio_list ul {
   margin: 0px;
   margin-bottom: 65px;
 }
-.elisc_tm_portfolio .portfolio_list ul li {
+.swiss_tm_portfolio .portfolio_list ul li {
   margin: 0px;
 }
-.elisc_tm_portfolio .portfolio_list .image {
+.swiss_tm_portfolio .portfolio_list .image {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
   margin-bottom: 25px;
 }
-.elisc_tm_portfolio .portfolio_list .image img {
+.swiss_tm_portfolio .portfolio_list .image img {
   min-width: 100%;
   position: relative;
   opacity: 0;
 }
-.elisc_tm_portfolio .portfolio_list .main {
+.swiss_tm_portfolio .portfolio_list .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1362,18 +1362,18 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_portfolio .portfolio_list .image:hover .main {
+.swiss_tm_portfolio .portfolio_list .image:hover .main {
   transform: scale(1.1);
 }
-.elisc_tm_portfolio .portfolio_list .details {
+.swiss_tm_portfolio .portfolio_list .details {
   width: 100%;
   float: left;
 }
-.elisc_tm_portfolio .portfolio_list .details .category {
+.swiss_tm_portfolio .portfolio_list .details .category {
   display: inline-block;
   margin-bottom: 7px;
 }
-.elisc_tm_portfolio .portfolio_list .details .category a {
+.swiss_tm_portfolio .portfolio_list .details .category a {
   display: inline-block;
   color: #55527c;
   text-transform: uppercase;
@@ -1385,10 +1385,10 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_portfolio .portfolio_list .details .category a:hover {
+.swiss_tm_portfolio .portfolio_list .details .category a:hover {
   color: var(--yellow-color);
 }
-.elisc_tm_portfolio .portfolio_list .details .title a {
+.swiss_tm_portfolio .portfolio_list .details .title a {
   font-weight: 600;
   font-size: 24px;
   color: #130f49;
@@ -1415,16 +1415,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*---------------------------------------------------*/
-/*	08) ELISC PARTNERS
+/*	08) swiss PARTNERS
 /*---------------------------------------------------*/
 
-.elisc_tm_partners {
+.swiss_tm_partners {
   width: 100%;
   float: left;
   margin-bottom: 120px;
   padding: 0px 20px;
 }
-.elisc_tm_partners .partners_inner {
+.swiss_tm_partners .partners_inner {
   width: 100%;
   float: left;
   clear: both;
@@ -1432,7 +1432,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   margin-top: 58px;
 }
-.elisc_tm_partners ul {
+.swiss_tm_partners ul {
   margin: -2px -10px -2px -2px;
   list-style-type: none;
   padding-top: 2px;
@@ -1440,7 +1440,7 @@ body::-webkit-scrollbar-thumb {
   padding-left: 2px;
   min-width: calc(100% + 12px);
 }
-.elisc_tm_partners ul li {
+.swiss_tm_partners ul li {
   margin: 0px;
   float: left;
   width: 25%;
@@ -1453,11 +1453,11 @@ body::-webkit-scrollbar-thumb {
   margin-left: -2px;
   overflow: hidden;
 }
-.elisc_tm_partners ul li img {
+.swiss_tm_partners ul li img {
   max-width: 88%;
   max-height: 100px;
 }
-.elisc_tm_partners ul li .list_inner {
+.swiss_tm_partners ul li .list_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -1470,60 +1470,60 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_partners ul li .list_inner:hover {
+.swiss_tm_partners ul li .list_inner:hover {
   opacity: 1;
 }
 
 /*---------------------------------------------------*/
-/*	09) ELISC TESTIMONIALS
+/*	09) swiss TESTIMONIALS
 /*---------------------------------------------------*/
 
-.elisc_tm_testimonial_wrapper {
+.swiss_tm_testimonial_wrapper {
   width: 100%;
   float: left;
   margin-bottom: 120px;
 }
-.elisc_tm_testimonials {
+.swiss_tm_testimonials {
   width: 100%;
   float: left;
   background-color: #fff5f6;
   padding: 100px 150px 105px 100px;
 }
-.elisc_tm_testimonials .testimonials_list {
+.swiss_tm_testimonials .testimonials_list {
   width: 100%;
   float: left;
   text-align: center;
   margin-top: 43px;
 }
-.elisc_tm_testimonials ul {
+.swiss_tm_testimonials ul {
   margin: 0px;
   list-style-type: none;
 }
-.elisc_tm_testimonials ul li {
+.swiss_tm_testimonials ul li {
   margin: 0px;
 }
-.elisc_tm_testimonials .text {
+.swiss_tm_testimonials .text {
   margin-bottom: 33px;
 }
-.elisc_tm_testimonials .text p {
+.swiss_tm_testimonials .text p {
   font-size: 24px;
   line-height: 40px;
   font-family: var(--font-inter);
 }
-.elisc_tm_testimonials .short {
+.swiss_tm_testimonials .short {
   width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 5px;
 }
-.elisc_tm_testimonials .short .image {
+.swiss_tm_testimonials .short .image {
   position: relative;
   width: 60px;
   height: 60px;
   border-radius: 100%;
 }
-.elisc_tm_testimonials .short .image .main {
+.swiss_tm_testimonials .short .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1534,7 +1534,7 @@ body::-webkit-scrollbar-thumb {
   background-position: center;
   border-radius: 100%;
 }
-.elisc_tm_testimonials .short .image .main:before {
+.swiss_tm_testimonials .short .image .main:before {
   position: absolute;
   content: "";
   top: -5px;
@@ -1545,28 +1545,28 @@ body::-webkit-scrollbar-thumb {
   background-color: #fff;
   z-index: -1;
 }
-.elisc_tm_testimonials .detail {
+.swiss_tm_testimonials .detail {
   text-align: left;
   padding-left: 18px;
 }
-.elisc_tm_testimonials .detail h3 {
+.swiss_tm_testimonials .detail h3 {
   font-size: 30px;
   font-weight: 500;
 }
-.elisc_tm_testimonials .job {
+.swiss_tm_testimonials .job {
   text-align: center;
 }
-.elisc_tm_testimonials .job p {
+.swiss_tm_testimonials .job p {
   color: #51586a;
 }
-.elisc_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet {
+.swiss_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
   background-color: #cec5c9;
   position: relative;
   margin: 0px 12px;
 }
-.elisc_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet:before {
+.swiss_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet:before {
   position: absolute;
   content: "";
   top: 1px;
@@ -1583,7 +1583,7 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.elisc_tm_testimonials
+.swiss_tm_testimonials
   .owl-theme
   .owl-dots
   .swiper-pagination-bullet-active:before {
@@ -1592,65 +1592,65 @@ body::-webkit-scrollbar-thumb {
   left: -5px;
   right: -5px;
 }
-.elisc_tm_testimonials .owl-theme .owl-nav.disabled + .owl-dots {
+.swiss_tm_testimonials .owl-theme .owl-nav.disabled + .owl-dots {
   top: -5px;
   bottom: -5px;
   left: -5px;
   right: -5px;
   margin-top: 39px;
 }
-.elisc_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet-active {
+.swiss_tm_testimonials .owl-theme .owl-dots .swiper-pagination-bullet-active {
   background-color: #5d3bee;
 }
 
 /*---------------------------------------------------*/
-/*	10) ELISC NEWS
+/*	10) swiss NEWS
 /*---------------------------------------------------*/
 
-.elisc_tm_news {
+.swiss_tm_news {
   width: 100%;
   float: left;
   padding: 120px 0px;
 }
-.elisc_tm_news .popup_image {
+.swiss_tm_news .popup_image {
   display: none;
   opacity: 0;
   position: absolute;
   z-index: -11;
 }
-.elisc_tm_news .wrapper {
+.swiss_tm_news .wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.elisc_tm_news .left {
+.swiss_tm_news .left {
   width: 33.3333%;
   padding-right: 50px;
 }
-.elisc_tm_news .left .elisc_tm_button {
+.swiss_tm_news .left .swiss_tm_button {
   margin-top: 45px;
 }
-.elisc_tm_news .right {
+.swiss_tm_news .right {
   width: 66.6666%;
   padding-left: 50px;
 }
-.elisc_tm_news .list {
+.swiss_tm_news .list {
   width: 100%;
   float: left;
   position: relative;
 }
-.elisc_tm_news .list ul {
+.swiss_tm_news .list ul {
   margin: 0px;
 }
-.elisc_tm_news .list ul li {
+.swiss_tm_news .list ul li {
   margin: 0px 0px 40px 0px;
   width: 100%;
   float: left;
 }
-.elisc_tm_news .list ul li:last-child {
+.swiss_tm_news .list ul li:last-child {
   margin-bottom: 0px;
 }
-.elisc_tm_news .list ul li .list_inner {
+.swiss_tm_news .list ul li .list_inner {
   width: 100%;
   float: left;
   position: relative;
@@ -1658,32 +1658,32 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: space-between;
 }
-.elisc_tm_news .list .info {
+.swiss_tm_news .list .info {
   width: 50%;
 }
-.elisc_tm_news .list .elisc_tm_read_more {
+.swiss_tm_news .list .swiss_tm_read_more {
   width: auto;
 }
-.elisc_tm_news .list .meta {
+.swiss_tm_news .list .meta {
   width: 100%;
   float: left;
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
-.elisc_tm_news .list .meta .svg {
+.swiss_tm_news .list .meta .svg {
   width: 18px;
   height: 18px;
 }
-.elisc_tm_news .list .meta span {
+.swiss_tm_news .list .meta span {
   font-weight: 500;
   padding-left: 8px;
 }
-.elisc_tm_news .list .title {
+.swiss_tm_news .list .title {
   width: 100%;
   float: left;
 }
-.elisc_tm_news .list .title a {
+.swiss_tm_news .list .title a {
   color: #130f49;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
@@ -1691,10 +1691,10 @@ body::-webkit-scrollbar-thumb {
   background-size: 0% 1.5px;
   transition: background-size 0.5s;
 }
-.elisc_tm_news .list .title a:hover {
+.swiss_tm_news .list .title a:hover {
   background-size: 100% 1.5px;
 }
-.elisc_tm_news .list .title h3 {
+.swiss_tm_news .list .title h3 {
   color: #130f49;
   font-size: 28px;
   font-weight: 600;
@@ -1719,54 +1719,54 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*---------------------------------------------------*/
-/*	11) ELISC CONTACT
+/*	11) swiss CONTACT
 /*---------------------------------------------------*/
 
-.elisc_tm_contact {
+.swiss_tm_contact {
   width: 100%;
   min-height: 100vh;
   float: left;
   background-color: #e9f9ff;
   padding-top: 120px;
 }
-.elisc_tm_contact .wrapper {
+.swiss_tm_contact .wrapper {
   width: 100%;
   float: left;
   display: flex;
 }
-.elisc_tm_contact .wrapper .left {
+.swiss_tm_contact .wrapper .left {
   width: 50%;
   padding-right: 50px;
 }
-.elisc_tm_contact .wrapper .text {
+.swiss_tm_contact .wrapper .text {
   width: 100%;
   float: left;
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.elisc_tm_contact .wrapper .info {
+.swiss_tm_contact .wrapper .info {
   width: 100%;
   float: left;
 }
-.elisc_tm_contact .wrapper .info ul {
+.swiss_tm_contact .wrapper .info ul {
   margin: 0px;
 }
-.elisc_tm_contact .wrapper .info ul li {
+.swiss_tm_contact .wrapper .info ul li {
   margin: 0px 0px 8px 0px;
   width: 100%;
   float: left;
 }
-.elisc_tm_contact .wrapper .info ul li:last-child {
+.swiss_tm_contact .wrapper .info ul li:last-child {
   margin-bottom: 0px;
 }
-.elisc_tm_contact .wrapper .info ul li a {
+.swiss_tm_contact .wrapper .info ul li a {
   color: var(--dark-color);
   font-weight: 600;
   font-family: var(--font-inter);
   display: inline-block;
   position: relative;
 }
-.elisc_tm_contact .wrapper .info ul li a:before {
+.swiss_tm_contact .wrapper .info ul li a:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -1781,69 +1781,69 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_contact .wrapper .info ul li a:hover:before {
+.swiss_tm_contact .wrapper .info ul li a:hover:before {
   width: 0px;
 }
-.elisc_tm_contact .wrapper .right {
+.swiss_tm_contact .wrapper .right {
   width: 50%;
   padding-left: 50px;
 }
-.elisc_tm_contact .fields {
+.swiss_tm_contact .fields {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.elisc_tm_contact .fields .first {
+.swiss_tm_contact .fields .first {
   width: 100%;
   float: left;
 }
-.elisc_tm_contact .fields ul {
+.swiss_tm_contact .fields ul {
   margin: 0px;
   list-style-type: none;
 }
-.elisc_tm_contact .fields ul li {
+.swiss_tm_contact .fields ul li {
   width: 100%;
   margin: 0px 0px 25px 0px;
   float: left;
 }
-.elisc_tm_contact .fields ul li input {
+.swiss_tm_contact .fields ul li input {
   width: 100%;
   height: 60px;
   background-color: #fff;
 }
-.elisc_tm_contact .fields ul li input:focus {
+.swiss_tm_contact .fields ul li input:focus {
   outline: none;
 }
-.elisc_tm_contact .fields .last textarea {
+.swiss_tm_contact .fields .last textarea {
   width: 100%;
   height: 120px;
   resize: none;
   margin-bottom: 15px;
   background-color: #fff;
 }
-.elisc_tm_contact .fields .last textarea:focus {
+.swiss_tm_contact .fields .last textarea:focus {
   outline: none;
 }
-.elisc_tm_contact .empty_notice {
+.swiss_tm_contact .empty_notice {
   color: #f52225;
   margin-bottom: 7px;
   display: none;
   text-align: left;
   font-weight: 500;
 }
-.elisc_tm_contact .contact_error {
+.swiss_tm_contact .contact_error {
   color: #f52225;
   text-align: left;
   font-weight: 500;
 }
-.elisc_tm_contact .returnmessage {
+.swiss_tm_contact .returnmessage {
   color: #3a00ff;
   margin-bottom: 7px;
   text-align: left;
   font-weight: 500;
 }
-.elisc_tm_map {
+.swiss_tm_map {
   width: 100%;
   float: left;
   margin-top: 100px;
@@ -1851,10 +1851,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*---------------------------------------------------*/
-/*	12) ELISC MODALBOXES
+/*	12) swiss MODALBOXES
 /*---------------------------------------------------*/
 
-.elisc_tm_modalbox {
+.swiss_tm_modalbox {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -1871,11 +1871,11 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_modalbox.opened {
+.swiss_tm_modalbox.opened {
   opacity: 1;
   visibility: visible;
 }
-.elisc_tm_modalbox .box_inner {
+.swiss_tm_modalbox .box_inner {
   position: absolute;
   top: 70px;
   bottom: 70px;
@@ -1895,19 +1895,19 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_modalbox.opened .box_inner {
+.swiss_tm_modalbox.opened .box_inner {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%);
 }
-.elisc_tm_modalbox .close {
+.swiss_tm_modalbox .close {
   position: fixed;
   left: 100%;
   top: 0px;
   margin-left: 30px;
   z-index: 10;
 }
-.elisc_tm_modalbox .close a {
+.swiss_tm_modalbox .close a {
   display: block;
   width: 40px;
   height: 40px;
@@ -1923,16 +1923,16 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_modalbox .close a:hover {
+.swiss_tm_modalbox .close a:hover {
   border-radius: 100%;
 }
-.elisc_tm_modalbox .close a i {
+.swiss_tm_modalbox .close a i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.elisc_tm_modalbox .description_wrap {
+.swiss_tm_modalbox .description_wrap {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1942,7 +1942,7 @@ body::-webkit-scrollbar-thumb {
   overflow-y: scroll;
   border-radius: 5px;
 }
-.elisc_tm_modalbox .description_wrap:before {
+.swiss_tm_modalbox .description_wrap:before {
   position: fixed;
   content: "";
   top: 0px;
@@ -1954,7 +1954,7 @@ body::-webkit-scrollbar-thumb {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.elisc_tm_modalbox .description_wrap:after {
+.swiss_tm_modalbox .description_wrap:after {
   position: fixed;
   content: "";
   bottom: 0px;
@@ -1966,17 +1966,17 @@ body::-webkit-scrollbar-thumb {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.elisc_tm_modalbox .description_wrap::-webkit-scrollbar {
+.swiss_tm_modalbox .description_wrap::-webkit-scrollbar {
   width: 11px;
 }
 .aali_tm_modalbox .description_wrap {
   scrollbar-width: thin;
   scrollbar-color: #bbb #fff;
 }
-.elisc_tm_modalbox .description_wrap:-webkit-scrollbar-track {
+.swiss_tm_modalbox .description_wrap:-webkit-scrollbar-track {
   background: #fff;
 }
-.elisc_tm_modalbox .description_wrap::-webkit-scrollbar-thumb {
+.swiss_tm_modalbox .description_wrap::-webkit-scrollbar-thumb {
   background-color: #bbb;
   border-radius: 10px;
   border: 3px solid #fff;
@@ -1988,22 +1988,22 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   z-index: -11;
 }
-.elisc_tm_services .descriptions {
+.swiss_tm_services .descriptions {
   width: 100%;
   float: left;
 }
-.elisc_tm_modalbox .top_image {
+.swiss_tm_modalbox .top_image {
   position: relative;
   width: 100%;
   float: left;
   margin-bottom: 30px;
 }
-.elisc_tm_modalbox .top_image img {
+.swiss_tm_modalbox .top_image img {
   position: relative;
   opacity: 0;
   min-width: 100%;
 }
-.elisc_tm_modalbox .top_image .main {
+.swiss_tm_modalbox .top_image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -2014,19 +2014,19 @@ body::-webkit-scrollbar-thumb {
   background-position: center;
   border-radius: 5px;
 }
-.elisc_tm_modalbox .main_title {
+.swiss_tm_modalbox .main_title {
   width: 100%;
   float: left;
   margin-bottom: 15px;
 }
-.elisc_tm_modalbox .main_title h3 {
+.swiss_tm_modalbox .main_title h3 {
   font-size: 25px;
 }
-.elisc_tm_modalbox .descriptions p {
+.swiss_tm_modalbox .descriptions p {
   margin-bottom: 10px;
   opacity: 0.8;
 }
-.elisc_tm_modalbox .descriptions p:last-child {
+.swiss_tm_modalbox .descriptions p:last-child {
   margin-bottom: 0px;
 }
 .hidden_content_portfolio {
@@ -2036,30 +2036,30 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   z-index: -11;
 }
-.elisc_tm_modalbox .hidden_content_portfolio {
+.swiss_tm_modalbox .hidden_content_portfolio {
   display: none;
   opacity: 0;
   visibility: hidden;
   position: absolute;
   z-index: -11;
 }
-.elisc_tm_modalbox .popup_details {
+.swiss_tm_modalbox .popup_details {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.elisc_tm_modalbox .popup_details .top_image {
+.swiss_tm_modalbox .popup_details .top_image {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
 }
-.elisc_tm_modalbox .popup_details .top_image img {
+.swiss_tm_modalbox .popup_details .top_image img {
   position: relative;
   min-width: 100%;
   opacity: 0;
 }
-.elisc_tm_modalbox .popup_details .top_image .main {
+.swiss_tm_modalbox .popup_details .top_image .main {
   position: absolute;
   top: 0;
   left: 0;
@@ -2069,12 +2069,12 @@ body::-webkit-scrollbar-thumb {
   background-position: center center;
   background-repeat: no-repeat;
 }
-.elisc_tm_modalbox .portfolio_main_title {
+.swiss_tm_modalbox .portfolio_main_title {
   width: 100%;
   float: left;
   margin-bottom: 20px;
 }
-.elisc_tm_modalbox .portfolio_main_title .category a {
+.swiss_tm_modalbox .portfolio_main_title .category a {
   display: inline-block;
   color: var(--main-color);
   margin-bottom: 7px;
@@ -2085,54 +2085,54 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_modalbox .portfolio_main_title .category a:hover {
+.swiss_tm_modalbox .portfolio_main_title .category a:hover {
   color: var(--yellow-color);
 }
-.elisc_tm_modalbox .portfolio_main_title h3 {
+.swiss_tm_modalbox .portfolio_main_title h3 {
   font-size: 25px;
 }
-.elisc_tm_modalbox .main_details {
+.swiss_tm_modalbox .main_details {
   width: 100%;
   height: auto;
   clear: both;
   display: flex;
   margin-bottom: 60px;
 }
-.elisc_tm_modalbox .main_details .textbox {
+.swiss_tm_modalbox .main_details .textbox {
   width: 70%;
   padding-right: 40px;
 }
-.elisc_tm_modalbox .main_details .textbox p {
+.swiss_tm_modalbox .main_details .textbox p {
   margin-bottom: 10px;
   opacity: 0.8;
 }
-.elisc_tm_modalbox .main_details .textbox p:last-child {
+.swiss_tm_modalbox .main_details .textbox p:last-child {
   margin-bottom: 0px;
 }
-.elisc_tm_modalbox .main_details .detailbox {
+.swiss_tm_modalbox .main_details .detailbox {
   width: 30%;
   padding-left: 40px;
 }
-.elisc_tm_modalbox .main_details .detailbox > ul {
+.swiss_tm_modalbox .main_details .detailbox > ul {
   margin: 0px;
   list-style-type: none;
 }
-.elisc_tm_modalbox .main_details .detailbox > ul > li {
+.swiss_tm_modalbox .main_details .detailbox > ul > li {
   margin: 0px 0px 10px 0px;
   width: 100%;
   float: left;
 }
-.elisc_tm_modalbox .main_details .detailbox > ul > li:last-child {
+.swiss_tm_modalbox .main_details .detailbox > ul > li:last-child {
   margin-bottom: 0px;
 }
-.elisc_tm_modalbox .main_details .detailbox > ul > li span:last-child {
+.swiss_tm_modalbox .main_details .detailbox > ul > li span:last-child {
   opacity: 0.8;
 }
-.elisc_tm_modalbox .main_details .detailbox .first {
+.swiss_tm_modalbox .main_details .detailbox .first {
   font-weight: 700;
   display: block;
 }
-.elisc_tm_modalbox .main_details .detailbox span a {
+.swiss_tm_modalbox .main_details .detailbox span a {
   text-decoration: none;
   color: var(--main-color);
 
@@ -2142,23 +2142,23 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_modalbox .main_details .detailbox span a:hover {
+.swiss_tm_modalbox .main_details .detailbox span a:hover {
   color: var(--yellow-color);
 }
-.elisc_tm_modalbox .main_details .detailbox .share {
+.swiss_tm_modalbox .main_details .detailbox .share {
   margin: 0px;
   list-style-type: none;
   position: relative;
   top: 7px;
 }
-.elisc_tm_modalbox .main_details .detailbox .share li {
+.swiss_tm_modalbox .main_details .detailbox .share li {
   margin: 0px 13px 0px 0px;
   display: inline-block;
 }
-.elisc_tm_modalbox .main_details .detailbox .share li:last-child {
+.swiss_tm_modalbox .main_details .detailbox .share li:last-child {
   margin-right: 0px;
 }
-.elisc_tm_modalbox .main_details .detailbox .share li a {
+.swiss_tm_modalbox .main_details .detailbox .share li a {
   text-decoration: none;
   color: var(--main-color);
 
@@ -2168,43 +2168,43 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_modalbox .main_details .detailbox .share li a:hover {
+.swiss_tm_modalbox .main_details .detailbox .share li a:hover {
   color: var(--yellow-color);
 }
-.elisc_tm_modalbox .additional_images {
+.swiss_tm_modalbox .additional_images {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.elisc_tm_modalbox .additional_images ul {
+.swiss_tm_modalbox .additional_images ul {
   margin: 0px 0px 0px -30px;
   list-style-type: none;
 }
-.elisc_tm_modalbox .additional_images ul li {
+.swiss_tm_modalbox .additional_images ul li {
   margin: 0px 0px 30px 0px;
   float: left;
   width: 50%;
   padding-left: 30px;
 }
-.elisc_tm_modalbox .additional_images ul li:nth-child(3n-2) {
+.swiss_tm_modalbox .additional_images ul li:nth-child(3n-2) {
   width: 100%;
 }
-.elisc_tm_modalbox .additional_images ul li .list_inner {
+.swiss_tm_modalbox .additional_images ul li .list_inner {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   position: relative;
 }
-.elisc_tm_modalbox .additional_images ul li .my_image {
+.swiss_tm_modalbox .additional_images ul li .my_image {
   position: relative;
 }
-.elisc_tm_modalbox .additional_images ul li .my_image img {
+.swiss_tm_modalbox .additional_images ul li .my_image img {
   opacity: 0;
   min-width: 100%;
 }
-.elisc_tm_modalbox .additional_images ul li .my_image .main {
+.swiss_tm_modalbox .additional_images ul li .my_image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -2215,29 +2215,29 @@ body::-webkit-scrollbar-thumb {
   background-position: center;
   border-radius: 5px;
 }
-.elisc_tm_news .news_hidden_details {
+.swiss_tm_news .news_hidden_details {
   display: none;
   opacity: 0;
   visibility: hidden;
   position: absolute;
   z-index: -11;
 }
-.elisc_tm_modalbox .news_popup_informations {
+.swiss_tm_modalbox .news_popup_informations {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.elisc_tm_modalbox .news_popup_informations .image {
+.swiss_tm_modalbox .news_popup_informations .image {
   position: relative;
   margin-bottom: 30px;
 }
-.elisc_tm_modalbox .news_popup_informations .image img {
+.swiss_tm_modalbox .news_popup_informations .image img {
   position: relative;
   opacity: 0;
   min-width: 100%;
 }
-.elisc_tm_modalbox .news_popup_informations .image .main {
+.swiss_tm_modalbox .news_popup_informations .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -2248,32 +2248,32 @@ body::-webkit-scrollbar-thumb {
   background-position: center;
   border-radius: 4px;
 }
-.elisc_tm_modalbox .news_popup_informations .text {
+.swiss_tm_modalbox .news_popup_informations .text {
   width: 100%;
   float: left;
 }
-.elisc_tm_modalbox .news_popup_informations .text p {
+.swiss_tm_modalbox .news_popup_informations .text p {
   margin-bottom: 10px;
   opacity: 0.8;
 }
-.elisc_tm_modalbox .news_popup_informations .text p:last-child {
+.swiss_tm_modalbox .news_popup_informations .text p:last-child {
   margin-bottom: 0px;
 }
-.elisc_tm_modalbox .meta {
+.swiss_tm_modalbox .meta {
   width: 100%;
   display: flex;
   align-items: center;
   float: left;
   margin-bottom: 7px;
 }
-.elisc_tm_modalbox .meta .svg {
+.swiss_tm_modalbox .meta .svg {
   width: 18px;
   height: 18px;
 }
-.elisc_tm_modalbox .meta span {
+.swiss_tm_modalbox .meta span {
   padding-left: 8px;
 }
-.elisc_tm_modalbox .meta ul {
+.swiss_tm_modalbox .meta ul {
   margin: 0px;
   list-style: none;
   display: -webkit-flex;
@@ -2286,25 +2286,25 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   margin-bottom: 2px;
 }
-.elisc_tm_modalbox .meta ul li {
+.swiss_tm_modalbox .meta ul li {
   margin: 0px;
   position: relative;
   margin-right: 10px;
 }
-.elisc_tm_modalbox .meta ul li:before {
+.swiss_tm_modalbox .meta ul li:before {
   position: relative;
   content: "/";
   font-size: 18px;
 }
-.elisc_tm_modalbox .meta ul li:first-child:before {
+.swiss_tm_modalbox .meta ul li:first-child:before {
   display: none;
 }
-.elisc_tm_modalbox .meta ul li span {
+.swiss_tm_modalbox .meta ul li span {
   font-size: 15px;
   color: #777;
   padding-left: 10px;
 }
-.elisc_tm_modalbox .meta ul li span a {
+.swiss_tm_modalbox .meta ul li span a {
   text-decoration: none;
   color: #777;
 
@@ -2314,52 +2314,52 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_modalbox .meta ul li span a:hover {
+.swiss_tm_modalbox .meta ul li span a:hover {
   color: #000;
 }
-.elisc_tm_modalbox .meta ul li:first-child span {
+.swiss_tm_modalbox .meta ul li:first-child span {
   padding-left: 0px;
 }
-.elisc_tm_modalbox .news_popup_informations .title {
+.swiss_tm_modalbox .news_popup_informations .title {
   width: 100%;
   float: left;
   margin-bottom: 20px;
 }
-.elisc_tm_modalbox .news_popup_informations .title h3 {
+.swiss_tm_modalbox .news_popup_informations .title h3 {
   font-size: 25px;
 }
-.elisc_tm_modalbox .infos {
+.swiss_tm_modalbox .infos {
   width: 100%;
   float: left;
   margin-top: 5px;
   margin-bottom: 20px;
 }
-.elisc_tm_modalbox .infos .year {
+.swiss_tm_modalbox .infos .year {
   width: 100%;
   float: left;
   margin-bottom: 20px;
 }
-.elisc_tm_modalbox .infos .year span {
+.swiss_tm_modalbox .infos .year span {
   display: inline-block;
   background-color: #000;
   color: var(--yellow-color);
   border-radius: 4px;
   padding: 4px 20px;
 }
-.elisc_tm_modalbox .infos .job {
+.swiss_tm_modalbox .infos .job {
   display: inline-block;
 }
-.elisc_tm_modalbox .infos .job span {
+.swiss_tm_modalbox .infos .job span {
   display: inline-block;
   margin-bottom: 5px;
   opacity: 0.8;
 }
-.elisc_tm_modalbox .infos .job h3 {
+.swiss_tm_modalbox .infos .job h3 {
   font-size: 25px;
 }
 
 /*---------------------------------------------------*/
-/*	13) ELISC ONE PAGE
+/*	13) swiss ONE PAGE
 /*---------------------------------------------------*/
 
 .dodo_tm_one_page_wrapper {
@@ -2368,7 +2368,7 @@ body::-webkit-scrollbar-thumb {
   clear: both;
   float: left;
 }
-.dodo_tm_one_page_wrapper .elisc_tm_section {
+.dodo_tm_one_page_wrapper .swiss_tm_section {
   position: relative;
   top: auto;
   bottom: auto;
@@ -2377,24 +2377,24 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
   visibility: visible;
 }
-.dodo_tm_one_page_wrapper .elisc_tm_portfolio {
+.dodo_tm_one_page_wrapper .swiss_tm_portfolio {
   padding-top: 120px;
 }
-.dodo_tm_one_page_wrapper .elisc_tm_news {
+.dodo_tm_one_page_wrapper .swiss_tm_news {
   padding-top: 120px;
 }
-.dodo_tm_one_page_wrapper .elisc_tm_sticky_section {
+.dodo_tm_one_page_wrapper .swiss_tm_sticky_section {
   top: 0px;
 }
-.dodo_tm_one_page_wrapper .elisc_tm_video {
+.dodo_tm_one_page_wrapper .swiss_tm_video {
   margin-bottom: 0px;
 }
-.dodo_tm_one_page_wrapper .elisc_tm_testimonial_wrapper {
+.dodo_tm_one_page_wrapper .swiss_tm_testimonial_wrapper {
   margin-bottom: 0px;
 }
 
 /*---------------------------------------------------*/
-/*	14) ELISC MAGIC CURSOR
+/*	14) swiss MAGIC CURSOR
 /*---------------------------------------------------*/
 
 .mouse-cursor {
@@ -2452,31 +2452,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*---------------------------------------------------*/
-/*	 ELISC INTRO
+/*	 swiss INTRO
 /*---------------------------------------------------*/
 
-.elisc_tm_intro .short_info {
+.swiss_tm_intro .short_info {
   position: fixed;
   top: 10%;
   width: 100%;
   text-align: center;
 }
-.elisc_tm_intro .short_info img {
+.swiss_tm_intro .short_info img {
   margin-bottom: 20px;
 }
-.elisc_tm_intro .short_info h3 {
+.swiss_tm_intro .short_info h3 {
   font-size: 20px;
   color: #767676;
   font-weight: 500;
 }
-.elisc_tm_intro {
+.swiss_tm_intro {
   width: 100%;
   height: 100vh;
   clear: both;
   float: left;
   position: relative;
 }
-.elisc_tm_intro .demos {
+.swiss_tm_intro .demos {
   width: 100%;
   height: 100%;
   clear: both;
@@ -2485,8 +2485,8 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   position: relative;
 }
-.elisc_tm_intro .left,
-.elisc_tm_intro .right {
+.swiss_tm_intro .left,
+.swiss_tm_intro .right {
   width: 50%;
   height: 100%;
   display: flex;
@@ -2494,11 +2494,11 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   position: relative;
 }
-.elisc_tm_intro .demos img {
+.swiss_tm_intro .demos img {
   max-width: 400px;
   margin-bottom: 25px;
 }
-.elisc_tm_intro .desc {
+.swiss_tm_intro .desc {
   position: relative;
   top: 0px;
 
@@ -2508,12 +2508,12 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.elisc_tm_intro .desc h3 {
+.swiss_tm_intro .desc h3 {
   font-size: 20px;
 }
-.elisc_tm_intro .intro_line,
-.elisc_tm_intro .intro_line_2,
-.elisc_tm_intro .intro_line_3 {
+.swiss_tm_intro .intro_line,
+.swiss_tm_intro .intro_line_2,
+.swiss_tm_intro .intro_line_3 {
   position: fixed;
   top: 0px;
   width: 1px;
@@ -2523,17 +2523,17 @@ body::-webkit-scrollbar-thumb {
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.06);
 }
-.elisc_tm_intro .intro_line {
+.swiss_tm_intro .intro_line {
   left: 25%;
 }
-.elisc_tm_intro .intro_line_2 {
+.swiss_tm_intro .intro_line_2 {
   left: 50%;
   transform: translateY(-50%);
 }
-.elisc_tm_intro .intro_line_3 {
+.swiss_tm_intro .intro_line_3 {
   left: 75%;
 }
-.elisc_tm_intro .intro_link {
+.swiss_tm_intro .intro_link {
   position: absolute;
   z-index: 2;
   top: 0px;
@@ -2541,14 +2541,14 @@ body::-webkit-scrollbar-thumb {
   left: 0px;
   right: 0px;
 }
-.elisc_tm_intro .left:hover .desc {
+.swiss_tm_intro .left:hover .desc {
   top: -20px;
 }
-.elisc_tm_intro .right:hover .desc {
+.swiss_tm_intro .right:hover .desc {
   top: -20px;
 }
-.elisc_tm_intro .pricing-info,
-.elisc_tm_intro .anim {
+.swiss_tm_intro .pricing-info,
+.swiss_tm_intro .anim {
   text-decoration: none;
   color: #fff;
   background-color: #e54b4b;
@@ -2605,23 +2605,23 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.elisc_tm_intro_fixed_price .anim:nth-child(1) {
+.swiss_tm_intro_fixed_price .anim:nth-child(1) {
   -webkit-animation: myAnim 2s infinite;
   animation: myAnim 2s infinite;
 }
 
-.elisc_tm_intro_fixed_price .anim:nth-child(2) {
+.swiss_tm_intro_fixed_price .anim:nth-child(2) {
   -webkit-animation: myAnim 2s infinite 0.3s;
   animation: myAnim 2s infinite 0.3s;
 }
 
-.elisc_tm_intro_fixed_price .anim:nth-child(3) {
+.swiss_tm_intro_fixed_price .anim:nth-child(3) {
   -webkit-animation: myAnim 2s infinite 0.6s;
   animation: myAnim 2s infinite 0.6s;
 }
 
 /*---------------------------------------------------*/
-/*	15) ELISC MEDIA QUERIES (FOR SMALL DEVICES)
+/*	15) swiss MEDIA QUERIES (FOR SMALL DEVICES)
 /*---------------------------------------------------*/
 
 @media (max-width: 1600px) {
@@ -2632,92 +2632,92 @@ body::-webkit-scrollbar-thumb {
   .tm_content {
     max-width: 1000px;
   }
-  .elisc_tm_sidebar {
+  .swiss_tm_sidebar {
     width: 300px;
   }
-  .elisc_tm_mainpart {
+  .swiss_tm_mainpart {
     padding-left: 300px;
   }
-  .elisc_tm_sidebar .author {
+  .swiss_tm_sidebar .author {
     padding-top: 30px;
   }
-  .elisc_tm_sidebar .author .image {
+  .swiss_tm_sidebar .author .image {
     width: 77px;
   }
-  .elisc_tm_sidebar .name .back {
+  .swiss_tm_sidebar .name .back {
     font-size: 18px;
   }
-  .elisc_tm_sidebar .name span {
+  .swiss_tm_sidebar .name span {
     font-size: 50px;
   }
-  .elisc_tm_sidebar .menu ul li {
+  .swiss_tm_sidebar .menu ul li {
     margin-bottom: 9px;
   }
-  .elisc_tm_sidebar .copyright {
+  .swiss_tm_sidebar .copyright {
     bottom: 30px;
   }
-  .elisc_tm_sidebar .social ul li a {
+  .swiss_tm_sidebar .social ul li a {
     width: 30px;
     height: 30px;
   }
-  .elisc_tm_sidebar .social {
+  .swiss_tm_sidebar .social {
     margin-bottom: 2px;
   }
-  .elisc_tm_sidebar .author .image {
+  .swiss_tm_sidebar .author .image {
     margin-bottom: 5px;
   }
-  .elisc_tm_home .title h3,
-  .elisc_tm_home .title span {
+  .swiss_tm_home .title h3,
+  .swiss_tm_home .title span {
     font-size: 50px;
     line-height: 60px;
   }
-  .elisc_tm_home .buttons {
+  .swiss_tm_home .buttons {
     margin-bottom: 60px;
   }
-  .elisc_tm_home .subtitle {
+  .swiss_tm_home .subtitle {
     margin-bottom: 30px;
   }
-  .elisc_tm_home .info ul li a {
+  .swiss_tm_home .info ul li a {
     font-size: 16px;
   }
-  .elisc_tm_biography .text p {
+  .swiss_tm_biography .text p {
     margin-bottom: 20px;
   }
-  .elisc_tm_biography .info ul li {
+  .swiss_tm_biography .info ul li {
     margin-right: 20px;
   }
-  .elisc_tm_biography .title .mini {
+  .swiss_tm_biography .title .mini {
     margin-bottom: 5px;
   }
-  .elisc_tm_biography .name {
+  .swiss_tm_biography .name {
     font-size: 35px;
   }
-  .elisc_tm_biography .job {
+  .swiss_tm_biography .job {
     font-size: 17px;
   }
-  .elisc_tm_biography .title {
+  .swiss_tm_biography .title {
     margin-bottom: 30px;
   }
-  .elisc_tm_counter ul li .list_inner {
+  .swiss_tm_counter ul li .list_inner {
     padding: 45px 20px;
   }
-  .elisc_tm_counter h3 {
+  .swiss_tm_counter h3 {
     font-size: 35px;
     margin-bottom: 3px;
   }
-  .elisc_tm_title h3 {
+  .swiss_tm_title h3 {
     font-size: 35px;
   }
-  .elisc_tm_title span {
+  .swiss_tm_title span {
     margin-bottom: 4px;
   }
-  .elisc_tm_experience .list ul li .list_inner {
+  .swiss_tm_experience .list ul li .list_inner {
     padding: 40px;
   }
-  .elisc_tm_experience .job h3 {
+  .swiss_tm_experience .job h3 {
     font-size: 19px;
   }
-  .elisc_tm_experience .job span {
+  .swiss_tm_experience .job span {
     margin-bottom: 3px;
   }
   .service_list .title span {
@@ -2733,86 +2733,86 @@ body::-webkit-scrollbar-thumb {
   .service_list ul li .list_inner {
     padding-bottom: 45px;
   }
-  .elisc_tm_video .play {
+  .swiss_tm_video .play {
     width: 100px;
     height: 100px;
   }
-  .elisc_tm_video .text {
+  .swiss_tm_video .text {
     padding: 15px 25px;
   }
-  .elisc_tm_video .text h3 {
+  .swiss_tm_video .text h3 {
     font-size: 15px;
   }
-  .elisc_tm_portfolio .portfolio_list .details .title a {
+  .swiss_tm_portfolio .portfolio_list .details .title a {
     font-size: 21px;
   }
-  .elisc_tm_portfolio .portfolio_list .details .category {
+  .swiss_tm_portfolio .portfolio_list .details .category {
     margin-bottom: 0px;
   }
-  .elisc_tm_news .list .title h3 {
+  .swiss_tm_news .list .title h3 {
     font-size: 25px;
     line-height: 33px;
   }
-  .elisc_tm_news .list .meta {
+  .swiss_tm_news .list .meta {
     margin-bottom: 6px;
   }
-  .elisc_tm_about {
+  .swiss_tm_about {
     padding-top: 85px;
   }
-  .elisc_tm_services {
+  .swiss_tm_services {
     padding-top: 85px;
   }
-  .elisc_tm_portfolio {
+  .swiss_tm_portfolio {
     padding-top: 85px;
   }
-  .elisc_tm_news {
+  .swiss_tm_news {
     padding-top: 85px;
   }
-  .elisc_tm_sticky_section {
+  .swiss_tm_sticky_section {
     top: 85px;
   }
-  .elisc_tm_contact {
+  .swiss_tm_contact {
     padding-top: 85px;
   }
-  .dodo_tm_one_page_wrapper .elisc_tm_news {
+  .dodo_tm_one_page_wrapper .swiss_tm_news {
     padding-top: 85px;
   }
-  .dodo_tm_one_page_wrapper .elisc_tm_portfolio {
+  .dodo_tm_one_page_wrapper .swiss_tm_portfolio {
     padding-top: 85px;
   }
-  .elisc_tm_modalbox .box_inner {
+  .swiss_tm_modalbox .box_inner {
     width: 800px;
   }
-  .elisc_tm_modalbox .description_wrap {
+  .swiss_tm_modalbox .description_wrap {
     padding: 40px;
   }
-  .elisc_tm_modalbox .description_wrap:before {
+  .swiss_tm_modalbox .description_wrap:before {
     height: 40px;
   }
-  .elisc_tm_modalbox .description_wrap:after {
+  .swiss_tm_modalbox .description_wrap:after {
     height: 40px;
   }
-  .elisc_tm_modalbox .close {
+  .swiss_tm_modalbox .close {
     margin-left: 20px;
   }
 
-  .elisc_tm_intro .short_info {
+  .swiss_tm_intro .short_info {
     top: 6%;
   }
-  .elisc_tm_intro .short_info img {
+  .swiss_tm_intro .short_info img {
     max-width: 140px;
     margin-bottom: 15px;
   }
-  .elisc_tm_intro .short_info h3 {
+  .swiss_tm_intro .short_info h3 {
     font-size: 17px;
   }
-  .elisc_tm_intro .demos img {
+  .swiss_tm_intro .demos img {
     max-width: 260px;
   }
-  .elisc_tm_intro .desc h3 {
+  .swiss_tm_intro .desc h3 {
     font-size: 17px;
   }
-  .elisc_tm_intro .demos img {
+  .swiss_tm_intro .demos img {
     margin-bottom: 18px;
   }
 }
@@ -2826,187 +2826,187 @@ body::-webkit-scrollbar-thumb {
   #preloader {
     display: none;
   }
-  .elisc_tm_topbar {
+  .swiss_tm_topbar {
     display: block;
   }
-  .elisc_tm_sidebar {
+  .swiss_tm_sidebar {
     display: none;
   }
-  .elisc_tm_mainpart {
+  .swiss_tm_mainpart {
     padding-left: 0px;
   }
-  .elisc_tm_home .details {
+  .swiss_tm_home .details {
     align-items: baseline;
     flex-direction: column-reverse;
   }
-  .elisc_tm_home .details .left {
+  .swiss_tm_home .details .left {
     width: 100%;
   }
-  .elisc_tm_home .details .right {
+  .swiss_tm_home .details .right {
     width: 100%;
     padding-left: 0px;
     margin-bottom: 50px;
   }
-  .elisc_tm_home {
+  .swiss_tm_home {
     padding: 100px 0px;
   }
-  .elisc_tm_home .title h3,
-  .elisc_tm_home .title span {
+  .swiss_tm_home .title h3,
+  .swiss_tm_home .title span {
     font-size: 50px;
     line-height: 63px;
   }
-  .elisc_tm_home .buttons {
+  .swiss_tm_home .buttons {
     margin-bottom: 75px;
   }
-  .elisc_tm_biography {
+  .swiss_tm_biography {
     flex-direction: column;
   }
-  .elisc_tm_biography .left {
+  .swiss_tm_biography .left {
     width: 100%;
     margin-bottom: 50px;
   }
-  .elisc_tm_biography .right {
+  .swiss_tm_biography .right {
     width: 100%;
   }
-  .elisc_tm_biography .text p {
+  .swiss_tm_biography .text p {
     margin-bottom: 17px;
   }
-  .elisc_tm_counter ul li {
+  .swiss_tm_counter ul li {
     width: 50%;
   }
-  .elisc_tm_biography .info ul li {
+  .swiss_tm_biography .info ul li {
     margin-right: 25px;
   }
-  .elisc_tm_title h3 {
+  .swiss_tm_title h3 {
     font-size: 30px;
   }
-  .elisc_tm_title span {
+  .swiss_tm_title span {
     margin-bottom: 5px;
   }
-  .elisc_tm_counter ul li .list_inner:before {
+  .swiss_tm_counter ul li .list_inner:before {
     display: none;
   }
   .service_list ul li {
     width: 50%;
   }
-  .elisc_tm_partners ul li {
+  .swiss_tm_partners ul li {
     width: 33.3333%;
   }
-  .elisc_tm_testimonials .text p {
+  .swiss_tm_testimonials .text p {
     font-size: 20px;
     line-height: 33px;
   }
-  .elisc_tm_testimonials .detail h3 {
+  .swiss_tm_testimonials .detail h3 {
     font-size: 25px;
   }
-  .elisc_tm_news .wrapper {
+  .swiss_tm_news .wrapper {
     flex-direction: column;
   }
-  .elisc_tm_news .left {
+  .swiss_tm_news .left {
     padding-right: 0px;
     width: 100%;
     margin-bottom: 50px;
   }
-  .elisc_tm_news .right {
+  .swiss_tm_news .right {
     padding-left: 0px;
     width: 100%;
   }
-  .elisc_tm_news .list ul li .list_inner {
+  .swiss_tm_news .list ul li .list_inner {
     flex-direction: column;
     align-items: baseline;
   }
-  .elisc_tm_news .list .info {
+  .swiss_tm_news .list .info {
     width: 100%;
     margin-bottom: 20px;
   }
-  .elisc_tm_news .list .title h3 {
+  .swiss_tm_news .list .title h3 {
     font-size: 22px;
   }
-  .elisc_tm_news .list .meta {
+  .swiss_tm_news .list .meta {
     margin-bottom: 5px;
   }
   .movingbox {
     display: none;
   }
-  .elisc_tm_contact .wrapper {
+  .swiss_tm_contact .wrapper {
     flex-direction: column;
   }
-  .elisc_tm_contact .wrapper .left {
+  .swiss_tm_contact .wrapper .left {
     width: 100%;
     padding: 0px;
     margin-bottom: 40px;
   }
-  .elisc_tm_contact .wrapper .right {
+  .swiss_tm_contact .wrapper .right {
     width: 100%;
     padding: 0px;
   }
-  .elisc_tm_contact .wrapper .text {
+  .swiss_tm_contact .wrapper .text {
     margin-bottom: 30px;
   }
-  .elisc_tm_map {
+  .swiss_tm_map {
     margin-top: 70px;
   }
-  .elisc_tm_modalbox .box_inner {
+  .swiss_tm_modalbox .box_inner {
     width: 600px;
     top: 50px;
     bottom: 50px;
   }
-  .elisc_tm_modalbox .description_wrap {
+  .swiss_tm_modalbox .description_wrap {
     padding: 30px;
   }
-  .elisc_tm_modalbox .description_wrap:before {
+  .swiss_tm_modalbox .description_wrap:before {
     height: 30px;
   }
-  .elisc_tm_modalbox .description_wrap:after {
+  .swiss_tm_modalbox .description_wrap:after {
     height: 30px;
   }
-  .elisc_tm_modalbox .main_details {
+  .swiss_tm_modalbox .main_details {
     flex-direction: column;
   }
-  .elisc_tm_modalbox .main_details .textbox {
+  .swiss_tm_modalbox .main_details .textbox {
     width: 100%;
     padding-right: 0px;
     margin-bottom: 30px;
   }
-  .elisc_tm_modalbox .main_details .detailbox {
+  .swiss_tm_modalbox .main_details .detailbox {
     width: 100%;
     padding-left: 0px;
   }
-  .elisc_tm_modalbox .close a {
+  .swiss_tm_modalbox .close a {
     width: 30px;
     height: 30px;
   }
-  .elisc_tm_modalbox .close {
+  .swiss_tm_modalbox .close {
     margin-left: 15px;
   }
 }
 @media (max-width: 768px) {
-  .elisc_tm_home .title h3,
-  .elisc_tm_home .title span {
+  .swiss_tm_home .title h3,
+  .swiss_tm_home .title span {
     font-size: 35px;
     line-height: 45px;
   }
-  .elisc_tm_counter ul {
+  .swiss_tm_counter ul {
     margin: 0px;
   }
-  .elisc_tm_counter ul li {
+  .swiss_tm_counter ul li {
     width: 100%;
     padding-left: 0px;
   }
-  .elisc_tm_experience .list ul {
+  .swiss_tm_experience .list ul {
     margin: 0px;
   }
-  .elisc_tm_experience .list ul li {
+  .swiss_tm_experience .list ul li {
     width: 100%;
     padding-left: 0px;
   }
-  .elisc_tm_experience .list ul li .list_inner {
+  .swiss_tm_experience .list ul li .list_inner {
     padding: 35px 25px;
   }
-  .elisc_tm_experience .short {
+  .swiss_tm_experience .short {
     font-size: 15px;
   }
-  .elisc_tm_experience .list ul li {
+  .swiss_tm_experience .list ul li {
     margin-bottom: 30px;
   }
   .service_list ul {
@@ -3016,110 +3016,110 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     padding-left: 0px;
   }
-  .elisc_tm_service_title {
+  .swiss_tm_service_title {
     flex-direction: column;
     align-items: baseline;
   }
-  .elisc_tm_service_title .elisc_tm_title {
+  .swiss_tm_service_title .swiss_tm_title {
     margin-bottom: 20px;
   }
   .service_list ul li .list_inner {
     padding-left: 25px;
     padding-right: 25px;
   }
-  .elisc_tm_video .text h3 {
+  .swiss_tm_video .text h3 {
     font-size: 12px;
   }
-  .elisc_tm_video .text {
+  .swiss_tm_video .text {
     padding: 5px 15px;
     bottom: 10px;
     right: 10px;
   }
-  .elisc_tm_video .play {
+  .swiss_tm_video .play {
     width: 45px;
     height: 45px;
   }
-  .elisc_tm_video .play .svg {
+  .swiss_tm_video .play .svg {
     width: 13px;
     height: 13px;
   }
-  .elisc_tm_portfolio_title {
+  .swiss_tm_portfolio_title {
     flex-direction: column;
     align-items: baseline;
   }
-  .elisc_tm_portfolio_title .elisc_tm_title {
+  .swiss_tm_portfolio_title .swiss_tm_title {
     margin-bottom: 20px;
   }
-  .elisc_tm_partners ul li {
+  .swiss_tm_partners ul li {
     width: 50%;
   }
-  .elisc_tm_testimonials {
+  .swiss_tm_testimonials {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .elisc_tm_modalbox .box_inner {
+  .swiss_tm_modalbox .box_inner {
     width: 300px;
     top: 40px;
     bottom: 40px;
   }
-  .elisc_tm_modalbox .description_wrap {
+  .swiss_tm_modalbox .description_wrap {
     padding: 30px 25px 25px 25px;
   }
-  .elisc_tm_modalbox .description_wrap:before {
+  .swiss_tm_modalbox .description_wrap:before {
     height: 30px;
   }
-  .elisc_tm_modalbox .description_wrap:after {
+  .swiss_tm_modalbox .description_wrap:after {
     height: 25px;
   }
-  .elisc_tm_modalbox .close {
+  .swiss_tm_modalbox .close {
     margin-left: auto;
     left: auto;
     right: 25px;
     top: 15px;
   }
-  .elisc_tm_modalbox .close a {
+  .swiss_tm_modalbox .close a {
     color: #000;
     width: auto;
     height: auto;
     border: none;
     font-size: 20px;
   }
-  .elisc_tm_modalbox .infos .job h3 {
+  .swiss_tm_modalbox .infos .job h3 {
     font-size: 19px;
   }
-  .elisc_tm_modalbox .infos .year span {
+  .swiss_tm_modalbox .infos .year span {
     padding: 2px 15px;
   }
-  .elisc_tm_modalbox .infos .year {
+  .swiss_tm_modalbox .infos .year {
     margin-bottom: 15px;
   }
-  .elisc_tm_modalbox .infos {
+  .swiss_tm_modalbox .infos {
     margin-bottom: 15px;
   }
-  .elisc_tm_modalbox .main_title h3 {
+  .swiss_tm_modalbox .main_title h3 {
     font-size: 19px;
   }
-  .elisc_tm_modalbox .main_title {
+  .swiss_tm_modalbox .main_title {
     margin-bottom: 10px;
   }
-  .elisc_tm_modalbox .portfolio_main_title h3 {
+  .swiss_tm_modalbox .portfolio_main_title h3 {
     font-size: 19px;
   }
-  .elisc_tm_modalbox .portfolio_main_title {
+  .swiss_tm_modalbox .portfolio_main_title {
     margin-bottom: 15px;
   }
-  .elisc_tm_modalbox .additional_images ul {
+  .swiss_tm_modalbox .additional_images ul {
     margin: 0px;
   }
-  .elisc_tm_modalbox .additional_images ul li {
+  .swiss_tm_modalbox .additional_images ul li {
     width: 100% !important;
     padding-left: 0px;
     margin-bottom: 20px;
   }
-  .elisc_tm_modalbox .news_popup_informations .title h3 {
+  .swiss_tm_modalbox .news_popup_informations .title h3 {
     font-size: 19px;
   }
-  .elisc_tm_modalbox .news_popup_informations .title {
+  .swiss_tm_modalbox .news_popup_informations .title {
     margin-bottom: 15px;
   }
 }

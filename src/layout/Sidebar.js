@@ -1,17 +1,17 @@
 import { Fragment, useContext, useEffect, useState } from "react";
 import { context } from "../context/context";
-import { eliscUtilits } from "../utilits";
+import { swissUtilits } from "../utilits";
 const Sidebar = () => {
   const { navChange, nav, menus } = useContext(context);
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
-    eliscUtilits.smoothScrolling();
+    swissUtilits.smoothScrolling();
   }, []);
 
   return (
     <Fragment>
       {/* MOBILE MENU */}
-      <div className="elisc_tm_topbar">
+      <div className="swiss_tm_topbar">
         <div className="topbar_inner">
           <div className="logo" data-type="image">
             {" "}
@@ -36,7 +36,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className={`elisc_tm_mobile_menu ${toggle ? "opened" : ""}`}>
+      <div className={`swiss_tm_mobile_menu ${toggle ? "opened" : ""}`}>
         <div className="inner">
           <div className="wrapper">
             <div className="avatar">
@@ -116,7 +116,7 @@ const Sidebar = () => {
       </div>
       {/* /MOBILE MENU */}
       {/* SIDEBAR */}
-      <div className="elisc_tm_sidebar">
+      <div className="swiss_tm_sidebar">
         <div className="sidebar_inner">
           <div className="author">
             <div className="image">
