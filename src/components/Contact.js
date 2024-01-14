@@ -21,7 +21,7 @@ const Contact = () => {
     const token = recaptcha.current.getValue();
     recaptcha.current.reset();
     const mailParams = {
-      mailData,
+      JSON.stringify(mailData),
       'g-recaptcha-response':token,
     };
     console.log(`mail params: ${mailParams}`);
