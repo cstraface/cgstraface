@@ -18,9 +18,11 @@ const Contact = () => {
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
+    const token = recaptcha.current.getValue();
+    recaptcha.current.reset();
     const mailParams = {
       mailData,
-      'g-recaptcha-response':recaptcha,
+      'g-recaptcha-response':token,
     };
     console.log(`mail params: ${mailParams}`);
     e.preventDefault();
