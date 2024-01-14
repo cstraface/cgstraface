@@ -204,18 +204,15 @@ const Blogs = ()=>{
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _SectionContainer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(802);
-/* harmony import */ var react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(623);
-/* harmony import */ var react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
-
+//import ReCAPTCHA from "react-google-recaptcha";
 const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
-//console.log(`Site Key: ${sitekey}`);
-//{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
-const Contact = ()=>{
-    const recaptcha = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)();
+/*//console.log(`Site Key: ${sitekey}`);
+//{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}*/ const Contact = ()=>{
+    //const recaptcha = useRef();
     const [mailData, setMailData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)({
         name: "",
         email: "",
@@ -228,19 +225,19 @@ const Contact = ()=>{
             [e.target.name]: e.target.value
         });
     const onSubmit = (e)=>{
-        const token = recaptcha.current.getValue();
-        recaptcha.current.reset();
-        const mailParams = {
-            mailData,
-            "g-recaptcha-response": token
-        };
-        console.log(mailParams);
-        e.preventDefault();
+        /*const token = recaptcha.current.getValue();
+    //recaptcha.current.reset();
+    //const mailParams = {
+    //  mailData,
+    //  'g-recaptcha-response':token,
+    //};
+    //console.log(mailParams);*/ e.preventDefault();
         if (name.length === 0 || email.length === 0 || message.length === 0) {
             setError(true);
             clearError();
         } else {
-            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_b0z3zhu", mailParams, "jZFfRXuqTehgwi-0j" // public api
+            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_b0z3zhu", //  mailParams,
+            mailData, "jZFfRXuqTehgwi-0j" // public api
             ).then((response)=>{
                 setError(false);
                 clearError();
@@ -379,7 +376,8 @@ const Contact = ()=>{
                                                     placeholder: "Write something..."
                                                 })
                                             }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                            "//",
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(ReCAPTCHA, {
                                                 class: "g-recaptcha",
                                                 sitekey: sitekey,
                                                 ref: recaptcha

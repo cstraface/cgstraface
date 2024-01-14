@@ -7,7 +7,7 @@ const sitekey = process.env.SITE_KEY
 //{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
 
 const Contact = () => {
-  //const recaptcha = useRef();
+  const recaptcha = useRef();
   const [mailData, setMailData] = useState({
     name: "",
     email: "",
@@ -18,12 +18,12 @@ const Contact = () => {
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
-    //const token = recaptcha.current.getValue();
-    //recaptcha.current.reset();
-    //const mailParams = {
-    //  mailData,
-    //  'g-recaptcha-response':token,
-    //};
+    const token = recaptcha.current.getValue();
+    recaptcha.current.reset();
+    const mailParams = {
+      JSON.stringify(mailData),
+      'g-recaptcha-response':token,
+    };
     console.log(mailParams);
     e.preventDefault();
     if (name.length === 0 || email.length === 0 || message.length === 0) {
@@ -34,8 +34,7 @@ const Contact = () => {
         .send(
           "service_vpskuf6", // service id
           "template_b0z3zhu", // template id
-        //  mailParams,
-          mailData,
+          mailParams,
           "jZFfRXuqTehgwi-0j" // public api
         )
         .then(
@@ -147,7 +146,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  //<ReCAPTCHA class="g-recaptcha" sitekey={sitekey} ref={recaptcha}  />
+                  <ReCAPTCHA class="g-recaptcha" sitekey={sitekey} ref={recaptcha}  />
                   <div className="elisc_tm_button">
                     <input type="submit" value="Submit now" />
                   </div>
