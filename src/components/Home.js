@@ -66,10 +66,10 @@ const Home = () => {
               <div className="info">
                 <ul>
                   <li>
-                    <a href="tel:+1 208 803 4580">Give me a call</a>
+                    <a href="">Give me a call</a>
                   </li>
                   <li>
-                    <a href="mailto:cstrafa@gmail.com">Shoot me an email</a>
+                    <a href="">Shoot me an email</a>
                   </li>
                   <li>
                     <a className="href_location" href="#">

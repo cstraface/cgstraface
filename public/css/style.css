@@ -703,6 +703,7 @@ body::-webkit-scrollbar-thumb {
 .swiss_tm_button {
   width: 100%;
   float: left;
+  margin-top: 1.25rem;
 }
 .swiss_tm_button a,
 .swiss_tm_button input[type="submit"] {
@@ -1784,6 +1785,27 @@ body::-webkit-scrollbar-thumb {
 .swiss_tm_contact .wrapper .info ul li a:hover:before {
   width: 0px;
 }
+.swiss_tm_contact .wrapper .info ul li span {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  display: inline-block;
+  position: relative;
+}
+.swiss_tm_contact .wrapper .info ul li span:hover:before {
+  width: 0px;
+}
+
+span.abc { unicode-bidi:bidi-override; direction:rtl }
+span.abc.e:before {
+  content:"moc.li"
+ }
+span.abc.e:after { content:"@afartsc" }
+span.abc.p:before {
+  content:"0854-308-"
+ }
+span.abc.p:after { content:" +1" }
+
 .swiss_tm_contact .wrapper .right {
   width: 50%;
   padding-left: 50px;

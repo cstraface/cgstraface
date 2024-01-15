@@ -121,7 +121,7 @@ const Sidebar = () => {
           <div className="author">
             <div className="image">
               <img src="img/thumbs/1-1.jpg" alt="image" />
-              <div className="main" data-img-url="img/about/1.jpg" />
+              <div className="main" data-img-url="img/about/1.png" />
             </div>
             <div className="name">
               <h3>

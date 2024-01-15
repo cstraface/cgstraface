@@ -1,6 +1,9 @@
 import { useContext } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { context } from "../context/context";
+import { sliderProps } from "../sliderProps";
 import SectionContainer from "./SectionContainer";
+
 
 const services = [
   {
@@ -42,7 +45,7 @@ const services = [
 ];
 
 const Service = () => {
-  const { setServiceModal, modalToggle } = useContext(context);
+  const { setServiceModal, modalToggle, navChange } = useContext(context);
   return (
     <SectionContainer name="service">
       <div className="swiss_tm_services">
@@ -52,7 +55,7 @@ const Service = () => {
               <span>- Services</span>
               <h3>My Services</h3>
             </div>
-            <a href="mailto:cstrafa@gmail.com">cstrafa@gmail.com</a>
+            <span class="abc e">amg</span>
           </div>
           <div className="service_list">
             <ul>
@@ -78,24 +81,104 @@ const Service = () => {
               ))}
             </ul>
           </div>
-          <div className="swiss_tm_video">
-            <img className="placeholder" src="img/thumbs/4-2.jpg" alt="image" />
-            <div className="image" data-img-url="img/service/1.jpg" />
-            <div className="overlay" />
-            <span className="play">
-              <img className="svg" src="img/svg/play.svg" alt="image" />
-            </span>
-            <div className="text">
-              <h3>Intro Video</h3>
+        </div>
+      </div>
+      <div className="swiss_tm_portfolio">
+        <div className="tm_content">
+          <div className="swiss_tm_portfolio_title">
+            <div className="swiss_tm_title">
+              <span>- Process</span>
+              <h3>How we work</h3>
             </div>
-            <a
-              className="swiss_tm_full_link popup-youtube"
-              href="https://www.youtube.com/watch?v=7e90gBu4pas"
-            />
+          </div>
+          <div className="portfolio_list">
+            <Swiper {...sliderProps.portfolio} className="gallery_zoom">
+              <SwiperSlide>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/31-36.jpg" alt="image" />
+                    <div className="main" data-img-url="img/portfolio/1.jpg" />
+                    <a
+                      className="swiss_tm_full_link popup-youtube"
+                      href=""
+                    />
+                  </div>
+                  <div className="details">
+                    <span className="category">
+                      <a href="#">Discovery</a>
+                    </span>
+                    <h3 className="title">
+                      <a
+                        className="line_effect popup-youtube"
+                        href=""
+                      >
+                        Determine scope of work
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/31-36.jpg" alt="image" />
+                    <div className="main" data-img-url="img/portfolio/2.jpg" />
+                    <a
+                      className="swiss_tm_full_link popup-vimeo"
+                      href=""
+                    />
+                  </div>
+                  <div className="details">
+                    <span className="category">
+                      <a href="#">Definition</a>
+                    </span>
+                    <h3 className="title">
+                      <a
+                        className="line_effect popup-vimeo"
+                        href=""
+                      >
+                        Provide details on our work
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="list_inner">
+                  <div className="image">
+                    <img src="img/thumbs/31-36.jpg" alt="image" />
+                    <div className="main" data-img-url="img/portfolio/3.jpg" />
+                    <a
+                      className="swiss_tm_full_link soundcloude_link mfp-iframe audio"
+                      href=""
+                    />
+                  </div>
+                  <div className="details">
+                    <span className="category">
+                      <a href="#">Build</a>
+                    </span>
+                    <h3 className="title">
+                      <a
+                        className="line_effect soundcloude_link mfp-iframe audio"
+                        href=""
+                      >
+                        Develop and deploy your store
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+            <div className="swiss_tm_button" data-position="center">
+            <a href="#contact" onClick={() => navChange("contact")}>
+                    Get Started
+                  </a>
+            </div>
           </div>
         </div>
       </div>
     </SectionContainer>
+
   );
 };
 export default Service;

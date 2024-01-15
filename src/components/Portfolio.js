@@ -86,10 +86,14 @@ const Portfolio = () => {
                 <SwiperSlide>
                   <div className="text">
                     <p>
-                      I rarely like to write reviews, but the Marketify team
-                      truly deserve a standing ovation for their customer
-                      support, customisation and most importantly, friendliness
-                      and professionalism.
+                      One of the most talented managers I've worked with.
+                      He's a veritable "Chris-Army Knife" who can readily
+                      move between analytics, product marketing, email...you name it.
+                      If he's not yet an expert in a given area, he's quick to
+                      research and learn what he needs to be effective. He's also
+                      super responsive and driven. I'd highly recommend him to
+                      prospective employers or, selfishly, would be excited to
+                      have him on my team in the future.
                     </p>
                   </div>
                   <div className="short">
@@ -100,18 +104,23 @@ const Portfolio = () => {
                       />
                     </div>
                     <div className="detail">
-                      <h3>John Doe</h3>
+                      <h3>Andy S.</h3>
                     </div>
                   </div>
-                  <p className="job">User Interface Design at PCL Lab</p>
+                  <p className="job">CEO/CMO</p>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="text">
                     <p>
-                      Really the Code Quality, Customer Support, and design are
-                      awesome and its good support they are giving. They give an
-                      instant solution to our needs. Really awesome. I will
-                      strongly recommend to my friends.
+                      I thoroughly enjoyed working for Chris on the Yoatz team.
+                      Chris is passionate about functional food and nutrition and has
+                      created some amazing products. Chris has high standards for
+                      quality and ingredients and makes sure that every ingredient
+                      in the product has a nutritional reason for being there.
+                      Chris is talented at package design, branding, and even photography.
+                      He designs and manages the Yoatz website which is best-in-class.
+                      Chris is involved in every facet of his business and his energy is contagious.
+                      I highly recommend Chris as a top notch entrepreneur and partner.
                     </p>
                   </div>
                   <div className="short">
@@ -122,32 +131,10 @@ const Portfolio = () => {
                       />
                     </div>
                     <div className="detail">
-                      <h3>Keita Smith</h3>
+                      <h3>Julie O.</h3>
                     </div>
                   </div>
-                  <p className="job">Senior Designer at Behance</p>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="text">
-                    <p>
-                      Loved the template design, documentation, customizability
-                      and the customer support from Marketify team! I am a noob
-                      in programming but the Marketify team helped me
-                      successfully.
-                    </p>
-                  </div>
-                  <div className="short">
-                    <div className="image">
-                      <div
-                        className="main"
-                        data-img-url="img/testimonials/3.jpg"
-                      />
-                    </div>
-                    <div className="detail">
-                      <h3>Alan Walker</h3>
-                    </div>
-                  </div>
-                  <p className="job">Sales Manager at Vivaco Shop</p>
+                  <p className="job">SVP</p>
                 </SwiperSlide>
                 <div className="owl-dots"></div>
               </Swiper>

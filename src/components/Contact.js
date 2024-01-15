@@ -68,22 +68,20 @@ const Contact = () => {
               </div>
               <div className="text">
                 <p>
-                  I'm currently avaliable to take on new projects, so feel free
-                  to send me a message about anything that you want to run past
-                  me. You can contact anytime at 24/7
+                  You can use the contact form below to contact me regarding my services and pricing.
                 </p>
               </div>
               <div className="info">
                 <ul>
                   <li>
-                    <a href="tel:+77 022 444 05 05">+77 022 444 05 05</a>
+                    <span class="abc e">amg</span>
                   </li>
                   <li>
-                    <a href="mailto:support@swiss.com">support@swiss.com</a>
+                    <span class="abc p">802</span>
                   </li>
                   <li>
                     <a className="href_location" href="#">
-                      Ave Street Avenue, New York
+                      Meridian, Idaho
                     </a>
                   </li>
                 </ul>
@@ -161,7 +159,7 @@ const Contact = () => {
                   width="100%"
                   height={375}
                   id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Meridian%20Idaho&t=&z=7&ie=UTF8&iwloc=&output=embed"
                   frameBorder={0}
                   scrolling="no"
                   marginHeight={0}

@@ -28,7 +28,7 @@ var utilits = __webpack_require__(335);
 
 const PreLoader = ()=>{
     (0,external_react_.useEffect)(()=>{
-        utilits/* eliscUtilits.preloader */.$.preloader();
+        utilits/* swissUtilits.preloader */.X.preloader();
     }, []);
     return /*#__PURE__*/ jsx_runtime.jsx("div", {
         id: "preloader",

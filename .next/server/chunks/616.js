@@ -67,7 +67,7 @@ const Blogs = ()=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SectionContainer__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
         name: "blogs",
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-            className: "elisc_tm_news fn_w_sminiboxes",
+            className: "swiss_tm_news fn_w_sminiboxes",
             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "tm_content",
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -76,10 +76,10 @@ const Blogs = ()=>{
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "left fn_w_sminibox",
                             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "elisc_tm_sticky_section",
+                                className: "swiss_tm_sticky_section",
                                 children: [
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: "elisc_tm_title",
+                                        className: "swiss_tm_title",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                 children: "- Blog"
@@ -90,7 +90,7 @@ const Blogs = ()=>{
                                         ]
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "elisc_tm_button transition_link",
+                                        className: "swiss_tm_button transition_link",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "#contact",
                                             onClick: ()=>navChange("contact"),
@@ -103,9 +103,9 @@ const Blogs = ()=>{
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "right fn_w_sminibox",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "elisc_tm_sticky_section",
+                                className: "swiss_tm_sticky_section",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "list elisc_blogs_list",
+                                    className: "list swiss_blogs_list",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
                                         children: blogsData.map((blog)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
                                                 "data-img": blog.img,
@@ -152,7 +152,7 @@ const Blogs = ()=>{
                                                                 ]
                                                             }),
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                className: "elisc_tm_read_more",
+                                                                className: "swiss_tm_read_more",
                                                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                                                                     className: "line_effect",
                                                                     href: "#",
@@ -204,15 +204,18 @@ const Blogs = ()=>{
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _SectionContainer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(802);
+/* harmony import */ var react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(623);
+/* harmony import */ var react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
-//import ReCAPTCHA from "react-google-recaptcha";
+
 const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
-/*//console.log(`Site Key: ${sitekey}`);
-//{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}*/ const Contact = ()=>{
-    //const recaptcha = useRef();
+//console.log(`Site Key: ${sitekey}`);
+//{process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_MODE : process.env.REACT_APP_PRO_MODE}
+const Contact = ()=>{
+    const recaptcha = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)();
     const [mailData, setMailData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)({
         name: "",
         email: "",
@@ -225,20 +228,18 @@ const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
             [e.target.name]: e.target.value
         });
     const onSubmit = (e)=>{
-        /*const token = recaptcha.current.getValue();
-    //recaptcha.current.reset();
-    //const mailParams = {
-    //  mailData,
-    //  'g-recaptcha-response':token,
-    //};
-    //console.log(mailParams);*/ e.preventDefault();
+        const token = recaptcha.current.getValue();
+        recaptcha.current.reset();
+        const mailParams = {
+            "g-recaptcha-response": token
+        };
+        console.log(mailParams);
+        e.preventDefault();
         if (name.length === 0 || email.length === 0 || message.length === 0) {
             setError(true);
             clearError();
         } else {
-            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_b0z3zhu", //  mailParams,
-            mailData, "jZFfRXuqTehgwi-0j" // public api
-            ).then((response)=>{
+            emailjs_com__WEBPACK_IMPORTED_MODULE_1___default().send("service_vpskuf6", "template_b0z3zhu", mailData, "jZFfRXuqTehgwi-0j", mailParams).then((response)=>{
                 setError(false);
                 clearError();
                 setMailData({
@@ -260,7 +261,7 @@ const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SectionContainer__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
         name: "contact",
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-            className: "elisc_tm_contact",
+            className: "swiss_tm_contact",
             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: "tm_content",
                 children: [
@@ -271,7 +272,7 @@ const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
                                 className: "left",
                                 children: [
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: "elisc_tm_title",
+                                        className: "swiss_tm_title",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                 children: "- Let's Connect"
@@ -284,7 +285,7 @@ const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: "text",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            children: "I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want to run past me. You can contact anytime at 24/7"
+                                            children: "You can use the contact form below to contact me regarding my services and pricing."
                                         })
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -292,22 +293,22 @@ const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
                                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                        href: "tel:+77 022 444 05 05",
-                                                        children: "+77 022 444 05 05"
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        class: "abc e",
+                                                        children: "amg"
                                                     })
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                        href: "mailto:support@elisc.com",
-                                                        children: "support@elisc.com"
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        class: "abc p",
+                                                        children: "802"
                                                     })
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                         className: "href_location",
                                                         href: "#",
-                                                        children: "Ave Street Avenue, New York"
+                                                        children: "Meridian, Idaho"
                                                     })
                                                 })
                                             ]
@@ -376,14 +377,13 @@ const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
                                                     placeholder: "Write something..."
                                                 })
                                             }),
-                                            "//",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(ReCAPTCHA, {
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_google_recaptcha__WEBPACK_IMPORTED_MODULE_4___default()), {
                                                 class: "g-recaptcha",
                                                 sitekey: sitekey,
                                                 ref: recaptcha
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "elisc_tm_button",
+                                                className: "swiss_tm_button",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
                                                     type: "submit",
                                                     value: "Submit now"
@@ -396,7 +396,7 @@ const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
                         ]
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "elisc_tm_map",
+                        className: "swiss_tm_map",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "mapouter",
                             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -406,7 +406,7 @@ const sitekey = "6LeT0k8pAAAAACjBrgWLUZuIq0IGG4XrygNP-c9i";
                                         width: "100%",
                                         height: 375,
                                         id: "gmap_canvas",
-                                        src: "https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
+                                        src: "https://maps.google.com/maps?q=Meridian%20Idaho&t=&z=7&ie=UTF8&iwloc=&output=embed",
                                         frameBorder: 0,
                                         scrolling: "no",
                                         marginHeight: 0,
@@ -478,7 +478,7 @@ const Home = ()=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SectionContainer__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
         name: "home",
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-            className: "elisc_tm_home",
+            className: "swiss_tm_home",
             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "tm_content",
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -541,7 +541,7 @@ const Home = ()=>{
                                     className: "buttons",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "elisc_tm_button transition_link",
+                                            className: "swiss_tm_button transition_link",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                 href: "#service",
                                                 onClick: ()=>navChange("service"),
@@ -549,7 +549,7 @@ const Home = ()=>{
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "elisc_tm_button transition_link",
+                                            className: "swiss_tm_button transition_link",
                                             "data-style": "border",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                 href: "#contact",
@@ -565,13 +565,13 @@ const Home = ()=>{
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    href: "tel:+1 208 803 4580",
+                                                    href: "",
                                                     children: "Give me a call"
                                                 })
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    href: "mailto:cstrafa@gmail.com",
+                                                    href: "",
                                                     children: "Shoot me an email"
                                                 })
                                             }),
@@ -605,7 +605,7 @@ const Home = ()=>{
 
 /***/ }),
 
-/***/ 524:
+/***/ 183:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
@@ -633,12 +633,12 @@ const Portfolio = ()=>{
         name: "portfolio",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "elisc_tm_partners",
+                className: "swiss_tm_partners",
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     className: "tm_content",
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "elisc_tm_title",
+                            className: "swiss_tm_title",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                     children: "- Clients"
@@ -661,7 +661,7 @@ const Portfolio = ()=>{
                                                     alt: "image"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    className: "elisc_tm_full_link",
+                                                    className: "swiss_tm_full_link",
                                                     href: "#"
                                                 })
                                             ]
@@ -676,7 +676,7 @@ const Portfolio = ()=>{
                                                     alt: "image"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    className: "elisc_tm_full_link",
+                                                    className: "swiss_tm_full_link",
                                                     href: "#"
                                                 })
                                             ]
@@ -691,7 +691,7 @@ const Portfolio = ()=>{
                                                     alt: "image"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    className: "elisc_tm_full_link",
+                                                    className: "swiss_tm_full_link",
                                                     href: "#"
                                                 })
                                             ]
@@ -706,7 +706,7 @@ const Portfolio = ()=>{
                                                     alt: "image"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    className: "elisc_tm_full_link",
+                                                    className: "swiss_tm_full_link",
                                                     href: "#"
                                                 })
                                             ]
@@ -721,7 +721,7 @@ const Portfolio = ()=>{
                                                     alt: "image"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    className: "elisc_tm_full_link",
+                                                    className: "swiss_tm_full_link",
                                                     href: "#"
                                                 })
                                             ]
@@ -736,7 +736,7 @@ const Portfolio = ()=>{
                                                     alt: "image"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    className: "elisc_tm_full_link",
+                                                    className: "swiss_tm_full_link",
                                                     href: "#"
                                                 })
                                             ]
@@ -751,7 +751,7 @@ const Portfolio = ()=>{
                                                     alt: "image"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    className: "elisc_tm_full_link",
+                                                    className: "swiss_tm_full_link",
                                                     href: "#"
                                                 })
                                             ]
@@ -766,7 +766,7 @@ const Portfolio = ()=>{
                                                     alt: "image"
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    className: "elisc_tm_full_link",
+                                                    className: "swiss_tm_full_link",
                                                     href: "#"
                                                 })
                                             ]
@@ -779,14 +779,14 @@ const Portfolio = ()=>{
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "elisc_tm_testimonial_wrapper",
+                className: "swiss_tm_testimonial_wrapper",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "tm_content",
                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "elisc_tm_testimonials",
+                        className: "swiss_tm_testimonials",
                         children: [
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "elisc_tm_title",
+                                className: "swiss_tm_title",
                                 "data-position": "center",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
@@ -808,7 +808,7 @@ const Portfolio = ()=>{
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                     className: "text",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        children: "I rarely like to write reviews, but the Marketify team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism."
+                                                        children: "One of the most talented managers I've worked with. He's a veritable \"Chris-Army Knife\" who can readily move between analytics, product marketing, email...you name it. If he's not yet an expert in a given area, he's quick to research and learn what he needs to be effective. He's also super responsive and driven. I'd highly recommend him to prospective employers or, selfishly, would be excited to have him on my team in the future."
                                                     })
                                                 }),
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -824,14 +824,14 @@ const Portfolio = ()=>{
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                             className: "detail",
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                                                children: "John Doe"
+                                                                children: "Andy S."
                                                             })
                                                         })
                                                     ]
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                     className: "job",
-                                                    children: "User Interface Design at PCL Lab"
+                                                    children: "CEO/CMO"
                                                 })
                                             ]
                                         }),
@@ -840,7 +840,7 @@ const Portfolio = ()=>{
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                     className: "text",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        children: "Really the Code Quality, Customer Support, and design are awesome and its good support they are giving. They give an instant solution to our needs. Really awesome. I will strongly recommend to my friends."
+                                                        children: "I thoroughly enjoyed working for Chris on the Yoatz team. Chris is passionate about functional food and nutrition and has created some amazing products. Chris has high standards for quality and ingredients and makes sure that every ingredient in the product has a nutritional reason for being there. Chris is talented at package design, branding, and even photography. He designs and manages the Yoatz website which is best-in-class. Chris is involved in every facet of his business and his energy is contagious. I highly recommend Chris as a top notch entrepreneur and partner."
                                                     })
                                                 }),
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -856,46 +856,14 @@ const Portfolio = ()=>{
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                             className: "detail",
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                                                children: "Keita Smith"
+                                                                children: "Julie O."
                                                             })
                                                         })
                                                     ]
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                     className: "job",
-                                                    children: "Senior Designer at Behance"
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, {
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "text",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        children: "Loved the template design, documentation, customizability and the customer support from Marketify team! I am a noob in programming but the Marketify team helped me successfully."
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                    className: "short",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                            className: "image",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                                className: "main",
-                                                                "data-img-url": "img/testimonials/3.jpg"
-                                                            })
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                            className: "detail",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                                                children: "Alan Walker"
-                                                            })
-                                                        })
-                                                    ]
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                    className: "job",
-                                                    children: "Sales Manager at Vivaco Shop"
+                                                    children: "SVP"
                                                 })
                                             ]
                                         }),
@@ -936,7 +904,7 @@ const SectionContainer = ({ name , children  })=>{
     const { nav , animation  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_context_context__WEBPACK_IMPORTED_MODULE_2__/* .context */ .D);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
         id: name,
-        className: `elisc_tm_section ${name == nav ? `animated active ${animation}` : ""}`,
+        className: `swiss_tm_section ${name == nav ? `animated active ${animation}` : ""}`,
         children: children
     });
 };
@@ -946,16 +914,23 @@ const SectionContainer = ({ name , children  })=>{
 /***/ }),
 
 /***/ 205:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(893);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _context_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(298);
-/* harmony import */ var _SectionContainer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(802);
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
+/* harmony import */ var _context_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(298);
+/* harmony import */ var _sliderProps__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(226);
+/* harmony import */ var _SectionContainer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(802);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([swiper_react__WEBPACK_IMPORTED_MODULE_2__, _sliderProps__WEBPACK_IMPORTED_MODULE_4__]);
+([swiper_react__WEBPACK_IMPORTED_MODULE_2__, _sliderProps__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
 
 
 
@@ -999,115 +974,258 @@ const services = [
     }
 ];
 const Service = ()=>{
-    const { setServiceModal , modalToggle  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_context_context__WEBPACK_IMPORTED_MODULE_2__/* .context */ .D);
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_SectionContainer__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+    const { setServiceModal , modalToggle , navChange  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(_context_context__WEBPACK_IMPORTED_MODULE_3__/* .context */ .D);
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_SectionContainer__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
         name: "service",
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-            className: "elisc_tm_services",
-            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "tm_content",
-                children: [
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "elisc_tm_service_title",
-                        children: [
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "elisc_tm_title",
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "swiss_tm_services",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "tm_content",
+                    children: [
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "swiss_tm_service_title",
+                            children: [
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "swiss_tm_title",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                            children: "- Services"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                            children: "My Services"
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                    class: "abc e",
+                                    children: "amg"
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "service_list",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
+                                children: services.map((service)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                className: "popup_image",
+                                                src: service.image,
+                                                alt: "image"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                className: "list_inner",
+                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                    className: "details",
+                                                    children: [
+                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                            className: "title",
+                                                            children: [
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                    children: service.id
+                                                                }),
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                                                    children: service.name
+                                                                })
+                                                            ]
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: "text",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                children: service.description
+                                                            })
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        ]
+                                    }, service.id))
+                            })
+                        })
+                    ]
+                })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "swiss_tm_portfolio",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "tm_content",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "swiss_tm_portfolio_title",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "swiss_tm_title",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                        children: "- Services"
+                                        children: "- Process"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                        children: "My Services"
+                                        children: "How we work"
                                     })
                                 ]
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                href: "mailto:cstrafa@gmail.com",
-                                children: "cstrafa@gmail.com"
                             })
-                        ]
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "service_list",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ul", {
-                            children: services.map((service)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                        }),
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "portfolio_list",
+                            children: [
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(swiper_react__WEBPACK_IMPORTED_MODULE_2__.Swiper, {
+                                    ..._sliderProps__WEBPACK_IMPORTED_MODULE_4__/* .sliderProps.portfolio */ .b.portfolio,
+                                    className: "gallery_zoom",
                                     children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            className: "popup_image",
-                                            src: service.image,
-                                            alt: "image"
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "list_inner",
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, {
                                             children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "details",
+                                                className: "list_inner",
                                                 children: [
                                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                        className: "title",
+                                                        className: "image",
                                                         children: [
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                                children: service.id
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                                src: "img/thumbs/31-36.jpg",
+                                                                alt: "image"
                                                             }),
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                                                children: service.name
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                className: "main",
+                                                                "data-img-url": "img/portfolio/1.jpg"
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                className: "swiss_tm_full_link popup-youtube",
+                                                                href: ""
                                                             })
                                                         ]
                                                     }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "text",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                            children: service.description
-                                                        })
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                        className: "details",
+                                                        children: [
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                className: "category",
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    href: "#",
+                                                                    children: "Discovery"
+                                                                })
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                                                className: "title",
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    className: "line_effect popup-youtube",
+                                                                    href: "",
+                                                                    children: "Determine scope of work"
+                                                                })
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, {
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "list_inner",
+                                                children: [
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                        className: "image",
+                                                        children: [
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                                src: "img/thumbs/31-36.jpg",
+                                                                alt: "image"
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                className: "main",
+                                                                "data-img-url": "img/portfolio/2.jpg"
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                className: "swiss_tm_full_link popup-vimeo",
+                                                                href: ""
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                        className: "details",
+                                                        children: [
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                className: "category",
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    href: "#",
+                                                                    children: "Definition"
+                                                                })
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                                                className: "title",
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    className: "line_effect popup-vimeo",
+                                                                    href: "",
+                                                                    children: "Provide details on our work"
+                                                                })
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(swiper_react__WEBPACK_IMPORTED_MODULE_2__.SwiperSlide, {
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "list_inner",
+                                                children: [
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                        className: "image",
+                                                        children: [
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                                src: "img/thumbs/31-36.jpg",
+                                                                alt: "image"
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                                className: "main",
+                                                                "data-img-url": "img/portfolio/3.jpg"
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                className: "swiss_tm_full_link soundcloude_link mfp-iframe audio",
+                                                                href: ""
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                        className: "details",
+                                                        children: [
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                className: "category",
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    href: "#",
+                                                                    children: "Build"
+                                                                })
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                                                className: "title",
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    className: "line_effect soundcloude_link mfp-iframe audio",
+                                                                    href: "",
+                                                                    children: "Develop and deploy your store"
+                                                                })
+                                                            })
+                                                        ]
                                                     })
                                                 ]
                                             })
                                         })
                                     ]
-                                }, service.id))
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "swiss_tm_button",
+                                    "data-position": "center",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                        href: "#contact",
+                                        onClick: ()=>navChange("contact"),
+                                        children: "Get Started"
+                                    })
+                                })
+                            ]
                         })
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: "elisc_tm_video",
-                        children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                className: "placeholder",
-                                src: "img/thumbs/4-2.jpg",
-                                alt: "image"
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "image",
-                                "data-img-url": "img/service/1.jpg"
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "overlay"
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                className: "play",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                    className: "svg",
-                                    src: "img/svg/play.svg",
-                                    alt: "image"
-                                })
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "text",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                    children: "Intro Video"
-                                })
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                className: "elisc_tm_full_link popup-youtube",
-                                href: "https://www.youtube.com/watch?v=7e90gBu4pas"
-                            })
-                        ]
-                    })
-                ]
+                    ]
+                })
             })
-        })
+        ]
     });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Service);
 
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
@@ -1169,12 +1287,12 @@ const experiences = [
 const Experience = ()=>{
     const { modalToggle , setexperienceModal  } = (0,external_react_.useContext)(context/* context */.D);
     return /*#__PURE__*/ jsx_runtime.jsx("div", {
-        className: "elisc_tm_experience",
+        className: "swiss_tm_experience",
         children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
             className: "tm_content",
             children: [
                 /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                    className: "elisc_tm_title",
+                    className: "swiss_tm_title",
                     children: [
                         /*#__PURE__*/ jsx_runtime.jsx("span", {
                             children: "- Experience"
@@ -1230,7 +1348,7 @@ const Experience = ()=>{
                                                 })
                                             }),
                                             /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                className: "elisc_tm_full_link",
+                                                className: "swiss_tm_full_link",
                                                 href: "#",
                                                 onClick: (e)=>{
                                                     e.preventDefault();
@@ -1261,13 +1379,13 @@ const AboutMe = ()=>{
     return /*#__PURE__*/ jsx_runtime.jsx(SectionContainer/* default */.Z, {
         name: "about",
         children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-            className: "elisc_tm_about",
+            className: "swiss_tm_about",
             children: [
                 /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                     className: "tm_content",
                     children: [
                         /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                            className: "elisc_tm_biography",
+                            className: "swiss_tm_biography",
                             children: [
                                 /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                                     className: "left",
@@ -1314,11 +1432,11 @@ const AboutMe = ()=>{
                                             ]
                                         }),
                                         /*#__PURE__*/ jsx_runtime.jsx("div", {
-                                            className: "elisc_tm_button transition_link",
+                                            className: "swiss_tm_button transition_link",
                                             children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                href: "#portfolio",
-                                                onClick: ()=>navChange("portfolio"),
-                                                children: "Got a project?"
+                                                href: "#service",
+                                                onClick: ()=>navChange("service"),
+                                                children: "My Services"
                                             })
                                         })
                                     ]
@@ -1379,10 +1497,8 @@ const AboutMe = ()=>{
                                                                 children: "Mail"
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime.jsx("span", {
-                                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                                    href: "mailto:cstrafa@gmail.com",
-                                                                    children: "cstrafa@gmail.com"
-                                                                })
+                                                                class: "abc e",
+                                                                children: "amg"
                                                             })
                                                         ]
                                                     }),
@@ -1392,10 +1508,8 @@ const AboutMe = ()=>{
                                                                 children: "Phone"
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime.jsx("span", {
-                                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                                    href: "tel:+1 208 803 4580",
-                                                                    children: "+1 208 803 4580"
-                                                                })
+                                                                class: "abc p",
+                                                                children: "802"
                                                             })
                                                         ]
                                                     })
@@ -1407,7 +1521,7 @@ const AboutMe = ()=>{
                             ]
                         }),
                         /*#__PURE__*/ jsx_runtime.jsx("div", {
-                            className: "elisc_tm_counter",
+                            className: "swiss_tm_counter",
                             children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
                                 children: [
                                     /*#__PURE__*/ jsx_runtime.jsx("li", {
@@ -1510,7 +1624,7 @@ const ModalContainer = ({ children , nullValue  })=>{
         nullValue(null);
     });
     return /*#__PURE__*/ jsx_runtime.jsx("div", {
-        className: "elisc_tm_modalbox opened",
+        className: "swiss_tm_modalbox opened",
         children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
             className: "box_inner",
             ref: domNode,
@@ -1596,7 +1710,7 @@ const BlogPopup = ()=>{
                     className: "text",
                     children: [
                         /*#__PURE__*/ jsx_runtime.jsx("p", {
-                            children: "Elisc is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals."
+                            children: "swiss is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals."
                         }),
                         /*#__PURE__*/ jsx_runtime.jsx("p", {
                             children: "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line."
@@ -1663,13 +1777,13 @@ const ExperiencePopup = ()=>{
                     ]
                 }),
                 /*#__PURE__*/ jsx_runtime.jsx("p", {
-                    children: "Elisc is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals."
+                    children: "swiss is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals."
                 }),
                 /*#__PURE__*/ jsx_runtime.jsx("p", {
                     children: "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line."
                 }),
                 /*#__PURE__*/ jsx_runtime.jsx("p", {
-                    children: "That’s why more companies are not only reevaluating their website’s design but also partnering with Elisc, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
+                    children: "That’s why more companies are not only reevaluating their website’s design but also partnering with swiss, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
                 })
             ]
         })
@@ -1934,13 +2048,13 @@ const ServicePopup = ()=>{
                     })
                 }),
                 /*#__PURE__*/ jsx_runtime.jsx("p", {
-                    children: "Elisc is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals."
+                    children: "swiss is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals."
                 }),
                 /*#__PURE__*/ jsx_runtime.jsx("p", {
                     children: "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line."
                 }),
                 /*#__PURE__*/ jsx_runtime.jsx("p", {
-                    children: "That’s why more companies are not only reevaluating their website’s design but also partnering with Elisc, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
+                    children: "That’s why more companies are not only reevaluating their website’s design but also partnering with swiss, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business."
                 })
             ]
         })
@@ -2042,12 +2156,12 @@ const Sidebar = ()=>{
     const { navChange , nav , menus  } = (0,external_react_.useContext)(context/* context */.D);
     const [toggle, setToggle] = (0,external_react_.useState)(false);
     (0,external_react_.useEffect)(()=>{
-        utilits/* eliscUtilits.smoothScrolling */.$.smoothScrolling();
+        utilits/* swissUtilits.smoothScrolling */.X.smoothScrolling();
     }, []);
     return /*#__PURE__*/ (0,jsx_runtime.jsxs)(external_react_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime.jsx("div", {
-                className: "elisc_tm_topbar",
+                className: "swiss_tm_topbar",
                 children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                     className: "topbar_inner",
                     children: [
@@ -2090,7 +2204,7 @@ const Sidebar = ()=>{
                 })
             }),
             /*#__PURE__*/ jsx_runtime.jsx("div", {
-                className: `elisc_tm_mobile_menu ${toggle ? "opened" : ""}`,
+                className: `swiss_tm_mobile_menu ${toggle ? "opened" : ""}`,
                 children: /*#__PURE__*/ jsx_runtime.jsx("div", {
                     className: "inner",
                     children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
@@ -2191,7 +2305,7 @@ const Sidebar = ()=>{
                 })
             }),
             /*#__PURE__*/ jsx_runtime.jsx("div", {
-                className: "elisc_tm_sidebar",
+                className: "swiss_tm_sidebar",
                 children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                     className: "sidebar_inner",
                     children: [
@@ -2207,7 +2321,7 @@ const Sidebar = ()=>{
                                         }),
                                         /*#__PURE__*/ jsx_runtime.jsx("div", {
                                             className: "main",
-                                            "data-img-url": "img/about/1.jpg"
+                                            "data-img-url": "img/about/1.png"
                                         })
                                     ]
                                 }),
@@ -2308,9 +2422,9 @@ const Sidebar = ()=>{
 
 const Layout = ({ children  })=>{
     (0,external_react_.useEffect)(()=>{
-        utilits/* eliscUtilits.dataImage */.$.dataImage();
-        utilits/* eliscUtilits.customCursor */.$.customCursor();
-        utilits/* eliscUtilits.imgToSVG */.$.imgToSVG();
+        utilits/* swissUtilits.dataImage */.X.dataImage();
+        utilits/* swissUtilits.customCursor */.X.customCursor();
+        utilits/* swissUtilits.imgToSVG */.X.imgToSVG();
     }, []);
     const { modal , experienceModal , serviceModal , portfolioModal , blogModal , animation  } = (0,external_react_.useContext)(context/* context */.D);
     return /*#__PURE__*/ (0,jsx_runtime.jsxs)(external_react_.Fragment, {
@@ -2322,14 +2436,14 @@ const Layout = ({ children  })=>{
             modal && portfolioModal && /*#__PURE__*/ jsx_runtime.jsx(popup_PortfolioPopup, {}),
             modal && blogModal && /*#__PURE__*/ jsx_runtime.jsx(popup_BlogPopup, {}),
             /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: animation ? "elisc_tm_all_wrap" : "dodo_tm_one_page_wrapper",
+                className: animation ? "swiss_tm_all_wrap" : "dodo_tm_one_page_wrapper",
                 "data-magic-cursor": "show",
                 "data-enter": animation,
                 "data-exit": true,
                 children: [
                     /*#__PURE__*/ jsx_runtime.jsx(layout_Sidebar, {}),
                     /*#__PURE__*/ jsx_runtime.jsx("div", {
-                        className: "elisc_tm_mainpart",
+                        className: "swiss_tm_mainpart",
                         children: /*#__PURE__*/ jsx_runtime.jsx("div", {
                             className: "mainpart_inner",
                             children: children
@@ -2344,7 +2458,7 @@ const Layout = ({ children  })=>{
                 ]
             }),
             /*#__PURE__*/ jsx_runtime.jsx("div", {
-                className: "elisc_fn_moving_box"
+                className: "swiss_fn_moving_box"
             })
         ]
     });

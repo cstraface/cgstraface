@@ -27,8 +27,8 @@ const AboutMe = () => {
                 </span>
               </div>
               <div className="swiss_tm_button transition_link">
-                <a href="#portfolio" onClick={() => navChange("portfolio")}>
-                  Got a project?
+                <a href="#service" onClick={() => navChange("service")}>
+                  My Services
                 </a>
               </div>
             </div>
@@ -62,15 +62,11 @@ const AboutMe = () => {
                   </li>
                   <li>
                     <span>Mail</span>
-                    <span>
-                      <a href="mailto:cstrafa@gmail.com">cstrafa@gmail.com</a>
-                    </span>
+                    <span class="abc e">amg</span>
                   </li>
                   <li>
                     <span>Phone</span>
-                    <span>
-                      <a href="tel:+1 208 803 4580">+1 208 803 4580</a>
-                    </span>
+                    <span class="abc p">802</span>
                   </li>
                 </ul>
               </div>
