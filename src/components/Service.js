@@ -88,7 +88,7 @@ const Service = () => {
           <div className="swiss_tm_portfolio_title">
             <div className="swiss_tm_title">
               <span>- Process</span>
-              <h3>How we work</h3>
+              <h3>How I work</h3>
             </div>
           </div>
           <div className="portfolio_list">

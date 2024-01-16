@@ -149,17 +149,17 @@ const Sidebar = () => {
             <div className="social">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/cstraface">
                     <i className="icon-facebook-1" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="icon-twitter-1" />
+                  <a href="https://www.instagram.com/cstraface/">
+                    <i className="icon-instagram-1" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/cstraface/">
                     <i className="icon-linkedin-1" />
                   </a>
                 </li>
