@@ -1059,7 +1059,7 @@ const Service = ()=>{
                                         children: "- Process"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                        children: "How we work"
+                                        children: "How I work"
                                     })
                                 ]
                             })
@@ -1467,30 +1467,6 @@ const AboutMe = ()=>{
                                             className: "info",
                                             children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("ul", {
                                                 children: [
-                                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("li", {
-                                                        children: [
-                                                            /*#__PURE__*/ jsx_runtime.jsx("span", {
-                                                                children: "Age"
-                                                            }),
-                                                            /*#__PURE__*/ jsx_runtime.jsx("span", {
-                                                                children: "36"
-                                                            })
-                                                        ]
-                                                    }),
-                                                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("li", {
-                                                        children: [
-                                                            /*#__PURE__*/ jsx_runtime.jsx("span", {
-                                                                children: "Born In"
-                                                            }),
-                                                            /*#__PURE__*/ jsx_runtime.jsx("span", {
-                                                                children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                                    className: "href_location",
-                                                                    href: "#",
-                                                                    children: "California, USA"
-                                                                })
-                                                            })
-                                                        ]
-                                                    }),
                                                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("li", {
                                                         children: [
                                                             /*#__PURE__*/ jsx_runtime.jsx("span", {
@@ -2364,7 +2340,7 @@ const Sidebar = ()=>{
                                         children: [
                                             /*#__PURE__*/ jsx_runtime.jsx("li", {
                                                 children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                    href: "#",
+                                                    href: "https://www.facebook.com/cstraface",
                                                     children: /*#__PURE__*/ jsx_runtime.jsx("i", {
                                                         className: "icon-facebook-1"
                                                     })
@@ -2372,15 +2348,15 @@ const Sidebar = ()=>{
                                             }),
                                             /*#__PURE__*/ jsx_runtime.jsx("li", {
                                                 children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                    href: "#",
+                                                    href: "https://www.instagram.com/cstraface/",
                                                     children: /*#__PURE__*/ jsx_runtime.jsx("i", {
-                                                        className: "icon-twitter-1"
+                                                        className: "icon-instagram-1"
                                                     })
                                                 })
                                             }),
                                             /*#__PURE__*/ jsx_runtime.jsx("li", {
                                                 children: /*#__PURE__*/ jsx_runtime.jsx("a", {
-                                                    href: "#",
+                                                    href: "https://www.linkedin.com/in/cstraface/",
                                                     children: /*#__PURE__*/ jsx_runtime.jsx("i", {
                                                         className: "icon-linkedin-1"
                                                     })

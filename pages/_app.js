@@ -1,4 +1,5 @@
 import PreLoader from "@/src/layout/PreLoader";
+import { Analytics } from '@vercel/analytics/react';
 import "@/styles/globals.css";
 import State from "../src/context/context";
 
@@ -7,6 +8,7 @@ export default function App({ Component, pageProps }) {
     <State>
       <PreLoader />
       <Component {...pageProps} />
+      <Analytics />
     </State>
   );
 }
