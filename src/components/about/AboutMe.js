@@ -49,18 +49,6 @@ const AboutMe = () => {
               <div className="info">
                 <ul>
                   <li>
-                    <span>Age</span>
-                    <span>36</span>
-                  </li>
-                  <li>
-                    <span>Born In</span>
-                    <span>
-                      <a className="href_location" href="#">
-                        California, USA
-                      </a>
-                    </span>
-                  </li>
-                  <li>
                     <span>Mail</span>
                     <span class="abc e">amg</span>
                   </li>
