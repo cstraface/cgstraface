@@ -55,7 +55,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div
-                  className="swiss_tm_button transition_link"
+                  className="swiss_tm_button transition_link swiss_tm_hide_mobile"
                   data-style="border"
                 >
                   <a href="#contact" onClick={() => navChange("contact")}>
@@ -68,7 +68,7 @@ const Home = () => {
                   <li>
                     <a href="">Give me a call</a>
                   </li>
-                  <li class="swiss_tm_hide_mobile">
+                  <li>
                     <a href="">Shoot me an email</a>
                   </li>
                   <li>
