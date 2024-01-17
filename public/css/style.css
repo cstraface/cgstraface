@@ -2696,6 +2696,9 @@ span.abc.p:after { content:" +1" }
   .swiss_tm_home .buttons {
     margin-bottom: 60px;
   }
+  .swiss_tm_hide_mobile {
+    display: none;
+  }
   .swiss_tm_home .subtitle {
     margin-bottom: 30px;
   }
