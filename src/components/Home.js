@@ -68,7 +68,7 @@ const Home = () => {
                   <li>
                     <a href="">Give me a call</a>
                   </li>
-                  <li>
+                  <li class="swiss_tm_hide_mobile">
                     <a href="">Shoot me an email</a>
                   </li>
                   <li>
