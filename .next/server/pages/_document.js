@@ -5,7 +5,7 @@ exports.id = 660;
 exports.ids = [660];
 exports.modules = {
 
-/***/ 669:
+/***/ 7669:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -17,9 +17,9 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(893);
+var jsx_runtime = __webpack_require__(5893);
 // EXTERNAL MODULE: ./node_modules/next/document.js
-var next_document = __webpack_require__(859);
+var next_document = __webpack_require__(6859);
 ;// CONCATENATED MODULE: ./pages/_document.js
 
 
@@ -35,18 +35,18 @@ function Document() {
                     }),
                     /*#__PURE__*/ jsx_runtime.jsx("meta", {
                         name: "description",
-                        content: "Name of your web site"
+                        content: "Shopify administration and customization"
                     }),
                     /*#__PURE__*/ jsx_runtime.jsx("meta", {
                         name: "author",
-                        content: "Marketify"
+                        content: "Brick Enterprises LLC"
                     }),
                     /*#__PURE__*/ jsx_runtime.jsx("meta", {
                         name: "viewport",
                         content: "width=device-width, initial-scale=1, maximum-scale=1"
                     }),
                     /*#__PURE__*/ jsx_runtime.jsx("title", {
-                        children: "swiss"
+                        children: "Shopify Administration"
                     }),
                     /*#__PURE__*/ jsx_runtime.jsx("link", {
                         href: "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap",
@@ -91,49 +91,49 @@ function Document() {
 
 /***/ }),
 
-/***/ 140:
+/***/ 4140:
 /***/ ((module) => {
 
 module.exports = require("next/dist/server/get-page-files.js");
 
 /***/ }),
 
-/***/ 716:
+/***/ 9716:
 /***/ ((module) => {
 
 module.exports = require("next/dist/server/htmlescape.js");
 
 /***/ }),
 
-/***/ 368:
+/***/ 6368:
 /***/ ((module) => {
 
 module.exports = require("next/dist/server/utils.js");
 
 /***/ }),
 
-/***/ 724:
+/***/ 6724:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/constants.js");
 
 /***/ }),
 
-/***/ 743:
+/***/ 8743:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/html-context.js");
 
 /***/ }),
 
-/***/ 524:
+/***/ 8524:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/is-plain-object.js");
 
 /***/ }),
 
-/***/ 689:
+/***/ 6689:
 /***/ ((module) => {
 
 module.exports = require("react");
@@ -147,7 +147,7 @@ module.exports = require("react");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [893,859], () => (__webpack_exec__(669)));
+var __webpack_exports__ = __webpack_require__.X(0, [893,859], () => (__webpack_exec__(7669)));
 module.exports = __webpack_exports__;
 
 })();

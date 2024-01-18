@@ -2784,7 +2784,7 @@ span.abc.p:after { content:" +1" }
   .swiss_tm_about {
     padding-top: 85px;
   }
-  .swiss_tm_services {
+  .swiss_tm_services, .swiss_tm_partners {
     padding-top: 85px;
   }
   .swiss_tm_portfolio {
