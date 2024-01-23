@@ -62,50 +62,20 @@ const Sidebar = () => {
             <div className="social">
               <ul>
                 <li>
-                  <a href="#">
-                    <img
-                      className="svg"
-                      src="img/svg/social/facebook.svg"
-                      alt="image"
-                    />
-                  </a>
-                </li>{" "}
-                <li>
-                  <a href="#">
-                    <img
-                      className="svg"
-                      src="img/svg/social/twitter.svg"
-                      alt="image"
-                    />
-                  </a>
-                </li>{" "}
-                <li>
-                  <a href="#">
-                    <img
-                      className="svg"
-                      src="img/svg/social/instagram.svg"
-                      alt="image"
-                    />
-                  </a>
-                </li>{" "}
-                <li>
-                  <a href="#">
-                    <img
-                      className="svg"
-                      src="img/svg/social/dribbble.svg"
-                      alt="image"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      className="svg"
-                      src="img/svg/social/tik-tok.svg"
-                      alt="image"
-                    />
-                  </a>
-                </li>
+                    <a href="https://www.facebook.com/cstraface">
+                      <i className="icon-facebook-1" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/cstraface/">
+                      <i className="icon-instagram-1" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/cstraface/">
+                      <i className="icon-linkedin-1" />
+                    </a>
+                  </li>
               </ul>
             </div>
             <div className="copyright">
