@@ -74,7 +74,7 @@ const Contact = () => {
               <div className="info">
                 <ul>
                   <li>
-                    <span class="abc e">amg</span>
+                    <span class="abc e">sgc</span>
                   </li>
                   <li>
                     <span class="abc p">802</span>

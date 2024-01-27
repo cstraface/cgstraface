@@ -50,7 +50,7 @@ const AboutMe = () => {
                 <ul>
                   <li>
                     <span>Mail</span>
-                    <span class="abc e">amg</span>
+                    <span class="abc e">sgc</span>
                   </li>
                   <li>
                     <span>Phone</span>

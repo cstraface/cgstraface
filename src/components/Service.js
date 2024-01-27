@@ -55,7 +55,7 @@ const Service = () => {
               <span>- Services</span>
               <h3>My Services</h3>
             </div>
-            <span class="abc e">amg</span>
+            <span class="abc e">sgc</span>
           </div>
           <div className="service_list">
             <ul>

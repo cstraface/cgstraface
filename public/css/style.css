@@ -1798,9 +1798,9 @@ body::-webkit-scrollbar-thumb {
 
 span.abc { unicode-bidi:bidi-override; direction:rtl }
 span.abc.e:before {
-  content:"moc.li"
+  content:"moc.ecafart"
  }
-span.abc.e:after { content:"@afartsc" }
+span.abc.e:after { content:"@sirhc" }
 span.abc.p:before {
   content:"0854-308-"
  }
