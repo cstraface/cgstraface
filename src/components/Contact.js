@@ -32,7 +32,7 @@ const Contact = () => {
       emailjs
         .send(
           "service_vpskuf6", // service id
-          "template_b0z3zhu", // template id
+          "template_0gbvgci", // template id
           mailData,
           "jZFfRXuqTehgwi-0j", // public api
           mailParams,
