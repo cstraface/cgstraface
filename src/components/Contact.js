@@ -90,63 +90,64 @@ const Contact = () => {
             <div className="right">
               <div className="fields">
                 <form
-                  onSubmit={(e) => onSubmit(e)}
-                  className="contact_form"
-                  id="contact_form"
+                    onSubmit={(e) => onSubmit(e)}
+                    className="contact_form"
+                    id="contact_form"
                 >
                   <div
-                    className="returnmessage"
-                    data-success="Your message has been received, We will contact you soon."
+                      className="returnmessage"
+                      data-success="Your message has been received, We will contact you soon."
                   />
                   <div
-                    className={error ? "empty_notice" : "returnmessage"}
-                    style={{ display: error == null ? "none" : "block" }}
+                      className={error ? "empty_notice" : "returnmessage"}
+                      style={{display: error == null ? "none" : "block"}}
                   >
                     <span>
                       {error
-                        ? "Please Fill Required Fields"
-                        : "Your message has been received, We will contact you soon."}
+                          ? "Please Fill Required Fields"
+                          : "Your message has been received, We will contact you soon."}
                     </span>
                   </div>
                   <div className="first">
                     <ul>
                       <li>
                         <input
-                          id="name"
-                          type="text"
-                          placeholder="Enter your name"
-                          autoComplete="off"
-                          name="name"
-                          onChange={(e) => onChange(e)}
-                          value={name}
+                            id="name"
+                            type="text"
+                            placeholder="Enter your name"
+                            autoComplete="off"
+                            name="name"
+                            onChange={(e) => onChange(e)}
+                            value={name}
                         />
                       </li>
                       <li>
                         <input
-                          id="email"
-                          name="email"
-                          onChange={(e) => onChange(e)}
-                          value={email}
-                          type="text"
-                          placeholder="Your email"
-                          autoComplete="off"
+                            id="email"
+                            name="email"
+                            onChange={(e) => onChange(e)}
+                            value={email}
+                            type="text"
+                            placeholder="Your email"
+                            autoComplete="off"
                         />
                       </li>
                     </ul>
                   </div>
                   <div className="last">
                     <textarea
-                      id="message"
-                      name="message"
-                      onChange={(e) => onChange(e)}
-                      value={message}
-                      placeholder="Write something..."
+                        id="message"
+                        name="message"
+                        onChange={(e) => onChange(e)}
+                        value={message}
+                        placeholder="Write something..."
                     />
                   </div>
 
-                  <ReCAPTCHA class="g-recaptcha" sitekey={sitekey} ref={recaptcha}  />
+                  <ReCAPTCHA class="g-recaptcha" sitekey={sitekey} ref={recaptcha}/>
+                  <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response"/>
                   <div className="swiss_tm_button">
-                    <input type="submit" value="Submit now" />
+                    <input type="submit" value="Submit now"/>
                   </div>
                 </form>
               </div>
