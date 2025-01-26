@@ -20,10 +20,11 @@ const Contact = () => {
   const onSubmit = (e) => {
     const token = recaptcha.current.getValue();
     recaptcha.current.reset();
-    const mailParams = {
+    const templateParams = {
+      ...mailData,
       'g-recaptcha-response':token,
     };
-    console.log(mailParams);
+    console.log(templateParams);
     e.preventDefault();
     if (name.length === 0 || email.length === 0 || message.length === 0) {
       setError(true);
@@ -33,9 +34,8 @@ const Contact = () => {
         .send(
           "service_vpskuf6", // service id
           "template_0gbvgci", // template id
-          mailData,
+            templateParams,
           "jZFfRXuqTehgwi-0j", // public api
-          mailParams
         )
         .then(
           (response) => {
@@ -46,8 +46,8 @@ const Contact = () => {
           (err) => {
             console.log(err.text);
           }
-        );
-      console.log(emailjs)
+        )
+      console.log(emailjs.send)
     }
 
   };
