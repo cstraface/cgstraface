@@ -83,7 +83,8 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div className="swiss_tm_portfolio">
+      {/* hide process section */}
+      {/*<div className="swiss_tm_portfolio">
         <div className="tm_content">
           <div className="swiss_tm_portfolio_title">
             <div className="swiss_tm_title">
@@ -176,7 +177,7 @@ const Service = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>*/}
     </SectionContainer>
 
   );
