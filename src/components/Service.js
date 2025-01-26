@@ -10,37 +10,37 @@ const services = [
     id: 1,
     name: "Shopify Store Setup",
     image: "/img/service/1.jpg",
-    description: "Get up and running"
+    description: "General setup required to get your Shopify account connected to your store."
   },
   {
     id: 2,
     name: "Shopify Product Catalog Setup",
     image: "/img/service/2.jpg",
-    description: "Sell & track your products"
+    description: "Sell & track your products by configuring your collections and inventory locations."
   },
   {
     id: 3,
     name: "Shopify Theme Development",
     image: "/img/service/3.jpg",
-    description: "Tailor your shop to your brand"
+    description: "Tailor your shop to your brand with theme customizations that make your website perform like the best."
   },
   {
     id: 4,
     name: "Shopify Store Automations",
     image: "/img/service/4.jpg",
-    description: "Eliminate busy work and increase efficiency"
+    description: "Eliminate busy work and increase efficiency by turning manual workflows into automated ones."
   },
   {
     id: 5,
-    name: "Shopify Inventory/Location Setup",
+    name: "Multi-site Setup",
     image: "/img/service/1.jpg",
-    description: "Untangle inventory and locations"
+    description: "Untangle inventory and ensure on-hand levels are properly tracking across your warehouse locations. "
   },
   {
     id: 6,
     name: "e-Commerce Administration",
     image: "/img/service/2.jpg",
-    description: "Day to day operations"
+    description: "Day to day operations and on-call support to eliminate bugs and keep your site running smoothly."
   },
 ];
 
