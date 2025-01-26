@@ -35,7 +35,7 @@ const Contact = () => {
           "template_0gbvgci", // template id
           mailData,
           "jZFfRXuqTehgwi-0j", // public api
-          mailParams,
+          mailParams
         )
         .then(
           (response) => {
@@ -47,6 +47,7 @@ const Contact = () => {
             console.log(err.text);
           }
         );
+      console.log(emailjs)
     }
 
   };
