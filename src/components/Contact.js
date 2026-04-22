@@ -24,7 +24,6 @@ const Contact = () => {
       ...mailData,
       'g-recaptcha-response':token,
     };
-    console.log(templateParams);
     e.preventDefault();
     if (name.length === 0 || email.length === 0 || message.length === 0) {
       setError(true);
@@ -47,11 +46,9 @@ const Contact = () => {
             console.log(err.text);
           }
         )
-      console.log(emailjs.send)
     }
 
   };
-  console.log(onSubmit);
   const clearError = () => {
     setTimeout(() => {
       setError(null);
@@ -75,10 +72,10 @@ const Contact = () => {
               <div className="info">
                 <ul>
                   <li>
-                    <span class="abc e">sgc</span>
+                    <span className="abc e">sgc</span>
                   </li>
                   <li>
-                    <span class="abc p">802</span>
+                    <span className="abc p">802</span>
                   </li>
                   <li>
                     <a className="href_location" href="#">
@@ -145,7 +142,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <ReCAPTCHA class="g-recaptcha" sitekey={sitekey} ref={recaptcha}/>
+                  <ReCAPTCHA className="g-recaptcha" sitekey={sitekey} ref={recaptcha}/>
                   <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response"/>
                   <div className="swiss_tm_button">
                     <input type="submit" value="Submit now"/>

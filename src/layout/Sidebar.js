@@ -1,8 +1,11 @@
 import { Fragment, useContext, useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import { context } from "../context/context";
 import { swissUtilits } from "../utilits";
 const Sidebar = () => {
   const { navChange, nav, menus } = useContext(context);
+  const router = useRouter();
+  const isHome = router.pathname === "/";
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
     swissUtilits.smoothScrolling();
@@ -50,8 +53,8 @@ const Sidebar = () => {
                     key={menu.id}
                   >
                     <a
-                      href={`#${menu.href}`}
-                      onClick={() => navChange(menu.href)}
+                      href={isHome ? `#${menu.href}` : `/#${menu.href}`}
+                      onClick={() => isHome && navChange(menu.href)}
                     >
                       {menu.name}
                     </a>
@@ -106,8 +109,8 @@ const Sidebar = () => {
               {menus.map((menu) => (
                 <li className={nav === menu.href ? "active" : ""} key={menu.id}>
                   <a
-                    href={`#${menu.href}`}
-                    onClick={() => navChange(menu.href)}
+                    href={isHome ? `#${menu.href}` : `/#${menu.href}`}
+                    onClick={() => isHome && navChange(menu.href)}
                   >
                     {menu.name}
                   </a>

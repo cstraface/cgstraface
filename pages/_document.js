@@ -4,14 +4,9 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Shopify Experts</title>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="Your Shopify store administrators and managers" />
         <meta name="author" content="Brick Enterprises LLC" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
         <link rel="canonical" href="https://cgstraface.com" /> 
         {/* OPEN GRAPH */}
         <meta property="og:locale" content="en_US" />

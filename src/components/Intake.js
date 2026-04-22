@@ -241,68 +241,66 @@ Other Notes: ${or(form.anythingElse)}
             <h4 className="intake_section_title">About You</h4>
           </div>
 
-          <div className="intake_field_row">
-            <div className="intake_field">
-              <label>
-                Full Name <span className="intake_required" />
-              </label>
-              <input
-                type="text"
-                name="fullName"
-                value={form.fullName}
-                onChange={handleChange}
-                placeholder="Jane Smith"
-                autoComplete="name"
-                className={errors.fullName ? "intake_err" : ""}
-              />
-              {errors.fullName && (
-                <span className="intake_error_msg">Please enter your name.</span>
-              )}
-            </div>
-            <div className="intake_field">
-              <label>Company / Organization</label>
-              <input
-                type="text"
-                name="company"
-                value={form.company}
-                onChange={handleChange}
-                placeholder="Acme Corp"
-                autoComplete="organization"
-              />
-            </div>
+          <div className="intake_field">
+            <label>
+              Full Name <span className="intake_required" />
+            </label>
+            <input
+              type="text"
+              name="fullName"
+              value={form.fullName}
+              onChange={handleChange}
+              placeholder="Jane Smith"
+              autoComplete="name"
+              className={errors.fullName ? "intake_err" : ""}
+            />
+            {errors.fullName && (
+              <span className="intake_error_msg">Please enter your name.</span>
+            )}
           </div>
 
-          <div className="intake_field_row">
-            <div className="intake_field">
-              <label>
-                Email Address <span className="intake_required" />
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="jane@acmecorp.com"
-                autoComplete="email"
-                className={errors.email ? "intake_err" : ""}
-              />
-              {errors.email && (
-                <span className="intake_error_msg">Please enter a valid email.</span>
-              )}
-            </div>
-            <div className="intake_field">
-              <label>Your Role</label>
-              <select name="role" value={form.role} onChange={handleChange}>
-                <option value="">Select your role</option>
-                <option>Founder / CEO</option>
-                <option>Product Manager</option>
-                <option>CTO / Engineering Lead</option>
-                <option>Designer</option>
-                <option>Marketing / Growth</option>
-                <option>Operations</option>
-                <option>Other</option>
-              </select>
-            </div>
+          <div className="intake_field">
+            <label>Company / Organization</label>
+            <input
+              type="text"
+              name="company"
+              value={form.company}
+              onChange={handleChange}
+              placeholder="Acme Corp"
+              autoComplete="organization"
+            />
+          </div>
+
+          <div className="intake_field">
+            <label>
+              Email Address <span className="intake_required" />
+            </label>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="jane@acmecorp.com"
+              autoComplete="email"
+              className={errors.email ? "intake_err" : ""}
+            />
+            {errors.email && (
+              <span className="intake_error_msg">Please enter a valid email.</span>
+            )}
+          </div>
+
+          <div className="intake_field">
+            <label>Your Role</label>
+            <select name="role" value={form.role} onChange={handleChange}>
+              <option value="">Select your role</option>
+              <option>Founder / CEO</option>
+              <option>Product Manager</option>
+              <option>CTO / Engineering Lead</option>
+              <option>Designer</option>
+              <option>Marketing / Growth</option>
+              <option>Operations</option>
+              <option>Other</option>
+            </select>
           </div>
 
           {/* 02 — Project Overview */}
@@ -405,33 +403,32 @@ Other Notes: ${or(form.anythingElse)}
             )}
           </div>
 
-          <div className="intake_field_row">
-            <div className="intake_field">
-              <label>Estimated Market Size</label>
-              <select name="marketSize" value={form.marketSize} onChange={handleChange}>
-                <option value="">Select range</option>
-                <option>Very niche (&lt;1,000 users)</option>
-                <option>Small (1K – 10K users)</option>
-                <option>Medium (10K – 100K users)</option>
-                <option>Large (100K – 1M users)</option>
-                <option>Massive (1M+ users)</option>
-                <option>Unknown</option>
-              </select>
-            </div>
-            <div className="intake_field">
-              <label>Business Model</label>
-              <select name="businessModel" value={form.businessModel} onChange={handleChange}>
-                <option value="">Select model</option>
-                <option>SaaS / Subscription</option>
-                <option>One-time purchase</option>
-                <option>Marketplace / Commission</option>
-                <option>Freemium</option>
-                <option>Advertising</option>
-                <option>Services / Consulting</option>
-                <option>Internal tool (no monetization)</option>
-                <option>Not yet determined</option>
-              </select>
-            </div>
+          <div className="intake_field">
+            <label>Estimated Market Size</label>
+            <select name="marketSize" value={form.marketSize} onChange={handleChange}>
+              <option value="">Select range</option>
+              <option>Very niche (&lt;1,000 users)</option>
+              <option>Small (1K – 10K users)</option>
+              <option>Medium (10K – 100K users)</option>
+              <option>Large (100K – 1M users)</option>
+              <option>Massive (1M+ users)</option>
+              <option>Unknown</option>
+            </select>
+          </div>
+
+          <div className="intake_field">
+            <label>Business Model</label>
+            <select name="businessModel" value={form.businessModel} onChange={handleChange}>
+              <option value="">Select model</option>
+              <option>SaaS / Subscription</option>
+              <option>One-time purchase</option>
+              <option>Marketplace / Commission</option>
+              <option>Freemium</option>
+              <option>Advertising</option>
+              <option>Services / Consulting</option>
+              <option>Internal tool (no monetization)</option>
+              <option>Not yet determined</option>
+            </select>
           </div>
 
           <div className="intake_field">

@@ -5,9 +5,14 @@ import Portfolio from "@/src/components/Portfolio";
 import Service from "@/src/components/Service";
 import AboutMe from "@/src/components/about/AboutMe";
 import Layout from "@/src/layout/Layout";
+import Head from "next/head";
 const Index = () => {
   return (
     <Layout>
+      <Head>
+        <title>Shopify Experts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      </Head>
       {/* HOME */}
       <Home />
       {/* /HOME */}

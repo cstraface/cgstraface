@@ -123,6 +123,7 @@ html {
   padding-bottom: 14px;
   margin-bottom: 30px;
   margin-top: 50px;
+  clear: both;
 }
 .intake_section_divider:first-of-type {
   margin-top: 0;
@@ -149,14 +150,8 @@ html {
 }
 
 /* Field layout */
-.intake_field_row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
 .intake_field {
   width: 100%;
-  float: left;
   margin-bottom: 24px;
 }
 .intake_field:last-child {
@@ -190,9 +185,14 @@ html {
 }
 
 /* Inputs, selects, textareas inside intake */
+.swiss_tm_intake form {
+  width: 100%;
+  display: block;
+}
 .intake_field input[type="text"],
 .intake_field input[type="email"],
 .intake_field input[type="url"] {
+  width: 100% !important;
   height: 60px !important;
   background-color: #fff !important;
 }
@@ -225,6 +225,7 @@ html {
   color: var(--main-color);
 }
 .intake_field textarea {
+  width: 100% !important;
   min-height: 110px;
   background-color: #fff !important;
 }
@@ -412,6 +413,7 @@ input[type="range"].intake_range::-webkit-slider-runnable-track {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  clear: both;
 }
 .intake_submit_note {
   font-size: 13px;
@@ -422,9 +424,6 @@ input[type="range"].intake_range::-webkit-slider-runnable-track {
 
 /* Responsive */
 @media screen and (max-width: 640px) {
-  .intake_field_row {
-    grid-template-columns: 1fr;
-  }
   .intake_priority_row {
     flex-direction: column;
     align-items: flex-start;
