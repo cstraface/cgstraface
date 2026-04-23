@@ -6,7 +6,17 @@ import Service from "@/src/components/Service";
 import AboutMe from "@/src/components/about/AboutMe";
 import Layout from "@/src/layout/Layout";
 import Head from "next/head";
+import { useContext, useEffect } from "react";
+import { context } from "@/src/context/context";
+
 const Index = () => {
+  const { navChange } = useContext(context);
+
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash) navChange(hash);
+  }, []);
+
   return (
     <Layout>
       <Head>

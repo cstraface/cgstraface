@@ -171,9 +171,9 @@ Other Notes: ${or(form.anythingElse)}
         "service_vpskuf6",
         "template_0gbvgci",
         {
-          name: `${form.fullName} — Project Intake`,
+          name: form.fullName,
           email: form.email,
-          message: intakeData,
+          message: `[Project Intake]\n\n${intakeData}`,
         },
         "jZFfRXuqTehgwi-0j"
       )

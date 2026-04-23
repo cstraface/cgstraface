@@ -54,7 +54,10 @@ const Sidebar = () => {
                   >
                     <a
                       href={isHome ? `#${menu.href}` : `/#${menu.href}`}
-                      onClick={() => isHome && navChange(menu.href)}
+                      onClick={() => {
+                        setToggle(false);
+                        if (isHome) navChange(menu.href);
+                      }}
                     >
                       {menu.name}
                     </a>

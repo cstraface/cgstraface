@@ -69,6 +69,15 @@ const Contact = () => {
                   You can use the contact form below to contact me regarding my services and pricing.
                 </p>
               </div>
+              <div className="text" style={{ marginTop: 0 }}>
+                <p>
+                  Have a new project in mind?{" "}
+                  <a href="/intake" style={{ color: "var(--yellow-color)", fontWeight: 600 }}>
+                    Fill out a project brief
+                  </a>{" "}
+                  and I&rsquo;ll get back to you within 1&ndash;2 business days.
+                </p>
+              </div>
               <div className="info">
                 <ul>
                   <li>
