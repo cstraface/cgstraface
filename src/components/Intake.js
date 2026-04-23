@@ -635,6 +635,21 @@ Other Notes: ${or(form.anythingElse)}
               Something went wrong — please try again or email us directly.
             </p>
           )}
+
+          <div className="intake_confidentiality">
+            <p><strong>Mutual Confidentiality</strong></p>
+            <p>
+              By submitting this form, both you and Brick Enterprises LLC agree to treat all
+              information exchanged in connection with this project discussion as confidential.
+              Neither party will disclose the other&rsquo;s proprietary information, business
+              details, technical concepts, or project specifics to any third party without prior
+              written consent. This mutual obligation of confidentiality applies from the date of
+              submission and remains in effect for two (2) years, or until the information
+              becomes publicly available through no fault of either party. Submission of this
+              form does not create a binding contract or obligate either party to enter into a
+              formal agreement.
+            </p>
+          </div>
         </form>
       </div>
     </div>
