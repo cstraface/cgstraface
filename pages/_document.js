@@ -13,7 +13,7 @@ export default function Document() {
         <meta property="og:site_name" content="Shopify Experts" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Your Shopify store administrators and managers" />
-        <meta property="og:image" content="https://cgsraface.com/img/logo/logo.png" />
+        <meta property="og:image" content="https://cgstraface.com/img/logo/logo.png" />
         <meta property="og:url" content="https://cgstraface.com" />
         {/* STYLES */}
         <link

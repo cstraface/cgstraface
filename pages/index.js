@@ -35,9 +35,6 @@ const Index = () => {
       {/* PORTFOLIO */}
       <Portfolio />
       {/* /PORTFOLIO */}
-      {/* NEWS */}
-      // <Blogs />
-      {/* /NEWS */}
       {/* CONTACT */}
       <Contact />
       {/* /CONTACT */}
