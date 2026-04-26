@@ -139,6 +139,11 @@ const Portfolio = () => {
                 <div className="owl-dots"></div>
               </Swiper>
             </div>
+            <div className="swiss_tm_button" data-position="center" style={{ marginTop: 32 }}>
+              <a href="https://linkedin.com/in/cstraface" target="_blank" rel="noopener noreferrer" data-style="border">
+                More recommendations on LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </div>

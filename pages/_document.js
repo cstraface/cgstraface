@@ -5,14 +5,14 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="Your Shopify store administrators and managers" />
+        <meta name="description" content="Shopify expert and e-commerce consultant based in Meridian, Idaho. Store setup, theme development, automations, and ongoing admin for D2C brands." />
         <meta name="author" content="Brick Enterprises LLC" />
-        <link rel="canonical" href="https://cgstraface.com" /> 
+        <link rel="canonical" href="https://cgstraface.com" />
         {/* OPEN GRAPH */}
         <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Shopify Experts" />
+        <meta property="og:site_name" content="Brick Enterprises LLC" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Your Shopify store administrators and managers" />
+        <meta property="og:description" content="Shopify expert and e-commerce consultant based in Meridian, Idaho. Store setup, theme development, automations, and ongoing admin for D2C brands." />
         <meta property="og:image" content="https://cgstraface.com/img/logo/logo.png" />
         <meta property="og:url" content="https://cgstraface.com" />
         {/* STYLES */}
